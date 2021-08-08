@@ -1,0 +1,14 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Create Date: 2020/12/09 10:46:42
+// Design Name: 
+// Module Name: Add1
+//////////////////////////////////////////////////////////////////////////////////
+
+module Add1(
+    input [31:0] Address,
+    output reg [31:0] ResultFromAdd1 
+    );
+    always @ (Address)
+    ResultFromAdd1 = Address + 4;
+endmodule

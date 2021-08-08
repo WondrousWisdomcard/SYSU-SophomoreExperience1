@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 25 13:36:32 2020
+# Process ID: 6208
+# Current directory: C:/Users/17727/Desktop/VivadoArea/adder/adder.runs/full_adder_0_synth_1
+# Command line: vivado.exe -log full_adder_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_adder_0.tcl
+# Log file: C:/Users/17727/Desktop/VivadoArea/adder/adder.runs/full_adder_0_synth_1/full_adder_0.vds
+# Journal file: C:/Users/17727/Desktop/VivadoArea/adder/adder.runs/full_adder_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source full_adder_0.tcl -notrace

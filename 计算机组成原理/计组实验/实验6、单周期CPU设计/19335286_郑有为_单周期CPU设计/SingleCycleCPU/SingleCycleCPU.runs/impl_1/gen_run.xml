@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1606707920">
+  <File Type="ROUTE-PWR" Name="ToFPGA_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ToFPGA.tcl"/>
+  <File Type="PWROPT-DCP" Name="ToFPGA_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="ToFPGA_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ToFPGA_reports.tcl"/>
+  <File Type="BG-DRC" Name="ToFPGA.drc"/>
+  <File Type="OPT-HWDEF" Name="ToFPGA.hwdef"/>
+  <File Type="OPT-DCP" Name="ToFPGA_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ToFPGA_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="ToFPGA_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ToFPGA_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ToFPGA_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ToFPGA_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ToFPGA_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ToFPGA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ToFPGA_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ToFPGA_physopt.dcp"/>
+  <File Type="BG-BIT" Name="ToFPGA.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ToFPGA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ToFPGA_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ToFPGA_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ToFPGA_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ToFPGA_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ToFPGA_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="ToFPGA.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ToFPGA_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="ToFPGA.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ToFPGA_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="ToFPGA.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ToFPGA_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="ToFPGA.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="ToFPGA_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ToFPGA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ToFPGA_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ToFPGA_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ToFPGA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ToFPGA_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="ToFPGA_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="ToFPGA.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ToFPGA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ToFPGA_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="ToFPGA.nky"/>
+  <File Type="BITSTR-BMM" Name="ToFPGA_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ToFPGA.mmi"/>
+  <File Type="BITSTR-LTX" Name="ToFPGA.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ToFPGA.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALUControlUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BeforeALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPUControl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPU_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Light.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NextAddress.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Registers.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SelectRegWriteData.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SignExtend.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ToFPGA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ToFPGA"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/PC_test.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

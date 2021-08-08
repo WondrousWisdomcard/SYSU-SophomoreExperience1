@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/ALUControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/BeforeALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BeforeALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/CPUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/NextAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NextAddress
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/SelectRegWriteData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SelectRegWriteData
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/SignExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sim_1/new/FinalCPUTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FinalCPUTest

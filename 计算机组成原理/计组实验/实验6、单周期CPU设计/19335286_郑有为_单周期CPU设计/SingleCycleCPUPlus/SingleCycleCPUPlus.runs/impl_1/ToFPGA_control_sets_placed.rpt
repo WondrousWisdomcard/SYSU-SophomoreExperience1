@@ -1,0 +1,368 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Dec  3 08:45:17 2020
+| Host         : LAPTOP-D025KD3I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ToFPGA_control_sets_placed.rpt
+| Design       : ToFPGA
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   304 |
+| Unused register locations in slices containing registers |    80 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             196 |          124 |
+| No           | No                    | Yes                    |              32 |           16 |
+| No           | Yes                   | No                     |              44 |           17 |
+| Yes          | No                    | No                     |            3040 |         1255 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+
+|                Clock Signal               |                    Enable Signal                   |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-------------------------------------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  CPU_test/CPUControl_test/JR_reg/G0       |                                                    |                                         |                1 |              1 |
+|  CPU_test/CPUControl_test/MemRead_reg/G0  |                                                    |                                         |                1 |              1 |
+|  CPU_test/PC_test/Registers_reg[31][0]_5  |                                                    | CPU_test/PC_test/Registers_reg[31][0]_8 |                1 |              1 |
+|  CPU_test/PC_test/Registers_reg[31][4]_1  |                                                    | CPU_test/PC_test/Registers_reg[31][4]_0 |                1 |              1 |
+|  CPU_test/PC_test/now_reg[0]_1            |                                                    | CPU_test/PC_test/now_reg[0]_6           |                1 |              1 |
+|  CPU_test/PC_test/now_reg[0]_4            |                                                    | CPU_test/PC_test/now_reg[1]_0           |                1 |              1 |
+|  CPU_test/PC_test/now_reg[0]_3            |                                                    | CPU_test/PC_test/now_reg[0]_5           |                1 |              1 |
+|  CPU_test/PC_test/Memory_reg[254][0]_1    |                                                    | CPU_test/PC_test/Registers_reg[6][31]   |                1 |              2 |
+|  CPU_test/PC_test/Registers_reg[24][31]_1 |                                                    | CPU_test/PC_test/Registers_reg[24][31]  |                1 |              2 |
+|  rclk_IBUF_BUFG                           |                                                    | light/select_reg[3]_1                   |                1 |              2 |
+|  rclk_IBUF_BUFG                           |                                                    | light/p_0_in[0]                         |                1 |              2 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[64][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[66][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[215][0]_0[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[239][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[139][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[103][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[147][0][0]            |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[127][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[159][0]_0[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[171][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[227][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[243][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[247][0]_0[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[207][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[235][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[195][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[23][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/E[0]                             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[143][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[155][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[167][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[123][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[19][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[223][0][0]            |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[251][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[255][0]_0[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[131][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[135][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[15][0]_0[0]           |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[179][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[151][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[115][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[163][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[119][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[107][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[175][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[183][0]_0[0]          |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[187][0]_0[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[199][0]_1[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[203][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[191][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[219][0]_0[0]          |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[231][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[111][0][0]            |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[211][0][0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[59][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[51][0]_0[0]           |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[35][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[71][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[83][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[91][0]_0[0]           |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[27][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[63][0]_0[0]           |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[95][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[43][0][0]             |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[3][0]_2[0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[47][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[67][0]_0[0]           |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[39][0][0]             |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[55][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[31][0][0]             |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[75][0][0]             |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[7][0]_0[0]            |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[79][0]_0[0]           |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[87][0][0]             |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/ALU_test/Memory_reg[99][0]_0[0]           |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[61][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[62][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[73][7]_i_1_n_1  |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[68][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[69][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[70][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[72][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[6][7]_i_1_n_1   |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[76][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[78][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[77][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[74][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[82][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[80][7]_i_1_n_1  |                                         |                6 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[81][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[84][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[85][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[86][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[8][7]_i_1_n_1   |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[88][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[90][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[92][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[89][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[96][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[98][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[94][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[97][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[9][7]_i_1_n_1   |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[93][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[100][7]_i_1_n_1 |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[0][7]_i_1_n_1   |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[106][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[101][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[102][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[104][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[105][7]_i_1_n_1 |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[113][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[108][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[10][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[110][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[112][7]_i_1_n_1 |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[114][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[109][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[120][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[116][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[117][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[118][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[125][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[124][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[122][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[126][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[121][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[132][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[128][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[129][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[130][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[12][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[138][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[134][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[133][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[136][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[137][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[13][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[140][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[141][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[142][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[144][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[145][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[148][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[14][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[146][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[149][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[150][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[158][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[157][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[152][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[154][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[156][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[153][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[161][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[160][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[162][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[164][7]_i_1_n_1 |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[165][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[168][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[172][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[170][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[16][7]_i_1_n_1  |                                         |                7 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[169][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[166][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[176][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[173][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[178][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[177][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[174][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[182][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[181][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[180][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[185][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[17][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[184][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[186][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[188][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[190][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[189][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[18][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[196][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[193][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[197][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[194][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[192][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[198][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[1][7]_i_1_n_1   |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[200][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[201][7]_i_1_n_1 |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[202][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[209][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[206][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[208][7]_i_1_n_1 |                                         |                8 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[204][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[205][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[210][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[212][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[213][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[214][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[20][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[218][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[221][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[216][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[217][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[21][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[220][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[226][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[222][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[224][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[225][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[232][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[228][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[229][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[230][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[22][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[238][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[233][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[234][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[236][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[237][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[242][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[240][7]_i_1_n_1 |                                         |                8 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[241][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[246][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[244][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[248][7]_i_1_n_1 |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[245][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[250][7]_i_1_n_1 |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[24][7]_i_1_n_1  |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[249][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[252][7]_i_1_n_1 |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[254][7]_i_1_n_1 |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[26][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[25][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[253][7]_i_1_n_1 |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[30][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[32][7]_i_1_n_1  |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[2][7]_i_1_n_1   |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[28][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[29][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[33][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[34][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[37][7]_i_1_n_1  |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[38][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[36][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[41][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[40][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[44][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[45][7]_i_1_n_1  |                                         |                6 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[42][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[50][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[46][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[48][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[52][7]_i_1_n_1  |                                         |                4 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[4][7]_i_1_n_1   |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[49][7]_i_1_n_1  |                                         |                5 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[54][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[58][7]_i_1_n_1  |                                         |                1 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[56][7]_i_1_n_1  |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[57][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[53][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[65][7]_i_1_n_1  |                                         |                3 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[5][7]_i_1_n_1   |                                         |                2 |              8 |
+| ~clk_IBUF_BUFG                            | CPU_test/DataMamory_test/i_/Memory[60][7]_i_1_n_1  |                                         |                2 |              8 |
+|  rclk_IBUF_BUFG                           |                                                    |                                         |                7 |             10 |
+|  rclk_IBUF_BUFG                           |                                                    | light/divclk_cnt[31]_i_1_n_1            |                8 |             31 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/E[0]                              |                                         |               19 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[27][31][0]          |                                         |               13 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[21][31][0]          |                                         |               20 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[30][31][0]          |                                         |               22 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[17][31][0]          |                                         |               18 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[26][31][0]          |                                         |               17 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[13][31][0]          |                                         |               18 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[19][31][0]          |                                         |               17 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[22][31][0]          |                                         |               17 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[23][31][0]          |                                         |               17 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[24][31]_2[0]        |                                         |               17 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[15][31][0]          |                                         |               17 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[28][31][0]          |                                         |               20 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[31][0]_10[0]        |                                         |               15 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[20][31][0]          |                                         |               22 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[14][31][0]          |                                         |               18 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[18][31][0]          |                                         |               19 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[29][31][0]          |                                         |               21 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[11][31][0]          |                                         |               14 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[10][31][0]          |                                         |               18 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[12][31][0]          |                                         |               21 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[16][31][0]          |                                         |               20 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[1][31][0]           |                                         |               20 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[25][31][0]          |                                         |               20 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[2][31][0]           |                                         |               16 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[9][31][0]           |                                         |               24 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[7][31][0]           |                                         |               23 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[8][31][0]           |                                         |               25 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[4][31][0]           |                                         |               24 |             32 |
+|  clk_IBUF_BUFG                            |                                                    | CPU_test/PC_test/now[31]_i_2_n_1        |               16 |             32 |
+| ~clk_IBUF_BUFG                            |                                                    |                                         |               18 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[5][31][0]           |                                         |               24 |             32 |
+| ~clk_IBUF_BUFG                            | CPU_test/PC_test/Registers_reg[3][31][0]           |                                         |               20 |             32 |
+|  MemRead                                  |                                                    |                                         |               32 |             32 |
+|  n_0_7718_BUFG                            |                                                    |                                         |               65 |            120 |
++-------------------------------------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     7 |
+| 2      |                     4 |
+| 8      |                   256 |
+| 10     |                     1 |
+| 16+    |                    36 |
++--------+-----------------------+
+
+

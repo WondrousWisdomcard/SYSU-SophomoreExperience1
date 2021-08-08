@@ -1,0 +1,21 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/ALU_sim.v,1606363756,verilog,,,,ALU_sim,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/PC_sim.v,1606181196,verilog,,,,PC_sim,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/Register_sim.v,1606140287,verilog,,,,Register_sim,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/FinalCPUTest.v,1606472837,verilog,,,,FinalCPUTest,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v,1606403352,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALUControlUnit.v,,ALU,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALUControlUnit.v,1606299043,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/BeforeALU.v,,ALUControlUnit,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/BeforeALU.v,1606399158,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/CPUControl.v,,BeforeALU,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/CPUControl.v,1606406303,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/CPU_top.v,,CPUControl,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/CPU_top.v,1606707294,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMemory.v,,CPU_top,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMemory.v,1606707602,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v,,DataMemory,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v,1607949553,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/NextAddress.v,,InstructionMemory,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/NextAddress.v,1606573320,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v,,NextAddress,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v,1606706645,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Registers.v,,PC,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Registers.v,1606403957,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectRegWriteData.v,,Registers,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectRegWriteData.v,1606401569,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SignExtend.v,,SelectRegWriteData,,,,,,,,
+C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SignExtend.v,1606706938,verilog,,C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/FinalCPUTest.v,,SignExtend,,,,,,,,

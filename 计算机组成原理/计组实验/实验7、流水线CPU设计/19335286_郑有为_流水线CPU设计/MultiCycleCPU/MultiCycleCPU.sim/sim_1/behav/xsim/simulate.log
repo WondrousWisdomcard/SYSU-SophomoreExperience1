@@ -1,0 +1,416 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+PC:4294967292 INSTRUCTION:          x
+PC:         0 INSTRUCTION:  537395204
+PC:         4 INSTRUCTION:  536870922
+PC:         8 INSTRUCTION:  536870923
+ResultFromMux1:  8
+PC:        12 INSTRUCTION:  536870924
+ResultFromMux1:  0
+PC:        16 INSTRUCTION: 2366701568
+WriteDataFromMux3:          4
+ALUResultFromMEMWB:          4
+ResultFromMux1:  0
+WriteData:          4 WriteReg:  8
+PC:        20 INSTRUCTION: 2366767108
+WriteDataFromMux3:         10
+ALUResultFromMEMWB:         10
+ResultFromMux1:  0
+PC:        24 INSTRUCTION:      38944
+WriteDataFromMux3:         11
+ALUResultFromMEMWB:         11
+ResultFromMux1: 17
+PC:        28 INSTRUCTION:  536870925
+WriteDataFromMux3:         12
+ALUResultFromMEMWB:         12
+ResultFromMux1: 18
+PC:        32 INSTRUCTION:  573636609
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:          4
+ResultFromMux1: 19
+WriteData:          6 WriteReg: 17
+PC:        36 INSTRUCTION:  536870925
+WriteDataFromMux3:          9
+ALUResultFromMEMWB:          8
+ResultFromMux1:  0
+WriteData:          9 WriteReg: 18
+PC:        40 INSTRUCTION:  536870927
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 17
+WriteData:          0 WriteReg: 19
+PC:        44 INSTRUCTION:  536870938
+WriteDataFromMux3:         13
+ALUResultFromMEMWB:         13
+ResultFromMux1:  0
+PC:        48 INSTRUCTION:  305266694
+WriteDataFromMux3:          7
+ALUResultFromMEMWB:          7
+ResultFromMux1:  0
+WriteData:          7 WriteReg: 17
+PC:        52 INSTRUCTION:  536870939
+WriteDataFromMux3:         13
+ALUResultFromMEMWB:         13
+ResultFromMux1:  0
+PC:        56 INSTRUCTION:  536870940
+WriteDataFromMux3:         15
+ALUResultFromMEMWB:         15
+ResultFromMux1: 18
+PC:        60 INSTRUCTION:  536870941
+WriteDataFromMux3:         26
+ALUResultFromMEMWB:         26
+ResultFromMux1:  0
+PC:        64 INSTRUCTION:   40998944
+WriteDataFromMux3: 4294967294
+ALUResultFromMEMWB: 4294967294
+ResultFromMux1:  0
+PC:        68 INSTRUCTION:  134217735
+WriteDataFromMux3:         27
+ALUResultFromMEMWB:         27
+ResultFromMux1:  0
+PC:        72 INSTRUCTION:  536870942
+WriteDataFromMux3:         28
+ALUResultFromMEMWB:         28
+ResultFromMux1: 19
+PC:        28 INSTRUCTION:  536870925
+WriteDataFromMux3:         29
+ALUResultFromMEMWB:         29
+ResultFromMux1:  0
+PC:        32 INSTRUCTION:  573636609
+WriteDataFromMux3:          7
+ALUResultFromMEMWB:          7
+ResultFromMux1:  0
+WriteData:          7 WriteReg: 19
+PC:        36 INSTRUCTION:  536870925
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1:  0
+PC:        40 INSTRUCTION:  536870927
+WriteDataFromMux3:         30
+ALUResultFromMEMWB:         30
+ResultFromMux1: 17
+PC:        44 INSTRUCTION:  536870938
+WriteDataFromMux3:         13
+ALUResultFromMEMWB:         13
+ResultFromMux1:  0
+PC:        48 INSTRUCTION:  305266694
+WriteDataFromMux3:          8
+ALUResultFromMEMWB:          8
+ResultFromMux1:  0
+WriteData:          8 WriteReg: 17
+PC:        52 INSTRUCTION:  536870939
+WriteDataFromMux3:         13
+ALUResultFromMEMWB:         13
+ResultFromMux1:  0
+PC:        56 INSTRUCTION:  536870940
+WriteDataFromMux3:         15
+ALUResultFromMEMWB:         15
+ResultFromMux1: 18
+PC:        60 INSTRUCTION:  536870941
+WriteDataFromMux3:         26
+ALUResultFromMEMWB:         26
+ResultFromMux1:  0
+PC:        64 INSTRUCTION:   40998944
+WriteDataFromMux3: 4294967295
+ALUResultFromMEMWB: 4294967295
+ResultFromMux1:  0
+PC:        68 INSTRUCTION:  134217735
+WriteDataFromMux3:         27
+ALUResultFromMEMWB:         27
+ResultFromMux1:  0
+PC:        72 INSTRUCTION:  536870942
+WriteDataFromMux3:         28
+ALUResultFromMEMWB:         28
+ResultFromMux1: 19
+PC:        28 INSTRUCTION:  536870925
+WriteDataFromMux3:         29
+ALUResultFromMEMWB:         29
+ResultFromMux1:  0
+PC:        32 INSTRUCTION:  573636609
+WriteDataFromMux3:         15
+ALUResultFromMEMWB:         15
+ResultFromMux1:  0
+WriteData:         15 WriteReg: 19
+PC:        36 INSTRUCTION:  536870925
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1:  0
+PC:        40 INSTRUCTION:  536870927
+WriteDataFromMux3:         30
+ALUResultFromMEMWB:         30
+ResultFromMux1: 17
+PC:        44 INSTRUCTION:  536870938
+WriteDataFromMux3:         13
+ALUResultFromMEMWB:         13
+ResultFromMux1:  0
+PC:        48 INSTRUCTION:  305266694
+WriteDataFromMux3:          9
+ALUResultFromMEMWB:          9
+ResultFromMux1:  0
+WriteData:          9 WriteReg: 17
+PC:        52 INSTRUCTION:  536870939
+WriteDataFromMux3:         13
+ALUResultFromMEMWB:         13
+ResultFromMux1:  0
+PC:        56 INSTRUCTION:  536870940
+WriteDataFromMux3:         15
+ALUResultFromMEMWB:         15
+ResultFromMux1: 18
+PC:        60 INSTRUCTION:  536870941
+WriteDataFromMux3:         26
+ALUResultFromMEMWB:         26
+ResultFromMux1:  0
+PC:        76 INSTRUCTION:   41064482
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1:  0
+PC:        80 INSTRUCTION:  536870954
+WriteDataFromMux3:         27
+ALUResultFromMEMWB:         27
+ResultFromMux1:  0
+PC:        84 INSTRUCTION:  536870955
+WriteDataFromMux3:         28
+ALUResultFromMEMWB:         28
+ResultFromMux1: 19
+PC:        88 INSTRUCTION:  536870956
+WriteDataFromMux3:         29
+ALUResultFromMEMWB:         29
+ResultFromMux1:  0
+PC:        92 INSTRUCTION: 2903703560
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:          6
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:        96 INSTRUCTION:  536870970
+WriteDataFromMux3:         42
+ALUResultFromMEMWB:         42
+ResultFromMux1:  0
+PC:       100 INSTRUCTION:  536870971
+WriteDataFromMux3:         43
+ALUResultFromMEMWB:         43
+ResultFromMux1: 19
+PC:       104 INSTRUCTION:  536870972
+WriteDataFromMux3:         44
+ALUResultFromMEMWB:         44
+ResultFromMux1:  0
+Memory:        12 ReadData2FromEXMEM:          6
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         12
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:         58
+ALUResultFromMEMWB:         58
+ResultFromMux1:  0
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:         59
+ALUResultFromMEMWB:         59
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         60
+ALUResultFromMEMWB:         60
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19
+PC:       108 INSTRUCTION: 2366832648
+WriteDataFromMux3:         74
+ALUResultFromMEMWB:         74
+ResultFromMux1:  0
+PC:       112 INSTRUCTION:  134217755
+WriteDataFromMux3:          6
+ALUResultFromMEMWB:         12
+ResultFromMux1:  0
+WriteData:          6 WriteReg: 19
+PC:       116 INSTRUCTION:  536870986
+WriteDataFromMux3:          0
+ALUResultFromMEMWB:          0
+ResultFromMux1: 19

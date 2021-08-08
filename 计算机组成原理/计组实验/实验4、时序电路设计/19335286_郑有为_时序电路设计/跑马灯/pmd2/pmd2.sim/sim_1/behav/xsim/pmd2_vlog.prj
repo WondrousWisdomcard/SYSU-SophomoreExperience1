@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pmd2.srcs/sources_1/ip/p138_0/sources_1/new/p138.v" \
+"../../../../pmd2.srcs/sources_1/ip/p138_0/sim/p138_0.v" \
+"../../../../pmd2.srcs/sources_1/new/pmd2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

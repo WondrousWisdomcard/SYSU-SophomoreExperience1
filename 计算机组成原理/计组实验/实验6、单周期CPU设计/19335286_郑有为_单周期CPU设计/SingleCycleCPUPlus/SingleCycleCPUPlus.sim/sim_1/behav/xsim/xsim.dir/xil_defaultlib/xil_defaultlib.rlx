@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sim_1/new/FinalCPUTest.v,1606925622,verilog,,,,FinalCPUTest,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/ALU.v,1606925512,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/ALUControlUnit.v,,ALU,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/ALUControlUnit.v,1606925396,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/BeforeALU.v,,ALUControlUnit,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/BeforeALU.v,1606925293,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/CPUControl.v,,BeforeALU,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/CPUControl.v,1606925235,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/CPU_top.v,,CPUControl,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/CPU_top.v,1606925175,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/DataMemory.v,,CPU_top,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/DataMemory.v,1606925122,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/InstructionMemory.v,,DataMemory,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/InstructionMemory.v,1606925071,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/NextAddress.v,,InstructionMemory,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/NextAddress.v,1606925012,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/PC.v,,NextAddress,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/PC.v,1606924910,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/Registers.v,,PC,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/Registers.v,1606953307,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/SelectRegWriteData.v,,Registers,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/SelectRegWriteData.v,1606924775,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/SignExtend.v,,SelectRegWriteData,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sources_1/new/SignExtend.v,1606924642,verilog,,C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.srcs/sim_1/new/FinalCPUTest.v,,SignExtend,,,,,,,,

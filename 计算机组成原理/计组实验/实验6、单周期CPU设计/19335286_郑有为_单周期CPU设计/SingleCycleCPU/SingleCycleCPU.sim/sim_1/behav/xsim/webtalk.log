@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec 14 21:14:16 2020
+# Process ID: 15248
+# Current directory: C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim/xsim.dir/FinalCPUTest_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/17727/Desktop/计组实验仓库/实验6、单周期CPU设计/19335286_郑有为_单周期CPU设计/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim/xsim.dir/FinalCPUTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 14 21:14:20 2020...

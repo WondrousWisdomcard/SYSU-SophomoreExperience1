@@ -1,0 +1,1438 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Normal
+PC:         0 INSTRUCTION:          x
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:         4 INSTRUCTION:       8224
+Normal
+Normal
+WriteData:        255 WriteReg: 29
+Normal
+PC:         8 INSTRUCTION:  538771711
+WriteData:          8 WriteReg:  5
+Normal
+PC:        12 INSTRUCTION:  537198600
+JUMP
+JUMP
+PC:        48 INSTRUCTION:  201326604
+Normal
+WriteData:        235 WriteReg: 29
+Normal
+PC:        52 INSTRUCTION:  599654380
+Memory:       251 WriteData:         16
+Normal
+PC:        56 INSTRUCTION: 2948530192
+Memory:       247 WriteData:          x
+Normal
+PC:        60 INSTRUCTION: 2947743756
+Memory:       243 WriteData:          x
+Normal
+PC:        64 INSTRUCTION: 2947678216
+Memory:       239 WriteData:          x
+Normal
+PC:        68 INSTRUCTION: 2947612676
+Memory:       235 WriteData:          x
+Normal
+PC:        72 INSTRUCTION: 2947547136
+Normal
+WriteData:          0 WriteReg: 18
+Normal
+PC:        76 INSTRUCTION:     299040
+Normal
+WriteData:          8 WriteReg: 19
+Normal
+PC:        80 INSTRUCTION:     366624
+Normal
+WriteData:          0 WriteReg: 16
+Normal
+PC:        84 INSTRUCTION:      32800
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+Normal
+Normal
+WriteData: 4294967295 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+WriteData:          1 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+BranchNot
+BranchNot
+PC:       148 INSTRUCTION:  352321547
+Normal
+Normal
+Normal
+WriteData:          1 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+Normal
+WriteData:          0 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+WriteData:          0 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          0 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+Normal
+Normal
+WriteData:          5 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+Normal
+WriteData:         20 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          2 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+WriteData:          1 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:          4 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          4 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         20 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         15 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          1 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:          4 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:          4 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         20 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         15 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:         4 WriteData:         15
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:         8 WriteData:         20
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+Normal
+WriteData:          0 WriteReg: 17
+Normal
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+WriteData:          0 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          0 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+Normal
+Normal
+WriteData:          5 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+Normal
+WriteData:         15 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          3 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+WriteData:          2 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:          8 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          8 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         20 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         12 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          2 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:          8 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:          8 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         20 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         12 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:         8 WriteData:         12
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:        12 WriteData:         20
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+WriteData:          1 WriteReg: 17
+Normal
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:          4 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          4 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         15 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         12 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          1 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:          4 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:          4 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         15 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         12 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:         4 WriteData:         12
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:         8 WriteData:         15
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+Normal
+WriteData:          0 WriteReg: 17
+Normal
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+WriteData:          0 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          0 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+Normal
+Normal
+WriteData:          5 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+Normal
+WriteData:         12 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          4 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+WriteData:          3 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         12 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         12 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         20 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         36 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          5 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+WriteData:          4 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         16 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         16 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         36 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         45 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          6 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+WriteData:          5 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         20 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         20 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         45 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         47 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          7 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Normal
+Normal
+PC:        92 INSTRUCTION:  285212688
+Normal
+WriteData:          6 WriteReg: 17
+Normal
+PC:        96 INSTRUCTION:  571604991
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         24 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         24 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         47 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         18 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          6 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:         24 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:         24 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         47 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         18 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:        24 WriteData:         18
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:        28 WriteData:         47
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+WriteData:          5 WriteReg: 17
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         20 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         20 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         45 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         18 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          5 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:         20 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:         20 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         45 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         18 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:        20 WriteData:         18
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:        24 WriteData:         45
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+WriteData:          4 WriteReg: 17
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         16 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         16 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         36 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         18 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          4 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:         16 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:         16 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         36 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         18 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:        16 WriteData:         18
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:        20 WriteData:         36
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+WriteData:          3 WriteReg: 17
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:         12 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:         12 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         20 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         18 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+Normal
+WriteData:          1 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Normal
+Normal
+PC:       128 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          0 WriteReg:  4
+Normal
+PC:       132 INSTRUCTION:    1187872
+Normal
+WriteData:          3 WriteReg:  5
+Normal
+PC:       136 INSTRUCTION:    1124384
+JUMP
+JUMP
+PC:        20 INSTRUCTION:  201326597
+Normal
+WriteData:         12 WriteReg:  9
+Normal
+PC:        24 INSTRUCTION:     346240
+WriteData:         12 WriteReg:  9
+Normal
+PC:        28 INSTRUCTION:    8996896
+WriteData:         20 WriteReg:  8
+Normal
+PC:        32 INSTRUCTION: 2368208896
+WriteData:         18 WriteReg: 10
+Normal
+PC:        36 INSTRUCTION: 2368339972
+Memory:        12 WriteData:         18
+Normal
+PC:        40 INSTRUCTION: 2905210880
+Memory:        16 WriteData:         20
+Normal
+PC:        44 INSTRUCTION: 2905079812
+JR
+JR
+PC:       140 INSTRUCTION:   65011720
+Normal
+WriteData:          2 WriteReg: 17
+Normal
+PC:       144 INSTRUCTION:  573702143
+JUMP
+JUMP
+PC:        96 INSTRUCTION:  134217752
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       100 INSTRUCTION:  707264512
+Normal
+Normal
+PC:       104 INSTRUCTION:  352321547
+Normal
+Normal
+WriteData:          8 WriteReg:  9
+Normal
+PC:       108 INSTRUCTION:    1132672
+WriteData:          8 WriteReg: 10
+Normal
+PC:       112 INSTRUCTION:   38359072
+WriteData:         15 WriteReg: 11
+Normal
+PC:       116 INSTRUCTION: 2370502656
+WriteData:         18 WriteReg: 12
+Normal
+PC:       120 INSTRUCTION: 2370568196
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:       124 INSTRUCTION:   25903146
+Branch
+Branch
+PC:       148 INSTRUCTION:  285212677
+Normal
+Normal
+WriteData:          8 WriteReg: 16
+Normal
+PC:       152 INSTRUCTION:  571473921
+JUMP
+JUMP
+PC:        84 INSTRUCTION:  134217749
+Normal
+Normal
+WriteData:          0 WriteReg:  8
+Normal
+PC:        88 INSTRUCTION:   34816042
+Branch
+Branch
+PC:       156 INSTRUCTION:  285212688
+Normal
+Normal
+WriteData:          x WriteReg: 16
+Normal
+PC:       160 INSTRUCTION: 2410676224
+WriteData:          x WriteReg: 17
+Normal
+PC:       164 INSTRUCTION: 2410741764
+WriteData:          x WriteReg: 18
+Normal
+PC:       168 INSTRUCTION: 2410807304
+WriteData:          x WriteReg: 19
+Normal
+PC:       172 INSTRUCTION: 2410872844
+WriteData:         16 WriteReg: 31
+Normal
+PC:       176 INSTRUCTION: 2411659280
+WriteData:        255 WriteReg: 29
+Normal
+PC:       180 INSTRUCTION:  599588884
+JR
+JR
+PC:        16 INSTRUCTION:   65011720
+JUMP
+JUMP
+PC:       184 INSTRUCTION:  201326638
+Normal
+Normal
+WriteData:          5 WriteReg:  8
+Normal
+PC:       188 INSTRUCTION: 2349334528
+Normal
+WriteData:         12 WriteReg:  8
+Normal
+PC:       192 INSTRUCTION: 2349334532
+WriteData:         15 WriteReg:  8
+Normal
+PC:       196 INSTRUCTION: 2349334536
+WriteData:         18 WriteReg:  8
+Normal
+PC:       200 INSTRUCTION: 2349334540
+WriteData:         20 WriteReg:  8
+Normal
+PC:       204 INSTRUCTION: 2349334544
+WriteData:         36 WriteReg:  8
+Normal
+PC:       208 INSTRUCTION: 2349334548
+WriteData:         45 WriteReg:  8
+Normal
+PC:       212 INSTRUCTION: 2349334552
+WriteData:         47 WriteReg:  8
+Normal
+PC:       216 INSTRUCTION: 2349334556
+Normal
+PC:       220 INSTRUCTION:          x
+Normal
+PC:       224 INSTRUCTION:          x
+Normal
+PC:       228 INSTRUCTION:          x
+Normal
+PC:       232 INSTRUCTION:          x
+Normal
+PC:       236 INSTRUCTION:          x
+Normal
+PC:       240 INSTRUCTION:          x
+Normal
+PC:       244 INSTRUCTION:          x
+Normal
+PC:       248 INSTRUCTION:          x
+Normal
+PC:       252 INSTRUCTION:          x
+Normal
+PC:       256 INSTRUCTION:          x
+Normal
+PC:       260 INSTRUCTION:          x
+Normal
+PC:       264 INSTRUCTION:          x
+Normal
+PC:       268 INSTRUCTION:          x
+Normal
+PC:       272 INSTRUCTION:          x
+Normal
+PC:       276 INSTRUCTION:          x
+Normal
+PC:       280 INSTRUCTION:          x
+Normal
+PC:       284 INSTRUCTION:          x
+Normal
+PC:       288 INSTRUCTION:          x
+Normal
+PC:       292 INSTRUCTION:          x
+Normal
+PC:       296 INSTRUCTION:          x
+Normal
+PC:       300 INSTRUCTION:          x
+Normal
+PC:       304 INSTRUCTION:          x
+Normal
+PC:       308 INSTRUCTION:          x
+Normal
+PC:       312 INSTRUCTION:          x
+Normal
+PC:       316 INSTRUCTION:          x
+Normal
+PC:       320 INSTRUCTION:          x
+Normal
+PC:       324 INSTRUCTION:          x
+Normal
+PC:       328 INSTRUCTION:          x
+Normal
+PC:       332 INSTRUCTION:          x
+Normal
+PC:       336 INSTRUCTION:          x
+Normal
+PC:       340 INSTRUCTION:          x
+Normal
+PC:       344 INSTRUCTION:          x
+Normal
+PC:       348 INSTRUCTION:          x
+Normal
+PC:       352 INSTRUCTION:          x
+Normal
+PC:       356 INSTRUCTION:          x
+Normal
+PC:       360 INSTRUCTION:          x
+Normal
+PC:       364 INSTRUCTION:          x
+Normal
+PC:       368 INSTRUCTION:          x
+Normal
+PC:       372 INSTRUCTION:          x
+Normal
+PC:       376 INSTRUCTION:          x
+Normal
+PC:       380 INSTRUCTION:          x
+Normal
+PC:       384 INSTRUCTION:          x
+Normal
+PC:       388 INSTRUCTION:          x
+Normal
+PC:       392 INSTRUCTION:          x
+Normal
+PC:       396 INSTRUCTION:          x
+Normal
+PC:       400 INSTRUCTION:          x
+Normal
+PC:       404 INSTRUCTION:          x
+Normal
+PC:       408 INSTRUCTION:          x
+Normal
+PC:       412 INSTRUCTION:          x
+Normal
+PC:       416 INSTRUCTION:          x
+Normal
+PC:       420 INSTRUCTION:          x
+Normal
+PC:       424 INSTRUCTION:          x
+Normal
+PC:       428 INSTRUCTION:          x
+Normal
+PC:       432 INSTRUCTION:          x
+Normal
+PC:       436 INSTRUCTION:          x
+Normal
+PC:       440 INSTRUCTION:          x
+Normal
+PC:       444 INSTRUCTION:          x
+Normal
+PC:       448 INSTRUCTION:          x
+Normal
+PC:       452 INSTRUCTION:          x
+Normal
+PC:       456 INSTRUCTION:          x
+Normal
+PC:       460 INSTRUCTION:          x
+Normal
+PC:       464 INSTRUCTION:          x
+Normal
+PC:       468 INSTRUCTION:          x
+Normal
+PC:       472 INSTRUCTION:          x
+Normal
+PC:       476 INSTRUCTION:          x
+Normal
+PC:       480 INSTRUCTION:          x
+Normal
+PC:       484 INSTRUCTION:          x
+Normal
+PC:       488 INSTRUCTION:          x
+Normal
+PC:       492 INSTRUCTION:          x
+Normal
+PC:       496 INSTRUCTION:          x
+Normal
+PC:       500 INSTRUCTION:          x
+Normal
+PC:       504 INSTRUCTION:          x
+Normal
+PC:       508 INSTRUCTION:          x
+Normal
+PC:       512 INSTRUCTION:          x
+Normal
+PC:       516 INSTRUCTION:          x
+Normal
+PC:       520 INSTRUCTION:          x
+Normal
+PC:       524 INSTRUCTION:          x
+Normal
+PC:       528 INSTRUCTION:          x
+Normal
+PC:       532 INSTRUCTION:          x
+Normal
+PC:       536 INSTRUCTION:          x
+Normal
+PC:       540 INSTRUCTION:          x
+Normal
+PC:       544 INSTRUCTION:          x
+Normal
+PC:       548 INSTRUCTION:          x
+Normal
+PC:       552 INSTRUCTION:          x
+Normal
+PC:       556 INSTRUCTION:          x
+Normal
+PC:       560 INSTRUCTION:          x
+Normal
+PC:       564 INSTRUCTION:          x
+Normal
+PC:       568 INSTRUCTION:          x
+Normal
+PC:       572 INSTRUCTION:          x
+Normal
+PC:       576 INSTRUCTION:          x
+Normal
+PC:       580 INSTRUCTION:          x
+Normal
+PC:       584 INSTRUCTION:          x
+Normal
+PC:       588 INSTRUCTION:          x
+Normal
+PC:       592 INSTRUCTION:          x
+Normal
+PC:       596 INSTRUCTION:          x
+Normal
+PC:       600 INSTRUCTION:          x
+Normal
+PC:       604 INSTRUCTION:          x
+Normal
+PC:       608 INSTRUCTION:          x
+Normal
+PC:       612 INSTRUCTION:          x
+Normal
+PC:       616 INSTRUCTION:          x
+Normal
+PC:       620 INSTRUCTION:          x
+Normal
+PC:       624 INSTRUCTION:          x
+Normal
+PC:       628 INSTRUCTION:          x
+Normal
+PC:       632 INSTRUCTION:          x
+Normal
+PC:       636 INSTRUCTION:          x
+Normal
+PC:       640 INSTRUCTION:          x
+Normal
+PC:       644 INSTRUCTION:          x
+Normal
+PC:       648 INSTRUCTION:          x
+Normal
+PC:       652 INSTRUCTION:          x
+Normal
+PC:       656 INSTRUCTION:          x
+Normal
+PC:       660 INSTRUCTION:          x
+Normal
+PC:       664 INSTRUCTION:          x
+Normal
+PC:       668 INSTRUCTION:          x
+Normal
+PC:       672 INSTRUCTION:          x
+Normal
+PC:       676 INSTRUCTION:          x
+Normal
+PC:       680 INSTRUCTION:          x
+Normal
+PC:       684 INSTRUCTION:          x
+Normal
+PC:       688 INSTRUCTION:          x
+Normal
+PC:       692 INSTRUCTION:          x
+Normal
+PC:       696 INSTRUCTION:          x
+Normal
+PC:       700 INSTRUCTION:          x
+Normal
+PC:       704 INSTRUCTION:          x
+Normal
+PC:       708 INSTRUCTION:          x
+Normal
+PC:       712 INSTRUCTION:          x
+Normal
+PC:       716 INSTRUCTION:          x
+Normal
+PC:       720 INSTRUCTION:          x
+Normal
+PC:       724 INSTRUCTION:          x
+Normal
+PC:       728 INSTRUCTION:          x
+Normal
+PC:       732 INSTRUCTION:          x
+Normal
+PC:       736 INSTRUCTION:          x
+Normal
+PC:       740 INSTRUCTION:          x
+Normal
+PC:       744 INSTRUCTION:          x
+Normal
+PC:       748 INSTRUCTION:          x
+Normal
+PC:       752 INSTRUCTION:          x
+Normal
+PC:       756 INSTRUCTION:          x
+Normal
+PC:       760 INSTRUCTION:          x
+Normal
+PC:       764 INSTRUCTION:          x
+Normal
+PC:       768 INSTRUCTION:          x
+Normal
+PC:       772 INSTRUCTION:          x
+Normal
+PC:       776 INSTRUCTION:          x
+Normal
+PC:       780 INSTRUCTION:          x
+Normal
+PC:       784 INSTRUCTION:          x
+Normal
+PC:       788 INSTRUCTION:          x
+Normal
+PC:       792 INSTRUCTION:          x
+Normal
+PC:       796 INSTRUCTION:          x
+Normal
+PC:       800 INSTRUCTION:          x
+Normal
+PC:       804 INSTRUCTION:          x
+Normal
+PC:       808 INSTRUCTION:          x
+Normal
+PC:       812 INSTRUCTION:          x
+Normal
+PC:       816 INSTRUCTION:          x
+Normal
+PC:       820 INSTRUCTION:          x
+Normal
+PC:       824 INSTRUCTION:          x
+Normal
+PC:       828 INSTRUCTION:          x
+Normal
+PC:       832 INSTRUCTION:          x
+Normal
+PC:       836 INSTRUCTION:          x
+Normal
+PC:       840 INSTRUCTION:          x
+Normal
+PC:       844 INSTRUCTION:          x
+Normal
+PC:       848 INSTRUCTION:          x
+Normal
+PC:       852 INSTRUCTION:          x
+Normal
+PC:       856 INSTRUCTION:          x
+Normal
+PC:       860 INSTRUCTION:          x
+Normal
+PC:       864 INSTRUCTION:          x
+Normal
+PC:       868 INSTRUCTION:          x
+Normal
+PC:       872 INSTRUCTION:          x
+Normal
+PC:       876 INSTRUCTION:          x
+Normal
+PC:       880 INSTRUCTION:          x
+Normal
+PC:       884 INSTRUCTION:          x
+Normal
+PC:       888 INSTRUCTION:          x
+Normal
+PC:       892 INSTRUCTION:          x
+Normal
+PC:       896 INSTRUCTION:          x
+Normal
+PC:       900 INSTRUCTION:          x
+Normal
+PC:       904 INSTRUCTION:          x
+Normal
+PC:       908 INSTRUCTION:          x
+Normal
+PC:       912 INSTRUCTION:          x
+Normal
+PC:       916 INSTRUCTION:          x
+Normal
+PC:       920 INSTRUCTION:          x
+Normal
+PC:       924 INSTRUCTION:          x
+Normal
+PC:       928 INSTRUCTION:          x
+Normal
+PC:       932 INSTRUCTION:          x
+Normal
+PC:       936 INSTRUCTION:          x
+Normal
+PC:       940 INSTRUCTION:          x
+Normal
+PC:       944 INSTRUCTION:          x
+Normal
+PC:       948 INSTRUCTION:          x
+Normal
+PC:       952 INSTRUCTION:          x
+Normal
+PC:       956 INSTRUCTION:          x
+Normal
+PC:       960 INSTRUCTION:          x
+Normal
+PC:       964 INSTRUCTION:          x
+Normal
+PC:       968 INSTRUCTION:          x
+Normal
+PC:       972 INSTRUCTION:          x
+Normal
+PC:       976 INSTRUCTION:          x
+Normal
+PC:       980 INSTRUCTION:          x
+Normal
+PC:       984 INSTRUCTION:          x
+Normal
+PC:       988 INSTRUCTION:          x
+Normal
+PC:       992 INSTRUCTION:          x
+Normal
+PC:       996 INSTRUCTION:          x
+Normal
+PC:      1000 INSTRUCTION:          x
+Normal
+PC:      1004 INSTRUCTION:          x
+Normal
+PC:      1008 INSTRUCTION:          x
+Normal
+PC:      1012 INSTRUCTION:          x
+Normal
+PC:      1016 INSTRUCTION:          x
+Normal
+PC:      1020 INSTRUCTION:          x
+Normal
+PC:      1024 INSTRUCTION:          x
+Normal
+PC:      1028 INSTRUCTION:          x
+Normal
+PC:      1032 INSTRUCTION:          x
+Normal
+PC:      1036 INSTRUCTION:          x
+Normal
+PC:      1040 INSTRUCTION:          x
+Normal
+PC:      1044 INSTRUCTION:          x
+Normal
+PC:      1048 INSTRUCTION:          x
+Normal
+PC:      1052 INSTRUCTION:          x
+Normal
+PC:      1056 INSTRUCTION:          x
+Normal
+PC:      1060 INSTRUCTION:          x
+Normal
+PC:      1064 INSTRUCTION:          x
+Normal
+PC:      1068 INSTRUCTION:          x
+Normal
+PC:      1072 INSTRUCTION:          x
+Normal
+PC:      1076 INSTRUCTION:          x
+Normal
+PC:      1080 INSTRUCTION:          x
+Normal
+PC:      1084 INSTRUCTION:          x
+Normal
+PC:      1088 INSTRUCTION:          x
+Normal
+PC:      1092 INSTRUCTION:          x
+Normal
+PC:      1096 INSTRUCTION:          x
+Normal
+PC:      1100 INSTRUCTION:          x
+Normal
+PC:      1104 INSTRUCTION:          x
+Normal
+PC:      1108 INSTRUCTION:          x
+Normal
+PC:      1112 INSTRUCTION:          x
+Normal
+PC:      1116 INSTRUCTION:          x
+Normal
+PC:      1120 INSTRUCTION:          x
+Normal
+PC:      1124 INSTRUCTION:          x
+Normal
+PC:      1128 INSTRUCTION:          x
+Normal
+PC:      1132 INSTRUCTION:          x
+Normal
+PC:      1136 INSTRUCTION:          x

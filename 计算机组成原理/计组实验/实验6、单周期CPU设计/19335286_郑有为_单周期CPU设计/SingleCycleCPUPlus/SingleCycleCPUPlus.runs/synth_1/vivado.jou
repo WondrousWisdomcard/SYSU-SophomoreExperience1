@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec  3 08:20:30 2020
+# Process ID: 9324
+# Current directory: C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.runs/synth_1
+# Command line: vivado.exe -log ToFPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ToFPGA.tcl
+# Log file: C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.runs/synth_1/ToFPGA.vds
+# Journal file: C:/Users/17727/Desktop/VivadoArea/SingleCycleCPUPlus/SingleCycleCPUPlus.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ToFPGA.tcl -notrace

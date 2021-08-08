@@ -1,0 +1,335 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Nov 30 11:47:51 2020
+| Host         : LAPTOP-D025KD3I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ToFPGA_control_sets_placed.rpt
+| Design       : ToFPGA
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   270 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             147 |           92 |
+| No           | No                    | Yes                    |               7 |            2 |
+| No           | Yes                   | No                     |              40 |           14 |
+| Yes          | No                    | No                     |            2048 |         1383 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+|                Clock Signal                |               Enable Signal               |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------------------------------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+|  CPU_test/CPUControl_test/Branch_reg/G0    |                                           |                                        |                1 |              1 |
+|  CPU_test/CPUControl_test/MemRead_reg/G0   |                                           |                                        |                1 |              1 |
+|  CPU_test/PC_test/PCandWriteData_reg[15]_2 |                                           | CPU_test/PC_test/now_reg[4]_17         |                1 |              1 |
+|  CPU_test/PC_test/Memory_reg[254][7]_9     |                                           | CPU_test/PC_test/Memory_reg[254][7]_10 |                1 |              2 |
+|  CPU_test/PC_test/Memory_reg[3][1]         |                                           | CPU_test/PC_test/Memory_reg[3][1]_1    |                1 |              2 |
+|  rclk_IBUF_BUFG                            |                                           | light/select_reg[3]_0                  |                2 |              2 |
+|  rclk_IBUF_BUFG                            |                                           | light/select[2]_i_1_n_1                |                1 |              2 |
+|  clk_IBUF_BUFG                             |                                           | CPU_test/PC_test/now[7]_i_2_n_1        |                2 |              7 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[153][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[157][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[160][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[147][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[164][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[149][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[150][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[156][7]_0[0] |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[155][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[167][0][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[163][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[162][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[161][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[159][0][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[152][7]_0[0] |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[168][7]_0[0] |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[169][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[14][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[158][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[166][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[151][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[148][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[15][0][0]    |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[154][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[165][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[176][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[175][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[174][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[182][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[178][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[183][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[171][0][0]   |                                        |                2 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[181][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[16][7]_0[0]  |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[184][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[17][7]_0[0]  |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[170][7]_0[0] |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[172][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[180][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[186][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[187][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[188][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[179][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[185][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[189][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[173][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[177][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[213][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[203][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[193][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[18][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[205][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[191][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[190][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[196][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[200][7]_0[0] |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[195][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[197][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[207][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[192][7][0]   |                                        |                2 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[201][7]_0[0] |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[208][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[199][0][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[1][7][0]     |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[209][7]_0[0] |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[211][0][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[212][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[214][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[204][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[20][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[19][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[198][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[215][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[206][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[194][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[210][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[202][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[226][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[222][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[233][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[227][0][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[235][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[217][7]_0[0] |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[238][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[223][0][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[239][0][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[236][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[23][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[240][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[237][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[224][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[225][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[220][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[231][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[218][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[230][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[229][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[234][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[21][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[221][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[228][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[22][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[232][7]_1[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[216][7]_0[0] |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[219][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[244][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[252][7]_0[0] |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[255][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[253][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[248][7]_0[0] |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[249][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[251][0][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[243][0][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[245][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[25][7]_0[0]  |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[247][0][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[241][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[29][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[2][7][0]     |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[30][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[31][0][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[32][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[33][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[250][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[24][7]_0[0]  |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[28][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[242][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[246][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[254][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[27][0][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[26][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[49][7]_0[0]  |                                        |                2 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[43][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[38][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[42][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[48][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[39][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[3][0][0]     |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[50][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[37][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[51][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[54][7]_0[0]  |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[52][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[34][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[4][7][0]     |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[45][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[41][7]_0[0]  |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[40][7]_0[0]  |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[36][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[53][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[44][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[46][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[55][0][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[35][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[47][0][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[68][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[69][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[5][7][0]     |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[59][0][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[58][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[57][7]_0[0]  |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[6][7][0]     |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[61][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[62][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[72][7]_0[0]  |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[63][0][0]    |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[64][7][0]    |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[65][7][0]    |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[70][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[67][0][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[66][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[71][0][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[56][7]_0[0]  |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[60][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[76][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[79][0][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[86][7][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[81][7]_0[0]  |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[7][0][0]     |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[74][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[75][0][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[84][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[85][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[80][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[77][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[87][0][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[89][7]_0[0]  |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[8][7]_0[0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[90][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[73][7]_0[0]  |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[78][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[83][0][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[88][7]_0[0]  |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[91][0][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[92][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[93][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[82][7][0]    |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[9][7]_0[0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[95][0][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[94][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[97][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[96][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[98][7][0]    |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[99][0][0]    |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[104][7]_0[0] |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[105][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/E[0]                    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[108][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[109][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[10][7][0]    |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[103][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[110][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[112][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[0][7][0]     |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[106][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[102][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[107][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[111][0][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[100][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[101][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[126][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[120][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[118][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[116][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[127][0][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[133][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[125][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[122][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[130][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[131][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[134][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[128][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[114][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[119][0][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[12][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[129][7][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[121][7]_0[0] |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[135][0][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[132][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[115][0][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[117][7][0]   |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[123][0][0]   |                                        |                4 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[124][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[136][7]_0[0] |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[113][7]_0[0] |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[141][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[142][7][0]   |                                        |                5 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[137][7]_0[0] |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[140][7][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[145][7]_0[0] |                                        |                2 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[146][7][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[138][7][0]   |                                        |                6 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[143][0][0]   |                                        |                7 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[139][0][0]   |                                        |                3 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[13][7][0]    |                                        |                8 |              8 |
+| ~clk_IBUF_BUFG                             | CPU_test/ALU_test/Memory_reg[144][7][0]   |                                        |                6 |              8 |
+|  rclk_IBUF_BUFG                            |                                           |                                        |                7 |             10 |
+| ~clk_IBUF_BUFG                             |                                           |                                        |               15 |             30 |
+|  rclk_IBUF_BUFG                            |                                           | light/divclk_cnt[31]_i_1_n_1           |                8 |             31 |
+|  MemToReg                                  |                                           |                                        |               32 |             32 |
+|  n_0_5835_BUFG                             |                                           |                                        |               36 |             73 |
+| ~clk_IBUF_BUFG                             | CPU_test/PC_test/p_0_in                   |                                        |               12 |             96 |
++--------------------------------------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     3 |
+| 2      |                     4 |
+| 7      |                     1 |
+| 8      |                   256 |
+| 10     |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+

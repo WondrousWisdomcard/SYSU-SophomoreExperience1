@@ -1,0 +1,14 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sim_1/new/mul_4_sim.v,1605088081,verilog,,,,mul_4_sim,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_0/sim/adder_0.v,1605014772,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/full_adder_0/sources_1/new/full_adder.v,,adder_0,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_0/sources_1/new/adder.v,1605014772,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_0/sim/adder_0.v,,adder,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_1/sim/adder_1.v,1605014854,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/new/mul_4.v,,adder_1,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_2/sim/adder_2.v,1605019778,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_1/sim/adder_1.v,,adder_2,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_2/sources_1/ip/full_adder_1/sim/full_adder_1.v,1605019781,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_2/sim/adder_2.v,,full_adder_1,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/full_adder_0/sim/full_adder_0.v,1605014818,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/adder_2/sources_1/ip/full_adder_1/sim/full_adder_1.v,,full_adder_0,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/full_adder_0/sources_1/new/full_adder.v,1605014818,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/ip/full_adder_0/sim/full_adder_0.v,,full_adder,,,,,,,,
+C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sources_1/new/mul_4.v,1605071381,verilog,,C:/Users/17727/Desktop/VivadoArea/mul_4/mul_4.srcs/sim_1/new/mul_4_sim.v,,mul_4,,,,,,,,

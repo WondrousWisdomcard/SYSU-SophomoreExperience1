@@ -1,0 +1,40 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 8b3694d753e540b0991498f4c7389f9b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux4
+Compiling module xil_defaultlib.Mux6
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.Add1
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.RegIFID
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.JumpUnit
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.RegIDEX
+Compiling module xil_defaultlib.Add2
+Compiling module xil_defaultlib.Mux5
+Compiling module xil_defaultlib.Mux2
+Compiling module xil_defaultlib.Mux1
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.RegEXMEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SetPCSrc
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.RegMEMWB
+Compiling module xil_defaultlib.Mux3
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
