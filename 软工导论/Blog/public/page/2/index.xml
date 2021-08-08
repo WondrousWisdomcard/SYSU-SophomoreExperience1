@@ -1,0 +1,1395 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/</link>
+    <description>Recent content on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://wondrouswisdomcard.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Homework of Week 10</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework10/</link>
+        <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework10/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework10/ -&lt;h3 id=&#34;1-bubble-sort-the-list-33-56-17-8-95-22make-sure-the-final-result-is-from-small-to-large-write-out-the-list-after-the-2nd-pass&#34;&gt;1. Bubble Sort the list: 33, 56, 17, 8, 95, 22。Make sure the final result is from small to large. Write out the list after the 2nd pass.&lt;/h3&gt;
+&lt;p&gt;Starting with the last list element, we compare successive pairs of elements, swapping whenever the bottom element of the pair is smaller than the one above it&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1st:
+33 56 17 8 22 95
+33 56 17 8 22 95
+33 56 8 17 22 95
+33 8 56 17 22 95
+8 33 56 17 22 95
+
+2nd:
+8 33 56 17 22 95
+8 33 56 17 22 95
+8 33 17 56 22 95
+8 17 33 56 22 95
+8 17 33 56 22 95
+
+after the 2nd pass:
+8 17 33 56 22 95
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;2-give-a-sorted-array-as-list606575809095-design-an-algorithm-to-insert-the-value-of-x-into-the-sorted-array-then-test-the-algorithm-with-value-506799-思考为什么选择插入点在list头上中间尾巴上的三个数作为算法测试的数据你能解释吗&#34;&gt;2. Give a sorted array as list={60,65,75,80,90,95}. Design an algorithm to insert the value of x into the sorted array. Then test the algorithm with value 50,67,99. 思考：为什么选择插入点在list头上、中间、尾巴上的三个数作为算法测试的数据，你能解释吗？&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;int list[20] = {60,65,75,80,90,95,-1};
+void insert(int n){
+    int i;
+    for(i = 0; i &amp;lt; 20; i++){
+        if(n &amp;lt; list[i])
+        break;
+        else if(list[i+1] != -1 &amp;amp;&amp;amp; list[i] &amp;gt; n &amp;amp;&amp;amp; list[i+1] &amp;lt; n){
+            i++;
+            break;
+        }
+        else if(list[i] == -1)
+        break;
+    }
+    for(int j = 19; j &amp;gt;= i+1; j--){
+        list[j] = list[j-1];
+    }
+    list[i] = n;
+}
+int main(){
+    insert(50);
+    insert(67);
+    insert(99);
+    for(int i = 0; i &amp;lt; 20; i++){
+        if(list[i] == -1)
+        break;
+        cout&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;list[i];
+    }
+}
+//输出： 50 60 65 67 75 80 90 95 99
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;头上、中间、尾巴上的三个数作为算法测试的数据，代表了显示数据的三种典型输入，由于链表的特性，选择插入点在list头上、中间、尾巴的实际操作可能会有差别，可用于测试设计者考虑是否完善。&lt;/p&gt;
+&lt;h3 id=&#34;3-what-is-the-state-of-the-stack-after-the-following-sequence-of-push-and-pop-operations-push-anne-push-get-push-your--pop-push-my-push-gun&#34;&gt;3. What is the state of the stack after the following sequence of Push and Pop operations? Push “anne”; Push “get”; Push “your” ; Pop; Push “my” Push “gun”&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;stack: 
+Push “anne”:        |anne|null
+Push “get”:         |anna|get|null
+Push “your”:        |anna|get|your|null
+Pop:                |anna|get|null
+Push “my”:          |anna|get|my|null
+Push “gun”:         |anna|get|my|gun|null
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the state of the stack after the following sequences:   |anna|get|my|gun|null&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;课堂笔记：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In computing, we view data from three perspectives 
+Application level • View of the data within a particular problem 
+Logical level • An abstract view of the data values (the domain) and the set of operations to manipulate them 
+Implementation level • A specific representation of the structure to hold the data items and the coding of the operations in a programming language&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;容器&lt;/strong&gt; is to hold&lt;strong&gt;持有&lt;/strong&gt; and manipulate&lt;strong&gt;操纵&lt;/strong&gt; other objects&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;名词意味着&lt;strong&gt;概念&lt;/strong&gt;或者&lt;strong&gt;数据&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;隐藏：（信息隐藏）（过程隐藏）（控制隐藏）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;算法在逻辑视图上解决问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework10/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Programming in Pippin CPUSim</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/blog4/</link>
+        <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/blog4/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/blog4/ -&lt;h2 id=&#34;实验名称硬件编程-机器指令编程&#34;&gt;实验名称：硬件编程-机器指令编程&lt;/h2&gt;
+&lt;h4 id=&#34;学号19335286&#34;&gt;学号：19335286&lt;/h4&gt;
+&lt;h4 id=&#34;姓名郑有为&#34;&gt;姓名：郑有为&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;目录&#34;&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%AE%9E%E9%AA%8C%E7%9B%AE%E6%A0%87&#34;&gt;1.实验目标&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%AE%9E%E9%AA%8C%E6%AD%A5%E9%AA%A4%E4%B8%8E%E7%BB%93%E6%9E%9C&#34;&gt;2. 实验步骤与结果&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E4%BB%BB%E5%8A%A1%E4%B8%80%E7%AE%80%E5%8D%95%E7%A8%8B%E5%BA%8F&#34;&gt;2.1. 任务一：简单程序&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E4%BB%BB%E5%8A%A1%E4%BA%8C%E7%AE%80%E5%8D%95%E5%BE%AA%E7%8E%AF&#34;&gt;2.2. 任务二：简单循环&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%AE%9E%E9%AA%8C%E5%B0%8F%E7%BB%93&#34;&gt;3. 实验小结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;实验目标&#34;&gt;实验目标&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;理解冯·诺伊曼计算机的结构&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;理解机器指令的构成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;理解机器指令执行周期&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用汇编编写简单程序&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;实验步骤与结果&#34;&gt;实验步骤与结果&lt;/h2&gt;
+&lt;h3 id=&#34;任务一简单程序&#34;&gt;任务一：简单程序&lt;/h3&gt;
+&lt;h4 id=&#34;1打开网页-the-pippin-users-guideslidesthe-pippin-users-guidehtml-然后输入-program-1add-2-number&#34;&gt;（1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog4/0.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2点step-after-step观察并回答下面问题&#34;&gt;（2）点step after step。观察并回答下面问题：&lt;/h4&gt;
+&lt;h5 id=&#34;pcir-寄存器的作用&#34;&gt;PC，IR 寄存器的作用。&lt;/h5&gt;
+&lt;p&gt;PC全称Program counter程序计数器，用于存放当前程序执行的下一行指令的地址，并会随着时钟信号更新。用于实现程序的顺序执行和条件跳转，循环跳转。
+IR全称Instruction Register指针寄存器，存放指令内容，以便于译码器译码识别指令。&lt;/p&gt;
+&lt;h5 id=&#34;acc-寄存器的全称与作用&#34;&gt;ACC 寄存器的全称与作用。&lt;/h5&gt;
+&lt;p&gt;ACC（Accumulator）的全称是累加器。累加器是一个具有特殊用途的寄存器，专门用来存放操作数或运算结果。在CPU执行某种运算前，两个操作数中的一个通常应放在累加器中，运算完成后累加器中便可得到运算结果。&lt;/p&gt;
+&lt;h5 id=&#34;用lod-3指令的执行过程解释fetch-execute周期&#34;&gt;用“LOD #3”指令的执行过程，解释Fetch-Execute周期。&lt;/h5&gt;
+&lt;p&gt;Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。
+Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取等号（进行赋值运算），同时译码器发出控制信号将指令中存储的立即数输入到ALU中，计算结果保留在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。&lt;/p&gt;
+&lt;h5 id=&#34;用add-w-指令的执行过程解释fetch-execute周期&#34;&gt;用“ADD W” 指令的执行过程，解释Fetch-Execute周期。&lt;/h5&gt;
+&lt;p&gt;Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。
+Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取加号（进行加运算），译码器将寄存器ACC中的数据取到ALU中，同时译码器发出控制信号将指令中存储的立即数取出，并通过这段立即数（W的地址）找到内存的相应位置取出数据，取出来的数据经过数据选择器进入ALU，在ALU中，该数据原本ACC的值相加，结果保存在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。&lt;/p&gt;
+&lt;h5 id=&#34;lod-3-与-add-w-指令的执行在fetch-execute周期级别有什么不同&#34;&gt;“LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。&lt;/h5&gt;
+&lt;p&gt;ADD W的指令周期更长，它访问了两次ALU，并且还需要寻址，从内存中取数据，而LOD #3只需要将指令中包含的二进制数写进累加器中，更快。&lt;/p&gt;
+&lt;h4 id=&#34;3点击binary观察回答下面问题&#34;&gt;（3）点击“Binary”,观察回答下面问题&lt;/h4&gt;
+&lt;h5 id=&#34;写出指令-lod-7-的二进制形式按指令结构解释每部分的含义&#34;&gt;写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。&lt;/h5&gt;
+&lt;p&gt;LOD #7 :&lt;/p&gt;
+&lt;p&gt;00010100 00000111&lt;/p&gt;
+&lt;p&gt;前四位：000&lt;strong&gt;1&lt;/strong&gt;表示该操作数是数值；
+第五至第八位：0100 表示LOD指令的操作码；
+后八位：00000111 存储7的二进制数。&lt;/p&gt;
+&lt;h5 id=&#34;解释-ram-的地址&#34;&gt;解释 RAM 的地址。&lt;/h5&gt;
+&lt;p&gt;RAM指随机存取存储器。&lt;/p&gt;
+&lt;p&gt;通过网站The PIPPIN User’s Guide的介绍，实验中的RAM共有256Bytes，也就是说他的地址可以用八位二进制数表示，在实验CPU中，地址为00000000到01111111的内存空间用来存储程序执行指令，从地址为10000000到11111111的内存空间用来存储数据，例如W对应的地址是10000000。&lt;/p&gt;
+&lt;p&gt;需要注意的是，由于指令为16位，一条指令占两个字节，第一条指令的地址为00000000，而第二条指令的地址为00000010.&lt;/p&gt;
+&lt;h5 id=&#34;该机器cpu是几位的按累加器的位数&#34;&gt;该机器CPU是几位的？（按累加器的位数）&lt;/h5&gt;
+&lt;p&gt;16位&lt;/p&gt;
+&lt;h5 id=&#34;写出该程序对应的-c语言表达&#34;&gt;写出该程序对应的 C语言表达。&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;w = 3;
+x = 7;
+y = x + w;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;任务二简单循环&#34;&gt;任务二：简单循环&lt;/h3&gt;
+&lt;h4 id=&#34;1-输入程序program-2运行并回答问题&#34;&gt;（1） 输入程序Program 2，运行并回答问题：&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog4/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;用一句话总结程序的功能&#34;&gt;用一句话总结程序的功能&lt;/h5&gt;
+&lt;p&gt;将存储在X的数字递减，直到X内的数字小于等于1&lt;/p&gt;
+&lt;h5 id=&#34;写出对应的-c-语言程序&#34;&gt;写出对应的 c 语言程序&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;do{
+    x--;
+}
+while(x &amp;gt;= 1);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;2-修改该程序用机器语言实现-10981-输出结果存放于内存-y&#34;&gt;（2） 修改该程序，用机器语言实现 10+9+8+..1 ，输出结果存放于内存 Y&lt;/h4&gt;
+&lt;p&gt;程序运行过程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog4/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;程序运行结果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog4/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;写出-c-语言的计算过程&#34;&gt;写出 c 语言的计算过程&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;int x = 11;
+int y;
+do{
+    x--;
+    y = y + x;
+}
+while(x &amp;gt; 0);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;写出机器语言的计算过程&#34;&gt;写出机器语言的计算过程&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;//我先将11存进了X中，否则则需要LOD 11 STO X两条指令来实现存入11.
+LOD X   //将X放入累加器
+SUB #1  //累加器内容-1
+JMZ 16  //分支判断，若累计器内容等于0则跳转到第8行指令
+STO X   //将累加器的内容存入X
+LOD Y   //将Y放入累加器
+ADD X   //取累加器中的数与X相加，结果存入累加器
+STO Y   //将累加器中的内容存入Y
+JMP 0   //跳转到第零条指令 LOD X处
+HLT     //结束程序
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;用自己的语言简单总结高级语言与机器语言的区别与联系&#34;&gt;用自己的语言，简单总结高级语言与机器语言的区别与联系。&lt;/h5&gt;
+&lt;p&gt;区别：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;机器语言是计算机最原始的语言，是由0和1的代码构成，面向硬件，而高级语言采用接近于人类自然语言的单词和符号来表示一组低级语言程序，使编程变得更加简单，易学，且写出的程序可读性强。&lt;/li&gt;
+&lt;li&gt;使用高级语言我们无需考虑数据是在寄存器中还是内存中，而机器语言需要考虑这些；&lt;/li&gt;
+&lt;li&gt;高级语言的书写更加灵活，机器语言的指令语法更加严格，也更加精简；&lt;/li&gt;
+&lt;li&gt;一条高级语言指令往往需要翻译成数条机器指令，意味着一般一条自然语言代码比一行汇编指令更加复杂。&lt;/li&gt;
+&lt;li&gt;高级语言更偏向人的思考方式，机器语言则是“机器的思考方式”的体现。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;联系：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;为了在计算机中执行高级语言程序，需先翻译成机器语言；&lt;/li&gt;
+&lt;li&gt;一条高级语言指令往往能翻译成数条机器指令。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;实验小结&#34;&gt;实验小结&lt;/h2&gt;
+&lt;p&gt;通过本实验，我们了解了冯·诺伊曼计算机的基本体系结构和机器指令的构成，通过仿真工具Pippin CPUSim模拟了执行指令的动态过程，了解了其执行周期，并使用简单的语言编写了求和程序。&lt;/p&gt;
+&lt;h3 id=&#34;实验达成情况&#34;&gt;实验达成情况&lt;/h3&gt;
+&lt;p&gt;实验目标达成。&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/blog4/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 9</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework9/</link>
+        <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework9/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework9/ -&lt;h3 id=&#34;根据素材识别类和对象&#34;&gt;根据素材，识别类和对象。&lt;/h3&gt;
+&lt;h4 id=&#34;阅读牧师与恶魔过河httpwww17yycomf69854html的游戏介绍并玩游戏然后回答问题&#34;&gt;阅读&lt;a href=&#34;http://www.17yy.com/f/69854.html&#34;&gt;牧师与恶魔过河&lt;/a&gt;的游戏介绍并玩游戏，然后回答问题&lt;/h4&gt;
+&lt;h5 id=&#34;游戏涉及哪些类请列表说明&#34;&gt;游戏涉及哪些类。请列表说明&lt;/h5&gt;
+&lt;p&gt;类：图层，文字，按钮，计时器，精灵&lt;/p&gt;
+&lt;h5 id=&#34;游戏中有哪些对象各几个例如船一个&#34;&gt;游戏中有哪些对象，各几个。例如，船（一个）&lt;/h5&gt;
+&lt;p&gt;对象：三个牧师，三个恶魔，一个船，三个背景图层（开始图层，游戏图层，结束图层），多个文字，一个计时器，多个按钮&lt;/p&gt;
+&lt;h5 id=&#34;类和对象的区别是什么举一个例子说明&#34;&gt;类和对象的区别是什么？举一个例子说明&lt;/h5&gt;
+&lt;p&gt;对象是例化的类。类是对一类事物的抽象描述，对象是可操作的实例。
+类：精灵是一个个体的抽象，有移动等操作；
+对象：牧师是精灵类的例化，可以被恶魔杀死，可以上船下船。&lt;/p&gt;
+&lt;h5 id=&#34;游戏中的魔鬼有哪些属性和方法&#34;&gt;游戏中的魔鬼，有哪些属性和方法？&lt;/h5&gt;
+&lt;p&gt;属性：大小形状图案，名字；
+行为：上船，下船上岸，杀死牧师。&lt;/p&gt;
+&lt;h5 id=&#34;假设魔鬼被鼠标点中会执行onclick事件请用文字-伪代码描述这个事件中魔鬼与其他对象沟通的过程&#34;&gt;假设魔鬼被鼠标点中，会执行onclick事件，请用文字 （伪代码）描述这个事件中魔鬼与其他对象沟通的过程。&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;if (恶魔在左岸 || 恶魔在右岸) &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来少于两个
+    跳上船
+else if 恶魔在船上 &amp;amp;&amp;amp; 船停在左岸 &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来大于一个
+    跳上左岸
+else if 恶魔在船上 &amp;amp;&amp;amp; 船停在右岸 &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来大于一个
+    跳上右岸
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;类或对象会是动词吗&#34;&gt;类或对象会是动词吗？&lt;/h5&gt;
+&lt;p&gt;类与对象模拟的是现实世界的事物，必须是名词，不可为动词。&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework9/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 8</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework8/</link>
+        <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework8/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework8/ -&lt;h3 id=&#34;1阅读-pseudocodestandard&#34;&gt;1、阅读 PseudocodeStandard。&lt;/h3&gt;
+&lt;h5 id=&#34;1用伪代码描述将十进制转换成16进制的方法&#34;&gt;1）用伪代码描述将十进制转换成16进制的方法&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;void octToHex(十进制数 num,十六进制存储数组 hex[10])
+{
+    if num为负数  
+        取num的绝对值;
+        将hex数组的首字符置为负号;
+    endif
+    index指向数组最后一位;
+    while 若num大于零
+        t = num对16取模;
+        if t大于9
+            hex[index] = (t-10) + &#39;A&#39;;
+        endif
+        else
+            hex[index] = t + &#39;0&#39;;
+        end else
+        index指向当前index的前一位;
+        num = num/16得到的余数
+    end while
+}
+void showHex(int num)
+{
+    // 对hex赋初始值为{0,0,0,0,0,0,0,0,&#39;0&#39;,0}
+    // 调用octToHex(num,hex);
+    // 遍历数组，输出非空字符;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2c语言实现先用注释写好算法然后翻译&#34;&gt;2）C语言实现（先用注释写好算法，然后翻译）&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;void octToHex(int num,char hex[10])
+{
+    if(num &amp;lt; 0)
+    {
+        num = -num;
+        hex[0] = &#39;-&#39;;
+    }
+    int i = 8;
+    while(num != 0)
+    {
+        int t = num % 16;
+        hex[i--] = t &amp;gt; 9 ? t % 10 + &#39;A&#39; : t + &#39;0&#39;;
+        num /= 16;
+    }
+}
+void showHex(int num)
+{
+    char hex[10] = {0,0,0,0,0,0,0,0,&#39;0&#39;,0};
+    octToHex(num,hex);
+    for(int i = 0 ; i &amp;lt; 10; i++) //遍历数组，输出非空字符
+    {
+        if(hex[i] != 0)
+        printf(&amp;quot;%c&amp;quot;,hex[i]);
+    }
+    printf(&amp;quot;\n&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;3使用--10115263265-最为输入测试你的程序&#34;&gt;3）使用 -1,0,1,15,26,3265 最为输入测试你的程序&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;showHex(-1); // output: -1
+showHex(0); // output: 0
+showHex(1); // output: 1 
+showHex(15); // output: F
+showHex(26); // output: 1A
+showHex(3265); // output: CC1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2名词解释与对比-from-wekipedia&#34;&gt;2、名词解释与对比 from Wekipedia&lt;/h3&gt;
+&lt;h5 id=&#34;1top-down-design&#34;&gt;1）Top-down design&lt;/h5&gt;
+&lt;p&gt;A design methodology that proceeds from the highest level to the lowest and from the general to the particular, and that provides a formal mechanism for breaking complex process designs into functional descriptions, reviewing progress, and allowing modifications.&lt;/p&gt;
+&lt;h5 id=&#34;2-work-breakdown-structure-wbs&#34;&gt;2） Work breakdown structure (WBS)&lt;/h5&gt;
+&lt;p&gt;A division of a project into tasks and subtasks. The tasks are numbered to indicate their relationship to each other. WBSs are indespensible for project planning, particularly when estimating time and resource requirements. Some industries use established work breakdown structure systems for billing and reporting purposes.&lt;/p&gt;
+&lt;h5 id=&#34;3简述管理学wbs-与-信息学top-down设计-的异同&#34;&gt;3）简述管理学WBS 与 信息学Top-down设计 的异同&lt;/h5&gt;
+&lt;p&gt;相同点：二者都是将一个复杂的问题细化，分成许多的子问题再解决；不同点：WBS是一个描述思路的规划和设计工具，它还可以帮助项目经理和项目团队确定和有效地管理项目的工作：清晰地表示各项目工作之间的相互联系，展现项目全貌，详细说明为完成项目所必须完成的各项工作，WBS定义了里程碑事件，可以向高级管理层和客户报告项目完成情况，作为项目状况的报告工具。而Top-down design对要完成的任务进行分解，先对最高层次中的问题进行定义、设计、编程和测试，而将其中未解决的问题作为一个子任务放到下一层次中去解决。这样逐层、逐个地进行定义、设计、编程和测试，直到所有层次上的问题均由实用程序来解决，就能设计出具有层次结构的程序。最后会通过由顶层模块调用子模块来实现整体功能。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-仔细观察您洗衣机的运作过程运用top-down设计方法和pseudocode-描述洗衣机控制程序&#34;&gt;3. 仔细观察您洗衣机的运作过程，运用Top-down设计方法和Pseudocode 描述洗衣机控制程序。&lt;/h3&gt;
+&lt;p&gt;假设洗衣机可执行的基本操作如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;water_in_switch(open_close)  // open 打开上水开关，close关闭 
+water_out_switch(open_close)  // open 打开排水开关，close关闭 
+get_water_volume()  //返回洗衣机内部水的高度
+motor_run(direction) // 电机转动。left左转，right右转，stop停 
+time_counter()  // 返回当前时间计数，以秒为单位
+halt(returncode) //停机，success 成功 failure 失败
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;1请使用伪代码分解正常洗衣程序的大步骤包括注水浸泡等&#34;&gt;1）请使用伪代码分解“正常洗衣”程序的大步骤。包括注水、浸泡等&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;start_up(); //开机
+mode_selection(); //模式选择
+get_water(num_of_mode); //注水
+soak_clothes(num_of_mode); //浸泡
+wash_clothes(num_of_mode); //洗衣
+drain_away_water(); //排水
+spin_dry(); //甩干
+power_off(); //关机
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2进一步用基本操作控制语句ifforwhile等变量与表达式写出每-个步骤的伪代码&#34;&gt;2）进一步用基本操作、控制语句（IF、FOR、WHILE等）、变量与表达式，写出每 个步骤的伪代码&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;start_up(open_close){
+
+}
+mode_selection(){
+    get num_of_mode;
+    return num_of_mode;
+}
+get_water(num_of_mode){
+    switch(num_of_mode){
+        case 1: target_volume_of_water = 2L;
+        case 2: target_volume_of_water = 3L;
+        case 3: target_volume_of_water = 4L;
+    }
+    water_in_switch(open);
+    while(get_water_volume() &amp;lt; target_water_volume);
+    water_in_switch(close);
+}
+soak_clothes(num_of_mode){
+    switch(num_of_mode){
+        case 1: target_soak_time = 1min;
+        case 2: target_soak_time = 2min;
+        case 3: target_soak_time = 3min;
+    }
+    init time_counter();
+    while(time_counter() &amp;gt;= target_soak_time);
+}
+wash_clothes(num_of_mode){
+    switch(num_of_mode){
+        case 1: target_wash_time = 10min;
+        case 2: target_wash_time = 15min;
+        case 3: target_wash_time = 20min;
+    }
+    init time_counter;
+    while(time_counter() &amp;lt;= target_wash_time){
+        if(time_counter() % 2 == 0)
+        motor_run(left);
+        else
+        motor_run(right);
+    }
+    motor_run(stop);
+}
+drain_away_water(){
+    water_out_switch(open);
+    while(get_water_volume() &amp;gt; 0);
+    water_out_switch(close);
+}
+spin_dry(){
+    switch(num_of_mode){
+        case 1: target_dry_time = 4min;
+        case 2: target_dry_time = 6min;
+        case 3: target_dry_time = 8min;
+    }
+    init time_counter();
+    motor_run(left);
+    while(time_counter() &amp;lt;= target_dry_time);
+    motor_run(stop);
+}
+power_off(){
+    halt(success);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;3根据你的实践请分析正常洗衣与快速洗衣在用户目标和程序上的异同-你认为是否存在改进创新空间简单说明你的改进意见&#34;&gt;3）根据你的实践，请分析“正常洗衣”与“快速洗衣”在用户目标和程序上的异同。 你认为是否存在改进（创新）空间，简单说明你的改进意见？&lt;/h5&gt;
+&lt;p&gt;两者相同点在于都要经过接水，洗衣，排水，甩干这样的基本流程，不同点在于接水量和洗衣，排水，甩干时间。可以为用户设计多种洗衣模式，减少不必要的浪费并方便用户使用。&lt;/p&gt;
+&lt;h5 id=&#34;4通过步骤3提取一些共性功能模块函数简化正常洗衣程序使程序-变得更利于人类理解和修改维护例如-waittime-等待指定的时间-注水volumetimeout-在指定时间内完成注水否则停机-排水timeout等子程序&#34;&gt;4）通过步骤3），提取一些共性功能模块（函数），简化“正常洗衣”程序，使程序 变得更利于人类理解和修改维护。例如： wait(time) //等待指定的时间； 注水(volume,timeout) //在指定时间内完成注水，否则停机； 排水(timeout)等子程序&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;wait(time,method()){
+    init time_counter();
+    method(open);
+    while(time_counter() &amp;lt;= time);
+    method(close);
+}
+
+get_water(volume,timeout){
+    init time_counter();
+    water_in_switch(open);
+    while(get_water_volume() &amp;lt; volume){
+        if(time_counter &amp;gt; time){
+            water_in_switch(close);
+            halt(failure);
+        }
+    }
+}
+
+drain_away_water(timeout){
+    water_out_switch(open);
+    init time_counter();
+    while(get_water_volume() &amp;gt; 0){
+        if(time_counter &amp;gt;= timeout){
+            water_out_switch(close);
+            halt(failure);
+        }
+    }
+    water_out_switch(close);
+}&lt;/code&gt;&lt;/pre&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework8/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Pseudocode of Washing Machine</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/blog5/</link>
+        <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/blog5/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/blog5/ -&lt;h3 id=&#34;项目5用伪代码描述算法&#34;&gt;项目5：用伪代码描述算法。&lt;/h3&gt;
+&lt;h4 id=&#34;介绍自顶向下逐步求精的编程方法以你观察的洗衣机为案例用伪代码描述洗衣机洗衣的程序&#34;&gt;介绍“自顶向下，逐步求精”的编程方法；以你观察的洗衣机为案例，用伪代码描述洗衣机洗衣的程序。&lt;/h4&gt;
+&lt;p&gt;“自顶向下”的具体内涵是将复杂、大的问题划分为小问题，找出问题的关键、重点所在，然后用精确的思维定性、定量地去描述问题。而“逐步求精”的具体内涵是是将现实世界的问题经抽象转化为逻辑空间或求解空间的问题。复杂问题经抽象化处理变为相对比较简单的问题。经若干步抽象（精化）处理，最后到求解域中只是比较简单的编程问题。&lt;a href=&#34;#refer1&#34;&gt;&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;假设洗衣机可执行的基本操作如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;water_in_switch(open_close)  // open 打开上水开关，close关闭 
+water_out_switch(open_close)  // open 打开排水开关，close关闭 
+get_water_volume()  //返回洗衣机内部水的高度
+motor_run(direction) // 电机转动。left左转，right右转，stop停 
+time_counter()  // 返回当前时间计数，以秒为单位
+halt(returncode) //停机，success 成功 failure 失败
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;1伪代码分解正常洗衣程序的大步骤&#34;&gt;1）伪代码分解“正常洗衣”程序的大步骤。&lt;/h5&gt;
+&lt;p&gt;洗衣机洗衣服时，这些子程序被顺序地一一调用&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;start_up(); //开机
+mode_selection(); //模式选择
+get_water(num_of_mode); //注水
+soak_clothes(num_of_mode); //浸泡
+wash_clothes(num_of_mode); //洗衣
+drain_away_water(); //排水
+spin_dry(); //甩干
+power_off(); //关机
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2进一步用基本操作控制语句ifforwhile等变量与表达式写出每个步骤的伪代码&#34;&gt;2）进一步用基本操作、控制语句（IF、FOR、WHILE等）、变量与表达式，写出每个步骤的伪代码&lt;/h5&gt;
+&lt;p&gt;这台洗衣机有三种洗衣模式1，2，3，分别对应不同的洗衣量。不同模式的注水体积，浸泡时间，洗衣，甩干时间有所不同。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;start_up(open_close){
+
+}
+mode_selection(){
+    get num_of_mode;
+    return num_of_mode;
+}
+get_water(num_of_mode){
+    switch(num_of_mode){
+        case 1: target_volume_of_water = 2L;
+        case 2: target_volume_of_water = 3L;
+        case 3: target_volume_of_water = 4L;
+    }
+    water_in_switch(open);
+    while(get_water_volume() &amp;lt; target_water_volume);
+    water_in_switch(close);
+}
+soak_clothes(num_of_mode){
+    switch(num_of_mode){
+        case 1: target_soak_time = 1min;
+        case 2: target_soak_time = 2min;
+        case 3: target_soak_time = 3min;
+    }
+    init time_counter();
+    while(time_counter() &amp;gt;= target_soak_time);
+}
+wash_clothes(num_of_mode){
+    switch(num_of_mode){
+        case 1: target_wash_time = 10min;
+        case 2: target_wash_time = 15min;
+        case 3: target_wash_time = 20min;
+    }
+    init time_counter;
+    while(time_counter() &amp;lt;= target_wash_time){
+        if(time_counter() % 2 == 0)
+        motor_run(left);
+        else
+        motor_run(right);
+    }
+    motor_run(stop);
+}
+drain_away_water(){
+    water_out_switch(open);
+    while(get_water_volume() &amp;gt; 0);
+    water_out_switch(close);
+}
+spin_dry(){
+    switch(num_of_mode){
+        case 1: target_dry_time = 4min;
+        case 2: target_dry_time = 6min;
+        case 3: target_dry_time = 8min;
+    }
+    init time_counter();
+    motor_run(left);
+    while(time_counter() &amp;lt;= target_dry_time);
+    motor_run(stop);
+}
+power_off(){
+    halt(success);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;-[1] &lt;a href=&#34;https://blog.csdn.net/wenhlin/article/details/78641308&#34;&gt;“自顶向下，逐步求精”的方法&lt;/a&gt;&lt;/p&gt;
+- https://wondrouswisdomcard.gitee.io/posts/blog5/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 7</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework7/</link>
+        <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework7/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework7/ -&lt;h3 id=&#34;1program-with-machine-language-according-to-the-following-c&#34;&gt;1、Program with machine language according to the following c.&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;int_8 a = 1;  
+int_8 c = a + 3;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;1write-your-assembly-code--machine-code&#34;&gt;1）Write your assembly code &amp;amp; machine code&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;;assembly code
+LOD # 1
+STO X 
+LOD X
+ADD # 3 
+STO Y 
+HLT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;我们假设LOD STO LOD ADD HLT对应的操作码是 0001 0010 0011 0100 1111，设X的存储地址是01010000，Y的存储地址是01010100&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;根据ppt中的指令格式：&lt;/p&gt;
+&lt;p&gt;The 8-bit instruction specifier（命令指示）&lt;/p&gt;
+&lt;p&gt;And optionally, the 8-bit operand specifier（操作数）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 0 0 X Z Z Z Z b b b b b b b b 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;b b b b b b b b operand specifier： 一个数值，或者 一个内存地址&lt;/p&gt;
+&lt;p&gt;0 0 0 X Z Z Z Z instruction specifier： ZZZZ：操作码 X:寻址模式 1表示操作数是数值 0表示操作数是该地址的内容&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;;machine code
+0001000100000001
+0000001001010000
+0000000101010000
+0001010000000011
+0000001001010100
+0000111100000000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2explain-machine-code-execution-with-the-fetch-decode-execute-cycle&#34;&gt;2）Explain machine code execution with the fetch-decode-execute cycle&lt;/h5&gt;
+&lt;p&gt;一个指令运行周期内：内存 –&amp;gt; 取指令 –&amp;gt; 指令译码 –&amp;gt; 寄存器 –&amp;gt; 取数据 –&amp;gt; 执行指令 –&amp;gt; 处理数据 -&amp;gt; 存储数据 -&amp;gt; 内存&lt;/p&gt;
+&lt;h5 id=&#34;3explain-functions-about--ir-pc-acc-registers-in-a-cpu&#34;&gt;3）Explain functions about  IR, PC, ACC registers in a CPU&lt;/h5&gt;
+&lt;p&gt;IR：指令寄存器，用来储存执行中指令的暂存器。&lt;/p&gt;
+&lt;p&gt;PC：程序计数器，用于指示计算机在其程序序列中的位置。&lt;/p&gt;
+&lt;p&gt;ACC：累加寄存器，用于暂时存放ALU运算结果。&lt;/p&gt;
+&lt;h5 id=&#34;4explain-physical-meaning-about-vars-a--c-in-a-machine&#34;&gt;4）Explain physical meaning about vars a &amp;amp; c in a machine&lt;/h5&gt;
+&lt;p&gt;变量a,c存储在内存当中的不同位置，分别占8个字节，即8为二进制数。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2简答题&#34;&gt;2、简答题&lt;/h3&gt;
+&lt;h5 id=&#34;1what-are-stored-in-memory&#34;&gt;1）What are stored in memory?&lt;/h5&gt;
+&lt;p&gt;数据和指令&lt;/p&gt;
+&lt;h5 id=&#34;2can-a-data-or-a-instruction-stored-in-the-same-place&#34;&gt;2）Can a data or a instruction stored in the same place?&lt;/h5&gt;
+&lt;p&gt;不可以&lt;/p&gt;
+&lt;h5 id=&#34;3-explain-instruction-format-with-example-instructions&#34;&gt;3） Explain Instruction Format with example instructions.&lt;/h5&gt;
+&lt;p&gt;如 SUB X：00000001 10000000
+前八位00000001对应指令内容，后八位10000000对应指令对象。第四位代表寻址模式，表示指令对象是地址还是数据。这条指令指寄存器减去目前在10000000(X)这个地址中的内容后存到寄存器中。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3解释以下词汇-from-wikipedia&#34;&gt;3、解释以下词汇 from Wikipedia&lt;/h3&gt;
+&lt;h5 id=&#34;1汇编语言assembly-language&#34;&gt;1）汇编语言（Assembly Language）&lt;/h5&gt;
+&lt;p&gt;Assembly Language is a low-level programming language for a computer, or other programmable device, in which there is a very strong correspondence between the language and the architecture&amp;rsquo;s machine code instructions. Each assembly language is specific to a particular computer architecture.&lt;/p&gt;
+&lt;h5 id=&#34;2编译compiler&#34;&gt;2）编译（Compiler）&lt;/h5&gt;
+&lt;p&gt;A compiler is a computer program (or a set of programs) that transforms source code written in a programming language (the source language) into another computer language (the target language), with the latter often having a binary form known as object code. The most common reason for converting source code is to create an executable program.&lt;/p&gt;
+&lt;h5 id=&#34;3命令式语言imperative-programming&#34;&gt;3）命令式语言（Imperative programming）&lt;/h5&gt;
+&lt;p&gt;Imperative programming is a programming paradigm that uses statements that change a program&amp;rsquo;s state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates.&lt;/p&gt;
+&lt;h5 id=&#34;4函数编程语言functional-programming&#34;&gt;4）函数编程语言（Functional programming）&lt;/h5&gt;
+&lt;p&gt;Functional programming is a programming paradigm — a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.&lt;/p&gt;
+&lt;h5 id=&#34;5过程式编程procedural-programming&#34;&gt;5）过程式编程（Procedural programming）&lt;/h5&gt;
+&lt;p&gt;Procedural programming is a programming paradigm, derived from structured programming, based upon the concept of the procedure call. Procedures, also known as routines, subroutines, or functions (not to be confused with mathematical functions, but similar to those used in functional programming), simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program&amp;rsquo;s execution, including by other procedures or itself.&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework7/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Java - The Learning Experience 3</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/java3/</link>
+        <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/java3/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/java3/ -&lt;h1 id=&#34;interfaces-接口&#34;&gt;Interfaces 接口&lt;/h1&gt;
+&lt;p&gt;In its most common form, an interface is &lt;strong&gt;a group of related methods with empty bodies&lt;/strong&gt;. A bicycle&amp;rsquo;s behavior, if specified as an interface, might appear as follows：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;interface BicycleInterface { 
+    // constant declarations, if any
+
+    // method signatures 
+    void changeCadence(int newValue); 
+    void changeGear(int newValue); 
+    void speedUp(int increment); 
+    void applyBrakes(int decrement); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Interfaces form a contract between the class and the outside world, and this contract is enforced at build time by the compiler.
+（不同牌子的汽车，有相同的操作，但这些不同场子的车不一定有同一个父类）&lt;/p&gt;
+&lt;p&gt;术语：&lt;strong&gt;类去实现一个接口&lt;/strong&gt;，保留字&lt;strong&gt;implements&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Interfaces cannot be instantiated——they can only be implemented by classes or &lt;strong&gt;extended by other interfaces&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Java does not permit multiple inheritance but interfaces provide an alternative. In Java, a class can inherit from only one class but it can implement more than one interface.&lt;/p&gt;
+&lt;p&gt;An interface name can be used anywhere a type can be used.&lt;/p&gt;
+&lt;h4 id=&#34;多接口的继承实例注意语法&#34;&gt;多接口的继承实例：//注意语法&lt;/h4&gt;
+&lt;p&gt;An interface declaration consists of modifiers, the keyword interface, the interface name, a comma-separated list of parent interfaces (if any), and the interface body.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public interface GroupedInterface extends Interface1, Interface2, Interface3 {
+    // constant declarations 
+    double E = 2.718282; 
+    // base of natural logarithms
+    // method signatures 
+    void doSomething (int i, double x); 
+    int doSomethingElse(String s);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;h4 id=&#34;using-an-interface-as-a-type&#34;&gt;Using an Interface as a Type&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;InterfaceAinterfaceName = new ClassB(); 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;rewriting-interfaces&#34;&gt;Rewriting Interfaces&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;public interface DoIt { 
+    void doSomething(int i, double x); 
+    int doSomethingElse(String s); 
+}
+//you want to add a third method to DoIt
+
+//问题操作
+public interface DoIt { 
+    void doSomething(int i, double x); 
+    int doSomethingElse(String s); 
+    boolean didItWork(int i, double x, String s);
+}// If you make this change, all classes that implement the old DoIt interface will break because they don&#39;t implement the interface anymore. 
+
+//Now users of your code can choose to continue to use the old interface or to upgrade to the new interface
+public interface DoItPlus extends DoIt {
+    boolean didItWork(int i, double x, String s);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;对比抽象类和接口&#34;&gt;对比抽象类和接口&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;abstract classes can contain fields that are not static and final, and they can contain implemented methods.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is possible to define a class that does not implement all of the interface methods, provided that the class is declared to be abstract.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;design-pattern-设计模式&#34;&gt;Design Pattern 设计模式&lt;/h1&gt;
+&lt;h3 id=&#34;gof-pattern&#34;&gt;GoF Pattern&lt;/h3&gt;
+&lt;h5 id=&#34;creational-pattern&#34;&gt;Creational Pattern:&lt;/h5&gt;
+&lt;p&gt;Factory Method, Abstract Factory, &lt;strong&gt;Singleton&lt;/strong&gt;, Builder, Prototype&lt;/p&gt;
+&lt;h5 id=&#34;structural-pattern&#34;&gt;Structural Pattern:&lt;/h5&gt;
+&lt;p&gt;Adapter, Bridge, Composite, &lt;strong&gt;Decorator&lt;/strong&gt;, Facade, Flyweight, Proxy&lt;/p&gt;
+&lt;h5 id=&#34;behavioral-pattern&#34;&gt;Behavioral Pattern:&lt;/h5&gt;
+&lt;p&gt;Command, Interpreter, Iterator, Mediator, &lt;strong&gt;Observer&lt;/strong&gt;, State, Strategy, Chain of Responsibility, Visitor, Template Method&lt;/p&gt;
+&lt;h3 id=&#34;pattern-singleton&#34;&gt;Pattern: Singleton&lt;/h3&gt;
+&lt;p&gt;定义：A pattern in which a class has only one instance and the class can create that instance itself&lt;/p&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在类里定义了一个该类的静态实例&lt;/li&gt;
+&lt;li&gt;构造函数为privated&lt;/li&gt;
+&lt;li&gt;成员函数getInstance()返回类的那个静态实例（如果instance == null，则new.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例子：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/java3/3.png&#34; alt=&#34;3&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;observer-pattern&#34;&gt;Observer pattern&lt;/h3&gt;
+&lt;p&gt;定义：In Observer pattern, the class can inform other objects which subscribe to a change of its state. Any object which is interested in this change, can subscribe to the target object, and receive this information while it occurs.&lt;/p&gt;
+&lt;p&gt;类的设计：The Pattern contains two roles: &lt;strong&gt;Subject&lt;/strong&gt;: a class that can inform others while its state has change. &lt;strong&gt;Observer&lt;/strong&gt;: a class that interested in the change of the subject.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Subject&lt;/em&gt; : an abstract class, which has &lt;strong&gt;add&lt;/strong&gt; method, &lt;strong&gt;remove&lt;/strong&gt; method, a &lt;strong&gt;List, whose element type is Observer&lt;/strong&gt; a abstract method named &lt;strong&gt;notifyObserver&lt;/strong&gt;. 
+&lt;em&gt;ConcreteSubject&lt;/em&gt;: a class inherite from the Subject class, and implement the abstract method notifyObserver.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Observer&lt;/em&gt; : an &lt;em&gt;interface or abstract class&lt;/em&gt;, which has a &lt;strong&gt;notify&lt;/strong&gt; method. 
+&lt;em&gt;ConcreteObserver&lt;/em&gt; : a class inherite from the Subject class, and implement the abstract method notify.&lt;/p&gt;
+&lt;p&gt;例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.*;
+public class RMBrateTest {
+    public static void main(String[] args) {
+        Rate rate = new RMBrate();
+        Company watcher1 = new ImportCompany();
+        Company watcher2 = new ExportCompany();
+        rate.add(watcher1);
+        rate.add(watcher2);
+        rate.change(10);
+        rate.change(-9);
+    }
+}
+
+// abstract: Rate
+abstract class Rate {
+    protected List&amp;lt;Company&amp;gt; companys = new ArrayList&amp;lt;Company&amp;gt;();
+
+    // add
+    public void add(Company company) {
+        companys.add(company);
+    }
+
+    // remove
+    public void remove(Company company) {
+        companys.remove(company);
+    }
+
+    public abstract void change(int number);
+}
+
+class RMBrate extends Rate {
+    public void change(int number) {
+        for (Company obs : companys) {
+            ((Company) obs).response(number);
+        }
+    }
+
+}
+
+// abstrct observer: Company
+interface Company {
+    void response(int number);
+}
+
+class ImportCompany implements Company {
+    public void response(int number) {
+        if (number &amp;gt; 0) {
+            System.out.println(&amp;quot;RMBrate increase&amp;quot; + number + &amp;quot;, improved the profit margin of import companies&amp;quot;);
+        } 
+        else if (number &amp;lt; 0) {
+            System.out.println(&amp;quot;RMBrate decrease&amp;quot; + (-number) + &amp;quot;, reduced the profit margin of import companies&amp;quot;);
+        } } }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;decorator-pattern&#34;&gt;Decorator Pattern&lt;/h3&gt;
+&lt;p&gt;定义： the Decorator Pattern is a design pattern that allows behavior to be added to an individual object, without affecting the behavior of other objects from the same class.&lt;/p&gt;
+&lt;p&gt;we just need to implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it.&lt;/p&gt;
+&lt;p&gt;每个装饰者类继承装饰者类，且都有一个被装饰者的对象作为数据成员，并且重写装饰者类的成员函数（如果需要的话）&lt;/p&gt;
+&lt;p&gt;例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class StarBuzzCoffeeDemo {
+
+    public static void main(String arg[]) {
+
+        Coffee coffer = new SimpleCoffee();
+        coffer = new WithMilk(coffer);
+        System.out.println(coffer.getCost() + &amp;quot;$  &amp;quot; + coffer.getIngredients());
+        coffer = new WithSprinkles(coffer);
+        System.out.println(coffer.getCost() + &amp;quot;$  &amp;quot; + coffer.getIngredients());
+    }
+}
+
+interface Coffee {
+    public double getCost();
+
+    public String getIngredients();
+}
+
+class SimpleCoffee implements Coffee {
+    @Override
+    public double getCost() {
+        return 1;
+    }
+
+    @Override
+    public String getIngredients() {
+        return &amp;quot;Coffee&amp;quot;;
+    }
+}
+
+class BlackCoffee implements Coffee {
+    @Override
+    public double getCost() {
+        return 2;
+    }
+
+    @Override
+    public String getIngredients() {
+        return &amp;quot;BlackCoffee&amp;quot;;
+    }
+}
+
+abstract class CoffeeDecorator  implements Coffee {
+    private final Coffee decoratedCoffee;
+
+    public CoffeeDecorator (Coffee c) {
+        this.decoratedCoffee = c;
+    }
+
+    @Override
+    public double getCost() {
+        return decoratedCoffee.getCost();
+    }
+
+    @Override
+    public String getIngredients() {
+        return decoratedCoffee.getIngredients();
+    }
+}
+
+class WithMilk extends CoffeeDecorator  {
+    public WithMilk(Coffee c) {
+        super(c);
+    }
+
+    @Override
+    public String getIngredients() {
+        return super.getIngredients() + &amp;quot;, Milk&amp;quot;;
+    }
+}
+
+class WithSprinkles extends CoffeeDecorator  {
+    public WithSprinkles(Coffee c) {
+        super(c);
+    }
+
+    @Override
+    public double getCost() {
+        return super.getCost() + 0.2;
+    }
+
+    @Override
+    public String getIngredients() {
+        return super.getIngredients() + &amp;quot;, Sprinkles&amp;quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;proxy-pattern-代理模式&#34;&gt;Proxy Pattern 代理模式&lt;/h3&gt;
+&lt;p&gt;定义：In Proxy Pattern, the class can provide a sub-interface to another class, which provide other object with a proxy to control access to that object.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;basic-io&#34;&gt;Basic I/O&lt;/h1&gt;
+&lt;p&gt;流支持不同类型的数据：包括简单的字节，内置数据类型，对象&lt;/p&gt;
+&lt;p&gt;Java.io package 里有两部分：字符流(16-bit UTF-16 character stream)和字节流(8 bits byte streams),I/O既可以是基于文本(data-based)的，也可以是基于二进制数据(binary data-based)的:&lt;/p&gt;
+&lt;p&gt;输入输出流(Inout streams or output streams)是字节流(byte stream)，而Readers or writers 是字符流(character stream)的&lt;/p&gt;
+&lt;h3 id=&#34;byte-streams-读取写入文件实例&#34;&gt;Byte Streams 读取写入文件实例：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+public class CopyBytes{
+    public static void main(String[] args) throws IOException{
+        FileInputStream in = null;
+        FileOutoutStream out = null;
+        try{
+            in = new FileInputStream(&amp;quot;test_in.txt&amp;quot;);
+            out = new FileOutputStream(&amp;quot;test_out.txt&amp;quot;);
+            int c;
+            while((c = in.read()) != 1)//read()从in中读取一个字节 a byte of data
+            {
+                out.write(c);
+            }
+        } finally{
+            if(in != null){
+                in.close();
+            }
+            if(out != null){
+                out.close();
+            }
+        }
+    }
+}
+
+//finally作为异常处理的一部分，它只能用在try/catch语句中，并且附带一个语句块
+//finally表示这段语句最终一定会被执行（不管有没有抛出异常），经常被用在需要释放资源的情况下。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;character-streams-读取写入文件实例&#34;&gt;Character Streams 读取写入文件实例：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+public class CopyCharacter{
+    public static void main(String[] args) throws IOException{
+        FileReader in = null;
+        FileWriter out = null;
+        try{
+            in = new FileReader(&amp;quot;test_in.txt&amp;quot;);
+            out = new FileWriter(&amp;quot;test_out.txt&amp;quot;);
+            int c;
+            while((c = in.read()) != 1)//read()从in中读取一个字符 a single character
+            {
+                out.write(c);
+            }
+        } finally{
+            if(in != null){
+                in.close();
+            }
+            if(out != null){
+                out.close();
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;character-streams-buffuered读取写入文件实例&#34;&gt;Character Streams (Buffuered)读取写入文件实例：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.PrintWriter;
+import java.io.IOException;
+public class CopyLines{
+    public static void main(String[] args) throws IOException{
+        BufferedReader in = null;
+        PrintWriter out = null;
+        try{
+            in = new BufferedReader(&amp;quot;test_in.txt&amp;quot;);
+            out = new PrintWriter(&amp;quot;test_out.txt&amp;quot;);
+            String i;
+            while((i = in.readLine()) != 1)//readLline()从in中读取一行字符串
+            {
+                out.write(c);
+            }
+        } finally{
+            if(in != null){
+                in.close();
+            }
+            if(out != null){
+                out.close();
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;filter-streams&#34;&gt;Filter Streams&lt;/h3&gt;
+&lt;p&gt;它是一个抽象类 我们要去继承它，然后定义成员函数 public int read()&lt;/p&gt;
+&lt;h3 id=&#34;scanner-and-formatting&#34;&gt;Scanner and Formatting&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.*;
+import java.util.Scanner;
+public class ScanXan{
+    public static void main(String[] args)throws IOException{
+        double sum = 0.0;
+        Scanner s = null;
+        try{
+            s = new Scanner(new BufferedReader(new FileReader(&amp;quot;text_in.txt&amp;quot;)));
+            while(s.hasNext())
+            {
+                System.out.println(s.next());
+            }
+            while(s.hasNext())
+            {
+                if(s.hasNextDouble) //Formatting 
+                {
+                    sum += s.nextDouble();
+                }
+                else
+                {
+                    s.next();
+                }
+            }
+        } finally{
+            if(s != null){
+                s.close();
+            }
+        }
+        System.out.println(sum);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;systemoutformat&#34;&gt;System.out.format();&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/java3/1.png&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;data-streams&#34;&gt;Data Streams&lt;/h3&gt;
+&lt;p&gt;支持内置数据类型和String，有专门的Read/Write methods  比如Char有readChar()和writeChar() 
+案例：
+&lt;img src=&#34;../../images/java3/2.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;object-streams-对象流-object-serialization-对象序列化&#34;&gt;Object Streams 对象流 （Object Serialization 对象序列化）&lt;/h3&gt;
+&lt;h3 id=&#34;file-io&#34;&gt;File I/O&lt;/h3&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/java3/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 6</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework6/</link>
+        <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework6/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework6/ -&lt;h3 id=&#34;1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer&#34;&gt;1. According to the von Neumann architecture, List basic parts of a computer:&lt;/h3&gt;
+&lt;p&gt;运算器(processing unit)、控制器(control unit)、存储器(memory)、输入设备、输出设备(input and output mechanisms)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory&#34;&gt;2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory?&lt;/h3&gt;
+&lt;p&gt;The memory address space is 64 MB, or 2^26 (2^6 x 2^20). This means it needs log2(2^26) or 26 bits, to address each single byte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-list-basic-parts-of-a-cpu-include-cache-or-not&#34;&gt;3. List basic parts of a CPU, include cache or not?&lt;/h3&gt;
+&lt;p&gt;传统上，CPU由&lt;strong&gt;控制器和运算器&lt;/strong&gt;这两个主要部件组成。
+随着集成电路技术的不断发展和进步，新型CPU纷纷集成了一些原先置于CPU之外的分立功能部件，如浮点处理器、&lt;strong&gt;高速缓存Cache&lt;/strong&gt;等，在大大提高CPU性能指标的同时，也使得CPU的内部组成日益复杂化。&lt;/p&gt;
+&lt;p&gt;控制器通常由程序计数器（PC）、指令寄存器（IR）、指令译码器（ID）、时序发生器和操作控制器组成。&lt;/p&gt;
+&lt;p&gt;运算器由算术逻辑单元(ALU)、累加寄存器（AC）、数据寄存器（DR）和程序状态字寄存器（PSW）组成。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;因此是新型CPU集成了Cache。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;内容来自
+&lt;a href=&#34;https://software.intel.com/content/www/cn/zh/develop/articles/book-processor-architecture_cpu_function_and_composition.html&#34;&gt;https://software.intel.com/content/www/cn/zh/develop/articles/book-processor-architecture_cpu_function_and_composition.html&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4what-mean-secondary-storage-list-some-on-your-pc&#34;&gt;4.What mean secondary storage. List some on your PC.&lt;/h3&gt;
+&lt;p&gt;Secondary Storage: A data storage device that is not the main memory of a computer&lt;/p&gt;
+&lt;p&gt;二级存储器也称为外部存储器,是指计算机用来存储数据和程序的各种存储介质。&lt;/p&gt;
+&lt;p&gt;二级存储设备有（固定/移动）硬盘、光碟、闪存卡、U盘和其他速度缓慢但拥有很高容量的设备。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;5使用维基百科解释以下概念-cpuramrombus-computingparallel-computing&#34;&gt;5.使用维基百科，解释以下概念： CPU、RAM、ROM、Bus (computing)、Parallel Computing&lt;/h3&gt;
+&lt;h4 id=&#34;cpu&#34;&gt;CPU&lt;/h4&gt;
+&lt;p&gt;Central processing unit: the key component of a computer system, containing the circuitry necessary to interpret and execute program instructions.&lt;/p&gt;
+&lt;h4 id=&#34;ram&#34;&gt;RAM&lt;/h4&gt;
+&lt;p&gt;Random access memory: semiconductor memory in which all storage locations can be rapidly accessed in the same amount of time. It &lt;strong&gt;forms the main memory of a computer&lt;/strong&gt;, used by applications to perform tasks while the device is operating.
+It is &lt;strong&gt;volatile&lt;/strong&gt; computer memory, used for creating, loading, and running programs and for manipulating and temporarily storing data.&lt;/p&gt;
+&lt;h4 id=&#34;rom&#34;&gt;ROM&lt;/h4&gt;
+&lt;p&gt;Computer hardware that holds permanently stored data. After the data is installed in ROM, it cannot be added to, modified, or deleted. ROM usually contains instructions that enable the computer&amp;rsquo;s operating system to communicate with other hardware.  It is a nonvolatile, nonmodifiable computer memory.&lt;/p&gt;
+&lt;h4 id=&#34;buscomputing&#34;&gt;Bus(computing)&lt;/h4&gt;
+&lt;p&gt;A bus is a communication system that transfers data between components inside a computer, or between computers. This expression covers all related hardware components (wire, optical fiber, etc.) and software, including communication protocols.&lt;/p&gt;
+&lt;p&gt;The bus connecting the CPU and memory is one of the defining characteristics of the system, and often referred to simply as the system bus.&lt;/p&gt;
+&lt;h4 id=&#34;parallel-computing&#34;&gt;Parallel Computing&lt;/h4&gt;
+&lt;p&gt;Parallel computing is a type of computation in which many calculations or the execution of processes are carried out simultaneously.&lt;/p&gt;
+&lt;p&gt;Large problems can often be divided into smaller ones, which can then be solved at the same time. There are several different forms of parallel computing: bit-level, instruction-level, data, and task parallelism.&lt;/p&gt;
+&lt;p&gt;Parallelism has been employed for many years, mainly in high-performance computing, but interest in it has grown lately due to the physical constraints preventing frequency scaling.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;6-写一段文字简单解释云计算cloud-computing&#34;&gt;6. 写一段文字，简单解释云计算（cloud computing）&lt;/h3&gt;
+&lt;p&gt;云计算是一种分布式计算，通过网络将巨大的数据计算处理程序分解成多个小程序，然后，通过多部服务器组成的系统进行处理和分析这些小程序得到结果并返回给用户。&lt;/p&gt;
+&lt;p&gt;云计算是计算服务的提供，用户可以利用网络来享用服务器、存储、数据库、网络、软件、分析和智能等计算服务。云计算使得用户摆脱了对高性能硬件的需求，降低了用户的计算成本，同时云计算具备高性能和安全性高的优势。&lt;/p&gt;
+&lt;p&gt;云计算有公用，私有，混合模型，公有云为第三方云服务提供商所拥有和运营，他们通过 Internet 提供其计算资源（如服务器和存储空间）；私有云是指专供一个企业或组织使用的云计算资源。&lt;/p&gt;
+&lt;p&gt;云服务类型有：基础结构即服务 (IaaS)、平台即服务 (PaaS)、无服务器和软件即服务 (SaaS)。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;参考 &lt;a href=&#34;https://azure.microsoft.com/zh-cn/overview/what-is-cloud-computing/#benefits&#34;&gt;https://azure.microsoft.com/zh-cn/overview/what-is-cloud-computing/#benefits&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;7-小孙买了计算机主板说明书表明支持双通道ddr3-1333内存最大支持16g&#34;&gt;7. 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存，最大支持16G”&lt;/h3&gt;
+&lt;h4 id=&#34;1ddr3内存3和1333的含义是什么&#34;&gt;1）DDR3内存，“3”和“1333”的含义是什么？&lt;/h4&gt;
+&lt;p&gt;3指第三代，DDR3为第三代双倍数据率同步动态随机存取存储器&lt;/p&gt;
+&lt;p&gt;1333代表着内存频率，频率越高，内存运算速度越快，内存也就越好，价格也就越高。&lt;/p&gt;
+&lt;h4 id=&#34;2小孙买8g-ddr3-1600的内存能提高性能吗&#34;&gt;2）小孙买8G DDR3-1600的内存能提高性能吗？&lt;/h4&gt;
+&lt;p&gt;内存条的标注频率代表该内存最高可以稳定在这个频率下工作&lt;/p&gt;
+&lt;p&gt;主板支持1333MHZ频率的内存，当使用了1600MHZ频率的内存之后，1600MHZ内存仍可以工作，但实际工作频率仅为1333MHZ，并不能提高性能。&lt;/p&gt;
+&lt;h4 id=&#34;3小孙买4g2-ddr3-1333的内存能提高性能吗&#34;&gt;3）小孙买4G*2 DDR3-1333的内存能提高性能吗？&lt;/h4&gt;
+&lt;p&gt;从理论上说双通道两个内存通过CPU可分别寻址、读取数据，从而使内存的带宽增加一倍，数据存取速度也相应增加一倍，所以能提高性能。&lt;/p&gt;
+&lt;h4 id=&#34;416g需要多少位地址&#34;&gt;4）16G需要多少位地址？&lt;/h4&gt;
+&lt;p&gt;内存地址空间为16 GB，即2^34 (2^4 x 2^30)，这意味着它需要log2(2^34)即34位来寻址每个字节。&lt;/p&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework6/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Experiments On EveryCircuit</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/blog3/</link>
+        <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/blog3/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/blog3/ -&lt;h1 id=&#34;硬件编程-电路与二进制运算&#34;&gt;硬件编程-电路与二进制运算&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;任务一门电路的设计与功能验证&#34;&gt;任务一：门电路的设计与功能验证&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;In A&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In B&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Out&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;电路图如下：其中电压设置为5伏，电阻为400欧，两个开关分别代表In A和In B&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/1-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;验证如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/1-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/1-3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/1-4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/1-5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;用xor门作非门&#34;&gt;用XOR门作非门&lt;/h4&gt;
+&lt;p&gt;电路如下，异或门一个输入接高电平：
+&lt;img src=&#34;../../images/blog3/1-1-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;实验验证：
+&lt;img src=&#34;../../images/blog3/1-1-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/1-1-3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;任务二验证电路-abc-和-abac-等价&#34;&gt;任务二：验证电路 A(B+C) 和 AB+AC 等价&lt;/h3&gt;
+&lt;p&gt;电路搭建及验证：三个开关从上到下依次代表A，B，C&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-6.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/2-8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;真值表：O1代表A(B+C),02代表AB+AC
+| A | B | C | O1 | O2 |
+|:-:|:-:|:-:|:-:|:-:|
+|0|0|0|0|0|
+|0|0|1|0|0|
+|0|1|0|0|0|
+|0|1|1|0|0|
+|1|0|0|0|0|
+|1|0|1|1|1|
+|1|1|0|1|1|
+|1|1|1|1|1|&lt;/p&gt;
+&lt;p&gt;可以看到O1,O2等价。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;任务三理解sr储存电路&#34;&gt;任务三：理解SR储存电路&lt;/h3&gt;
+&lt;p&gt;电路搭建：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/3-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/3-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/3-3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/3-4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/3-5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;表格填写：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;~Set&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;~Reset&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Q(x)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;~Q(x)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;任务四设计全加电路&#34;&gt;任务四：设计全加电路&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1一位全加器有s--a-异或-b-异或-ccarry--a-异或-b-c--ab&#34;&gt;(1)一位全加器：有S = (A 异或 B) 异或 C，Carry = (A 异或 B) C + AB&lt;/h4&gt;
+&lt;p&gt;如图：三个开关从上到下依次代表A，B，C&lt;/p&gt;
+&lt;p&gt;A + B + C = 0 + 0 + 1 = 1,S = 1,Carry = 0
+&lt;img src=&#34;../../images/blog3/4-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 0 + 1 + 0 = 1,S = 1,Carry = 0
+&lt;img src=&#34;../../images/blog3/4-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 0 + 1 + 1 = 10,S = 0,Carry = 1
+&lt;img src=&#34;../../images/blog3/4-3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 1 + 0 + 0 = 1,S = 1,Carry = 0
+&lt;img src=&#34;../../images/blog3/4-4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 1 + 0 + 1 = 10,S = 0,Carry = 1
+&lt;img src=&#34;../../images/blog3/4-5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 1 + 1 + 0 = 10,S = 0,Carry = 1
+&lt;img src=&#34;../../images/blog3/4-6.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 1 + 1 + 1 = 11,S = 1,Carry = 1
+&lt;img src=&#34;../../images/blog3/4-7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A + B + C = 0 + 0 + 0 = 0,S = 0,Carry = 0
+&lt;img src=&#34;../../images/blog3/4-8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;2两位的全加器&#34;&gt;(2)两位的全加器&lt;/h4&gt;
+&lt;p&gt;部分电路搭建与检验如下：
+其中三面三个开关表示A0 B0 C0,下面两个开关表示A1 B1,
+右边最上面的灯时S0,中间的灯表示Carry0,下面左边的灯表示S1，右边的灯表示Carry1.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;表示 A = 00 B = 00 C = 0 S = 00 Carry1 = 0
+&lt;img src=&#34;../../images/blog3/5-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-6.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-10.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-11.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-12.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-13.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-14.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;表示 A = 01 B = 11 C = 0 S = 00 Carry1 = 1
+&lt;img src=&#34;../../images/blog3/5-15.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-16.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog3/5-17.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;表示 A = 11 B = 11 C = 1 S = 11 Carry1 = 1
+&lt;img src=&#34;../../images/blog3/5-18.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/blog3/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Java - The Learning Experience 2</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/java2/</link>
+        <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/java2/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/java2/ -&lt;h1 id=&#34;chapter-6-polymorphism-多态&#34;&gt;Chapter 6 Polymorphism 多态&lt;/h1&gt;
+&lt;p&gt;In programming, polymorphism is the ability for same code to be used with several different types of objects and behave differently depending on the actual type of object used.&lt;/p&gt;
+&lt;p&gt;Alternate views of polymorphism:&lt;/p&gt;
+&lt;p&gt;One objects sends a message to another object without caring about the type of the receiving object.&lt;/p&gt;
+&lt;p&gt;The receiving object responds to a message appropriately for its type.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Java methods are polymorphic by default&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;static or final ( private methods are implicitly final ) are bound at compile time.&lt;/p&gt;
+&lt;p&gt;对于多态，可以总结以下几点：&lt;/p&gt;
+&lt;p&gt;一、使用父类类型的引用指向子类的对象；（以下都是动态绑定）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//(1) Student extends Person
+Student s = new Student(&amp;quot;Xiaoli&amp;quot;,&amp;quot;s115333&amp;quot;); 
+Person p = s; 
+//(2) 函数传参
+public static void main(String[] args) { 
+    m(new Student(&amp;quot;Xiaoli&amp;quot;, &amp;quot;s115333&amp;quot;)); 
+    m(new Person( “Xiaowang&amp;quot;)); 
+} 
+public static void m(Person x) { 
+    System.out.println(x.introduction()); 
+}
+//(3) 数组
+Person[] people = { 
+    new Person(&amp;quot; Xiaoli &amp;quot;), 
+    new Student(“Xiaowang&amp;quot;, “s116000&amp;quot;), 
+    new Person(&amp;quot; Xiaozhang&amp;quot;)
+}; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;//(4) 理解一下
+&lt;img src=&#34;../../images/java2/1.png&#34; alt=&#34;1&#34;&gt;
+&lt;img src=&#34;../../images/java2/2.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、该引用只能调用父类中定义的方法和变量；&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、如果子类中重写了父类中的一个方法，那么在调用这个方法的时候，将会调用子类中的这个方法；（动态连接、动态调用）;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;四、变量不能被重写（覆盖），”重写“的概念只针对方法，如果在子类中”重写“了父类中的变量，那么在编译时会报错。&lt;/p&gt;
+&lt;h6 id=&#34;来自-httpsblogcsdnnetkaiwiiarticledetails8042488&#34;&gt;来自 &lt;a href=&#34;https://blog.csdn.net/kaiwii/article/details/8042488&#34;&gt;https://blog.csdn.net/kaiwii/article/details/8042488&lt;/a&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;strong&gt;C++ 中普通成员函数加上 virtual 关键字就成为虚函数。
+Java 中其实没有虚函数的概念，它的普通函数就相当于 C++ 的虚函数，动态绑定是 Java 的默认行为。如果 Java 中不希望某个函数具有虚函数特性，可以加上 final 关键字变成非虚函数&lt;/strong&gt;。&lt;/p&gt;
+&lt;h6 id=&#34;来自-httpswwwrunoobcomnote40084&#34;&gt;来自 &lt;a href=&#34;https://www.runoob.com/note/40084&#34;&gt;https://www.runoob.com/note/40084&lt;/a&gt;&lt;/h6&gt;
+&lt;h5 id=&#34;动态绑定的过程&#34;&gt;动态绑定的过程&lt;/h5&gt;
+&lt;p&gt;We can conceptually think of the dynamic binding mechanism as follows: Suppose an object o is an instance of classes C1, C2, &amp;hellip;, Cn-1, and Cn, where C1 is a subclass of C2, C2 is a subclass of C3, &amp;hellip;, and Cn-1 is a subclass of Cn.&lt;/p&gt;
+&lt;p&gt;That is, Cn is the most general class, and C1 is the most specific class. In Java, Cn is the Object class.&lt;/p&gt;
+&lt;p&gt;If o invokes a method p, the JVM searches the implementation for the method p in C1, C2, &amp;hellip;, Cn-1 and Cn, in this order, until it is found. Once an implementation is found, the search stops and the first-found implementation is invoked.&lt;/p&gt;
+&lt;h5 id=&#34;抽象类-abstract-class&#34;&gt;抽象类 Abstract Class&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;An abstract class&lt;/strong&gt; is a class that is declared abstract—it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;An abstract method&lt;/strong&gt; is a method that is declared without an implementation. If a class includes abstract methods, the class itself must be declared abstract.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public abstract class GraphicObject { 
+    // declare fields 
+    // declare non-abstract methods 
+    abstract void draw(); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When an abstract class is subclassed, the subclass usually provides implementations for all of the abstract methods in its parent class. However, &lt;strong&gt;if it does not, the subclass must also be declared abstract&lt;/strong&gt;.&lt;/p&gt;
+&lt;h5 id=&#34;static-method&#34;&gt;Static Method&lt;/h5&gt;
+&lt;p&gt;If a method is static, it does not behave polymorphically.  Static methods are associated with the class and not the individual objects.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;package-包-自学&#34;&gt;Package 包 (自学)&lt;/h1&gt;
+&lt;p&gt;来自 &lt;a href=&#34;https://www.runoob.com/java/java-package.html&#34;&gt;https://www.runoob.com/java/java-package.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Java 使用包（package）这种机制是为了防止命名冲突，访问控制，提供搜索和定位类（class）、接口、枚举（enumerations）和注释（annotation）等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package pkg1[．pkg2[．pkg3…]]; //语法格式
+//Something.java
+package net.java.util; 
+public class Something{
+...
+} //那么它的路径应该是 net/java/util/Something.java 这样保存的。 package(包) 的作用是把不同的 java 程序分类保存，更方便的被其他 java 程序调用。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;java.lang-打包基础的类&lt;/p&gt;
+&lt;p&gt;java.io-包含输入输出功能的函数&lt;/p&gt;
+&lt;h5 id=&#34;创建一个包&#34;&gt;创建一个包&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;/* 文件名: Animal.java */
+package animals;
+
+interface Animal {
+public void eat();
+public void travel();
+} //在 animals 包中加入一个接口（interface）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;接下来，在同一个包中加入该接口的实现：
+MammalInt.java 文件代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package animals;
+/* 文件名 : MammalInt.java */
+public class MammalInt implements Animal{
+    public void eat(){
+        System.out.println(&amp;quot;Mammal eats&amp;quot;);
+    }
+    public void travel(){
+        System.out.println(&amp;quot;Mammal travels&amp;quot;);
+    } 
+    public int noOfLegs(){
+        return 0;
+    }
+    public static void main(String args[]){
+        MammalInt m = new MammalInt();
+        m.eat();
+        m.travel();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;import-关键字&#34;&gt;import 关键字&lt;/h5&gt;
+&lt;p&gt;为了能够使用某一个包的成员，我们需要在 Java 程序中明确导入该包。使用 &amp;ldquo;import&amp;rdquo; 语句可完成此功能。 
+在 java 源文件中 import 语句应位于 package 语句之后，所有类的定义之前，可以没有，也可以有多条，其语法格式为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import package1\[.package2…\].(classname|*);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一个类想要使用本包中的另一个类，那么该包名可以省略。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;C/C++ 的 #include会把所包含的内容在编译时添加到程序文件中，而java的import则不同。
+Java 对象名称分为包（package）名和类（class）名两部分
+package名称就像是我们的姓，而class名称就像是我们的名字 。
+比如说java.lang.String，就指明了String类是属于java.lang这个包的。
+可是现在问题来了，有的包名非常的长，使用某些类的时候就要写一大串的代码，看起来非常不简洁也降低开发效率，于是Sun公司就引入了import。
+在Java文件开头的地方使用import 导入某些类，java文件开头的地方，先说明会用到那些类别。 
+接着我们就能在代码中只用类名指定某个类，无需写包名。&lt;/p&gt;
+&lt;p&gt;来源 &lt;a href=&#34;https://www.zhihu.com/question/324436383/answer/684131107&#34;&gt;https://www.zhihu.com/question/324436383/answer/684131107&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/java2/ - This is a customized copyright.</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

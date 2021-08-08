@@ -1,0 +1,973 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/</link>
+    <description>Recent content on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://wondrouswisdomcard.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Homework of Week 5</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework5/</link>
+        <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework5/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework5/ -&lt;hr&gt;
+&lt;h3 id=&#34;1-and-gate-与门&#34;&gt;1) AND Gate 与门&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;与门有n个输入,1个输出,当且仅当所有输入为1时输出为1,否则输出为0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Representation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;设 A,B 为输入, X 为输出&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Truth Table&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;A&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;B&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;X&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Boolean Expression&lt;/p&gt;
+&lt;p&gt;X = A + B&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logic Diagram Symbol (Image Below)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-xor-gate-异或门&#34;&gt;2) XOR Gate 异或门&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;与门有2个输入,1个输出,当且仅当所有输入相同时输出为0,否则输出为1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Representation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;设 A,B 为输入, X 为输出&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Truth Table&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;A&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;B&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;X&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Boolean Expression&lt;/p&gt;
+&lt;p&gt;令A&amp;rsquo;表示A的非,B&amp;rsquo;表示B的非&lt;/p&gt;
+&lt;p&gt;X = A ⊕ B = A B&amp;rsquo; + A&amp;rsquo; B&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logic Diagram Symbol (Image Below)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework5/1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-draw-a-circuit-diagram-about-xabcd&#34;&gt;3) Draw a circuit diagram about X=(A+B)(C+D)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework5/2.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4--show-the-behavior-of-the-following-circuit-with-a-truth-table&#34;&gt;4)  Show the behavior of the following circuit with a truth table&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework5/3.png&#34; alt=&#34;3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设输出为X,令A&amp;rsquo;表示A的非，有 X = (A&amp;rsquo;) ⊕ (AB),真值表如下:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;A&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;B&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;X&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula&#34;&gt;5) What is circuit equivalence? Use truth table to prove the following formula.&lt;/h3&gt;
+&lt;p&gt;(AB)&amp;rsquo; = A&amp;rsquo; + B&amp;rsquo; 等价&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;|A|B| AB | (AB)&#39; | A&#39; | B&#39; | A&#39;+B&#39; | (AB)&#39;=A&#39;+B&#39; |
+|:--:| :--: | :--: | :--: |  :--: | :--: | :--: | :--: |
+|0|0|0| 1 | 1 | 1 | 1 | 1 |
+|0|1|0| 1 | 1 | 0 | 1 | 1 |
+|1|0|0| 1 | 0 | 1 | 1 | 1 |
+|1|1|1| 0 | 0 | 0 | 0 | 1 |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从真值表可以看出(AB)&amp;lsquo;=A&#39;+B&amp;rsquo;为永真式,所以(AB)&amp;lsquo;和A&#39;+B&amp;rsquo;等价。&lt;/p&gt;
+&lt;h3 id=&#34;6--combine-8-full-adders-to-8bit-adder-circuit&#34;&gt;6)  Combine 8 Full Adders to 8bit adder circuit&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework5/4.jpg&#34; alt=&#34;4&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;7-fill-the-follow-expression&#34;&gt;7) Fill the follow expression&lt;/h3&gt;
+&lt;p&gt;令X&amp;rsquo;表示X的非:&lt;/p&gt;
+&lt;p&gt;(1) (X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; or (00001111)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; = ((X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;1111)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(2) (X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; xor (00001111)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; = (X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt;&#39;X&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;&#39;X&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&#39;X&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;&amp;rsquo;)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(3) ((X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; and (11110000)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;)
+or (not (X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; and (00001111)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;) = (X&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;7&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;5&lt;!-- raw HTML omitted --&gt;X&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt;&#39;X&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;&#39;X&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&#39;X&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;&amp;rsquo;)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;关键词解释-from-wikipedia&#34;&gt;关键词解释 from Wikipedia&lt;/h2&gt;
+&lt;h3 id=&#34;logic-gate&#34;&gt;Logic Gate&lt;/h3&gt;
+&lt;p&gt;In electronics, a logic gate is an idealized or physical device implementing a Boolean function; that is, it performs a logical operation on one or more binary inputs and produces a single binary output.&lt;/p&gt;
+&lt;h3 id=&#34;boolean-algebra&#34;&gt;Boolean Algebra&lt;/h3&gt;
+&lt;p&gt;In mathematics and mathematical logic, Boolean algebra is the branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively. the main operations of Boolean algebra are the conjunction and denoted as ∧, the disjunction or denoted as ∨, and the negation not denoted as ¬.&lt;/p&gt;
+&lt;h3 id=&#34;flip-flops&#34;&gt;Flip-Flops&lt;/h3&gt;
+&lt;p&gt;(1). 中文翻译：(双稳态)触发器&lt;/p&gt;
+&lt;p&gt;(2). Q: How many bits information does a SR latch store? A: &lt;strong&gt;1 Bit&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework5/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Game Making - Flappy Bird</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/blog2/</link>
+        <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/blog2/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/blog2/ -&lt;h1 id=&#34;笨比飞扬鸟&#34;&gt;笨比飞扬鸟&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog2/1.jpg&#34; alt=&#34;游戏界面&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;笨比飞扬鸟简单地模仿了经典游戏flappy-bird&#34;&gt;笨比飞扬鸟简单地模仿了经典游戏&lt;strong&gt;Flappy Bird&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;游戏链接:&lt;/strong&gt; &lt;a href=&#34;https://www.construct.net/en/free-online-games/free-game-17945/play&#34;&gt;https://www.construct.net/en/free-online-games/free-game-17945/play&lt;/a&gt; (手机端和PC端都可以玩)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;视频链接:&lt;/strong&gt; &lt;a href=&#34;https://www.bilibili.com/video/BV1S54y1y7P7/&#34;&gt;https://www.bilibili.com/video/BV1S54y1y7P7/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;设计思路&#34;&gt;设计思路&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;游戏规则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;玩家需要通过点击鼠标/屏幕来使小鸟跳起来来避免迎面而来的绿柱子，在玩家不进行操作的情况下，笨比小蓝鸟会因为重力而往下掉。当小鸟撞上绿柱子时，游戏结束。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;界面的设定&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们需要三个界面：游戏启动界面，游戏界面和游戏结束界面。通过游戏启动界面的&lt;strong&gt;start&lt;/strong&gt;按钮，玩家可以进入游戏界面进行游戏，当小鸟撞上绿柱子时界面转入游戏结束界面，游戏结束界面显示玩家本轮游戏的分数，并且玩家可以通过&lt;strong&gt;restart&lt;/strong&gt;按钮重新进入游戏启动界面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;对象和对象行为&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小鸟(&lt;strong&gt;bird&lt;/strong&gt;)可以进行跳跃，否则坠落，具有平台(Platform)属性,需要考虑小鸟的下落速度(和加速度)，还有小鸟跳跃一次的高度。&lt;/p&gt;
+&lt;p&gt;柱子(上柱子&lt;strong&gt;up&lt;/strong&gt;和下柱子&lt;strong&gt;down&lt;/strong&gt;)需要系统以一定的速率生成，并且能够向左移动，并在出界后自动销毁。其中上下柱子需要同时生成，并具有一样的速率，之间留出的间隔需要合理（保证小鸟能过去）,还需要用到随机生成器来是系统每次生成的柱子高度不同。&lt;/p&gt;
+&lt;p&gt;计分器(全局变量&lt;strong&gt;count&lt;/strong&gt;)需要在小鸟通过一对柱子后计分，并显示在游戏页面左上方。&lt;/p&gt;
+&lt;p&gt;其余对象还包括文本显示对象(&lt;strong&gt;text&lt;/strong&gt;)和输入对象(&lt;strong&gt;touch&lt;/strong&gt;),按钮(&lt;strong&gt;button&lt;/strong&gt;)和背景(&lt;strong&gt;background&lt;/strong&gt;),他们都是游戏不可缺的元素。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;事件表&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;将事件表的事件进行分组有利于我们更清晰地安排事件。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;分组包括“界面的跳转”，“小鸟的碰撞”，“障碍物的生成和销毁”，“得分的判定”。(在&lt;strong&gt;制作过程&lt;/strong&gt;中有体现)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;制作过程&#34;&gt;制作过程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;收集素材&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog2/2.jpg&#34; alt=&#34;游戏素材&#34;&gt;
+&lt;strong&gt;素材来自张羿九学长！&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;基本过程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;先创建一个新的项目
+&lt;img src=&#34;../../images/blog2/0.png&#34; alt=&#34;创建&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建了三个背景板和对应的事件表，分别处理不同界面的事件：(下图出现在construct3界面的右侧)
+&lt;img src=&#34;../../images/blog2/3.png&#34; alt=&#34;界面&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单击右键&lt;strong&gt;创建对象&lt;/strong&gt;，也可以直接将图片拖入场景版中直接创建对象
+&lt;img src=&#34;../../images/blog2/4.png&#34; alt=&#34;对象&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;给对象赋予行为&lt;/strong&gt;(右键单击对象-添加-行为)，以小鸟为例，需要给他赋予&lt;strong&gt;平台&lt;/strong&gt;，并在左栏中给小鸟的速度等赋值，可参考图片：
+&lt;img src=&#34;../../images/blog2/5.png&#34; alt=&#34;行为&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;构建事件表&lt;/strong&gt;，可参考下面几张图(有一点乱)：&lt;/p&gt;
+&lt;p&gt;游戏界面的事件表:
+&lt;img src=&#34;../../images/blog2/6.png&#34; alt=&#34;事件表1&#34;&gt;
+&lt;img src=&#34;../../images/blog2/7.png&#34; alt=&#34;事件表2&#34;&gt;
+开始界面的事件表:
+&lt;img src=&#34;../../images/blog2/8.png&#34; alt=&#34;事件表3&#34;&gt;
+结束界面的事件表:
+&lt;img src=&#34;../../images/blog2/9.png&#34; alt=&#34;事件表4&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最后可以耍小聪明美化一下开始结束界面，点击顶部菜单旁边的三角形预览游戏试玩（记得保存项目）。 
+&lt;img src=&#34;../../images/blog2/10.png&#34; alt=&#34;试玩&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;小经验&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以先看construct3里的游戏实例(&lt;a href=&#34;https://editor.construct.net/&#34;&gt;https://editor.construct.net/&lt;/a&gt; 里的&lt;strong&gt;demo&lt;/strong&gt;)，体验一下，刚开始不用担心看不明白或者看不全游戏的对象，事件表等是如何安排的，先有个大致印象。到自己实现小游戏时，对一个功能或逻辑不清楚的时候想想之前看的游戏案例有没有实现，再去翻看找到答案！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;问题思考&#34;&gt;问题思考&lt;/h2&gt;
+&lt;h3 id=&#34;0基础用户为什么能较好编程制作游戏例如使用-events-sheet-和-script-选择的区别&#34;&gt;“0基础”用户为什么能较好编程制作游戏？例如，使用 Events sheet 和 Script 选择的区别&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;相对于编程，图形化的游戏设计程序显然能降低设计游戏的门槛，使用construct3或迷你世界设计游戏，设计者无需掌握脚本语言的，底层的技术被封装好，设计者能专注于处理游戏的安排的设计，减少了设计者的工作量。给予我个人的体验，使用construct3做游戏的全过程包括学习案例，参考案例，设计游戏；若使用脚本语言则需要先学习并熟悉脚本语言，才能设计并编写游戏，耗时长成本高。&lt;/li&gt;
+&lt;li&gt;相比于脚本语言，显然显示成表的事件表具有更高的可读性，设计者无需掌握脚本语言的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;这些平台如何表达游戏世界的事物和行为&#34;&gt;这些平台如何表达游戏世界的事物和行为？&lt;/h3&gt;
+&lt;p&gt;如同C++的类，可以通过类的数据成员和成员函数来模拟现实世界的事物和这些事物的行为，而这些平台则是通过对象和对象的动作来模拟游戏世界，同时这些平台提供的对象更针对于游戏的设计，比如精灵和子弹等概念。&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/blog2/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Java - The Learning Experience 1</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/java1/</link>
+        <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/java1/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/java1/ -&lt;h1 id=&#34;chapter-1--2-introduction-to-objects&#34;&gt;Chapter 1 &amp;amp; 2 Introduction to Objects&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Java technology includes &lt;strong&gt;Java programming languages&lt;/strong&gt; and &lt;strong&gt;Java platform&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序&lt;/p&gt;
+&lt;p&gt;Java Platform has two components: The Java Virtual Machine(&lt;strong&gt;JavaVM&lt;/strong&gt;) and The Java Application Programming Interface
+(&lt;strong&gt;API&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/java1/1.png&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The API(&lt;a href=&#34;https://docs.oracle.com/javase/6/docs/index.html&#34;&gt;https://docs.oracle.com/javase/6/docs/index.html&lt;/a&gt;) is a large collection of ready-made  software components. The API provides many useful capabilities:&lt;/p&gt;
+&lt;p&gt;It is grouped into libraries of related classes and  interfaces; 
+These libraries are known as packages .&lt;/p&gt;
+&lt;p&gt;The Java Runtime Environment (&lt;strong&gt;JRE&lt;/strong&gt;) provides the libraries, the Java Virtual Machine, and other components to run applets and applications written in the Java programming language. The Java Development Kit (&lt;strong&gt;JDK&lt;/strong&gt;) is a superset of the JRE, and contains everything that is in the JRE, plus tools such as the compilers and debuggers necessary for developing applets and applications.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;run-file-welcomejava&#34;&gt;Run file welcome.java&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;public class Welcome{  //class name: welcome
+    public static void main(String[] args){ //main method 
+        System.out.println(&amp;quot;Welcome toJava!&amp;quot;); 
+        } 
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save the text to the file: &lt;strong&gt;Welcome.java&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Compile the program typing: &lt;strong&gt;javac Welcome.java&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Run the program typing: &lt;strong&gt;java Welcome&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Output of theprogram: Welcome to Java!&lt;/p&gt;
+&lt;p&gt;Every Java program must have at least one class. Each class has a name,并且文件名需与类名相同。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;类和对象&#34;&gt;类和对象&lt;/h2&gt;
+&lt;p&gt;An object stores its state in fields (variables in some programming languages).
+An object exposes its behavior through  methods (functions in some programming  languages).（与C++大同小异）&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;chapter-3-language-basics&#34;&gt;Chapter 3 Language Basics&lt;/h1&gt;
+&lt;p&gt;非常多跟C都是一样的，下面是我选的一些有差异的语法&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/java1/2.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;1the-8-primitive-or-native-data-types-are-byte-char--short-int-long-float-double-and-boolean&#34;&gt;1.The 8 primitive (or native) data types are: byte, char,  short, int, long, float, double, and &lt;strong&gt;boolean&lt;/strong&gt;&lt;/h5&gt;
+&lt;h5 id=&#34;2-char字符类型的定义是-16-bit-unicode-utf-16-character&#34;&gt;2. char字符类型的定义是 16-bit Unicode UTF-16 character&lt;/h5&gt;
+&lt;h5 id=&#34;3-使用未初始化的局部变量会导致编译时错误&#34;&gt;3. 使用未初始化的局部变量会导致编译时错误&lt;/h5&gt;
+&lt;h5 id=&#34;4-string-class-defined-in-javalang&#34;&gt;4. String class (defined in &lt;em&gt;java.lang&lt;/em&gt;)&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;String s1 = new String(“this is a String”);
+String s2 = “this is another String”;
+String s2 = null; // no String object assigned 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;5-array-注意声明数组的语法和length&#34;&gt;5. Array (注意声明数组的语法和length)&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;int[] a1 = new int[5];  
+int[] a2 = { 1,2,3,4,5 };
+String[][] names = {{&amp;quot;Mr. &amp;quot;, &amp;quot;Mrs. &amp;quot;}, {&amp;quot;Smith&amp;quot;, &amp;quot;Jones&amp;quot;}}; 
+int aL = a1.length;
+a2.length = 6; //error
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;6-null-it-represents-an-invalid-object-or-one-that-has-not-been-created-yet&#34;&gt;6. &lt;strong&gt;null&lt;/strong&gt; It represents an invalid object or one that has not been created yet.&lt;/h5&gt;
+&lt;h5 id=&#34;7-instanceof是java中的一个双目运算符用来测试一个对象是否为一个类的实例&#34;&gt;7. &lt;strong&gt;instanceof&lt;/strong&gt;是Java中的一个双目运算符，用来测试一个对象是否为一个类的实例&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;boolean result = obj instanceof Class
+//其中 obj 为一个对象，Class 表示一个类或者一个接口，当 obj 为 Class 的对象，或者是其直接或间接子类，或者是其接口的实现类，结果result 都返回 true，否则返回false，并且 obj 必须为引用类型，不能是基本类型
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;8-数组的拷贝方法-systemarraycopy&#34;&gt;8. 数组的拷贝(方法 System.arrayCopy)&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/java1/3.png&#34; alt=&#34;3&#34;&gt;
+&lt;img src=&#34;../../images/java1/4.png&#34; alt=&#34;4&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;chapter-4-io-basics&#34;&gt;Chapter 4 IO Basics&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.Scanner;
+public class Test {
+    public static void main(String args[]){        
+        Scanner s = new Scanner(System.in); 
+        String name = s.nextLine(); 
+        int ival = s.nextInt(); 
+        System.out.println(ival + &amp;quot;,&amp;quot; + name); 
+    } 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;chapter-5-inheritance&#34;&gt;Chapter 5 Inheritance&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;1-keyword-extends&#34;&gt;1. keyword &lt;strong&gt;extends&lt;/strong&gt;&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;public class Bicycle {};
+public class MountainBike extends Bicycle {};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2-every-class-has-one-and-only-one-direct-superclass-single-inheritance-only-javalangobject-has-no-superclass-every-class-is-implicitly-a-subclass-of-object&#34;&gt;2. Every class has one and only one direct superclass (single inheritance). Only &lt;strong&gt;java.lang.Object&lt;/strong&gt; has no superclass. Every class is implicitly a subclass of &lt;strong&gt;Object&lt;/strong&gt;.&lt;/h5&gt;
+&lt;h5 id=&#34;3-the-constructor-of-the-superclass-can-be-invoked-from-the-subclass-by-using-the-keyword-super&#34;&gt;3. The constructor of the superclass can be invoked from the subclass by using the keyword &lt;strong&gt;super&lt;/strong&gt;.&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;public MountainBike(int startHeight, int startCadence, int startSpeed, int startGear){ 
+    super(startCadence, startSpeed, startGear);//调用父类的构造函数 
+    seatHeight = startHeight; 
+} 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;4-声明一个对象&#34;&gt;4. 声明一个对象&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;MountainBike myBike = new MountainBike(); 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;5-casting-类型转换&#34;&gt;5. casting 类型转换&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;Object obj = new MountainBike(); //ok 隐式类型准换
+MountainBike myBike = obj; // error 
+if(obj instanceof MountainBike) { 
+    MountainBike myBike = (MountainBike)obj; // 显式类型转换 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;6--you-can-write-a-new-instance-method-in-the-subclass-that-has-the-same-signature-as-the-one-in-the-superclass-thus-overriding-it--you-can-write-a-new-static-method-in-the-subclass-that-has-the-same-signature-as-the-one-in-the-superclass-thus-hiding-it&#34;&gt;6.  You can write a new &lt;strong&gt;instance&lt;/strong&gt; method in the subclass that has the same signature as the one in the superclass, thus &lt;strong&gt;overriding&lt;/strong&gt; it.  You can write a new &lt;strong&gt;static&lt;/strong&gt; method in the subclass that has the same signature as the one in the superclass, thus &lt;strong&gt;hiding&lt;/strong&gt; it.&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;public classAnimal { 
+    public static void testClassMethod() { 
+        System.out.println(&amp;quot;The class method inAnimal.&amp;quot;); 
+        } 
+        public void testInstanceMethod() { 
+            System.out.println(&amp;quot;The instance method inAnimal.&amp;quot;); 
+        } 
+    } // end of theAnimal 
+class public class Cat extends Animal { 
+    public static void testClassMethod() { 
+        System.out.println(&amp;quot;The class method in Cat.&amp;quot;); 
+        } 
+    public void testInstanceMethod() { 
+        System.out.println(&amp;quot;The instance method in Cat.&amp;quot;); 
+        } 
+    public static void main(String[] args) { 
+        Cat myCat = new Cat(); 
+        Animal myAnimal = myCat; 
+        Animal.testClassMethod(); 
+        myAnimal.testInstanceMethod(); 
+        } 
+    } // end of the Cat class
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;output:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The class method in Animal. //因为是static
+The instance method in Cat. //因为是动态绑定
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Cat class overrides the instance method in Animal and hides the class method in Animal.&lt;/p&gt;
+&lt;p&gt;The version of the hidden method that gets invoked is the one in the superclass, and the version of the overridden method that gets invoked is the one in the subclass.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/java1/5.png&#34; alt=&#34;5&#34;&gt;
+If your method overrides one of its superclass&amp;rsquo;s methods, you can invoke the overridden method through the use of the keyword &lt;strong&gt;super&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A subclass has no access to a &lt;strong&gt;private&lt;/strong&gt; field or method of its superclass&lt;/p&gt;
+&lt;h5 id=&#34;7-super-and-constructors&#34;&gt;7. &lt;strong&gt;super&lt;/strong&gt; and Constructors&lt;/h5&gt;
+&lt;p&gt;Invocation of a superclass constructor must be the first line in the subclass constructor&lt;/p&gt;
+&lt;p&gt;If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass&lt;/p&gt;
+&lt;p&gt;If the super class does not have a no-argument constructor, you will get a compile-time error&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Animal{
+    public Animal(int i){} //删除这一行后下面就不会报错
+};
+public class Dog extends Animal{
+    public Dog(){
+        super();//报错
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;8-the-final-keyword&#34;&gt;8. The &lt;strong&gt;final&lt;/strong&gt; Keyword&lt;/h5&gt;
+&lt;p&gt;A final method cannot be overridden by a subclass, for example: final void method() { … }&lt;/p&gt;
+&lt;p&gt;An entire class can be declared final to prevent the class from being subclassed:  public final class String { … }&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/java1/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>NightNote - 1</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/nightnote1/</link>
+        <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/nightnote1/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/nightnote1/ -&lt;p&gt;今天注册了Leetcode账号，并研究了第一道题 &lt;strong&gt;#1 两数之和&lt;/strong&gt; &lt;a href=&#34;https://leetcode-cn.com/problems/two-sum/&#34;&gt;https://leetcode-cn.com/problems/two-sum/&lt;/a&gt;。
+我分别使用C和Java写了题，还看了看使用哈希表的题解。&lt;/p&gt;
+&lt;h2 id=&#34;c做法&#34;&gt;C做法：&lt;/h2&gt;
+&lt;p&gt;Note: The returned array must be malloced, assume caller calls free().&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int* twoSum(int* nums, int numsSize, int target, int* returnSize){
+    int * result = (int *)malloc(sizeof(int) * 2);
+    for(int i = 0; i &amp;lt; numsSize-1 ; i++)
+    {
+        for(int j = i + 1; j &amp;lt; numsSize; j++)
+        {
+            if(nums[i] + nums[j] == target)
+            {
+                result[0] = i;
+                result[1] = j;
+                *returnSize = 2;
+                return result;
+            }
+        }
+    }
+    return result;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里需要注意的是malloc的语法，太久不用忘记了&lt;/p&gt;
+&lt;h3 id=&#34;关于malloc和free的语法的复习&#34;&gt;关于malloc和free的语法的复习&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;
+    void *malloc(size_t size);
+        //功能：在堆中申请空间
+        //size:要申请的空间的大小（字节数）　　　
+        //返回值类型：void * 该类型表明malloc返回的地址空间中的数据类型是不确定，必须经过强制类型转换才可以使用。
+        //返回值：成功时，返回malloc申请的空间的起始地址，失败时，返回NULL。
+        //特点：malloc申请的空间为连续空间；
+        //malloc申请的是没有初始化的空间；
+    void free(void *ptr);
+        //参数ptr: 
+        //1)不能传NULL 
+        //2)不能给ptr传申请的空间的一部分 
+        //3)不能释放已经被释放的空间
+        //4)不能使用已经被释放的空间
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;java做法&#34;&gt;Java做法：&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for(int i = 0; i &amp;lt; nums.length; i++)
+        {
+            for(int j = i + 1; j &amp;lt; nums.length; j++)
+            {
+                if(nums[i] + nums[j] == target)
+                {
+                    return new int [] {i,j};
+                }
+            }
+        }
+        return new int [2];
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;数组的长度的获取：&lt;strong&gt;数组名.length&lt;/strong&gt; （没有括号）&lt;/p&gt;
+&lt;p&gt;注意一下return的形式：&lt;strong&gt;return new int [] {i,j};&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;使用哈希表的on复杂度代码&#34;&gt;使用哈希表的O(n)复杂度代码&lt;/h2&gt;
+&lt;p&gt;参考题解 &lt;a href=&#34;https://leetcode-cn.com/problems/two-sum/solution/liang-shu-zhi-he-by-leetcode-2/&#34;&gt;https://leetcode-cn.com/problems/two-sum/solution/liang-shu-zhi-he-by-leetcode-2/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
+        for (int i = 0; i &amp;lt; nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i &amp;lt; nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) &amp;amp;&amp;amp; map.get(complement) != i) {
+                return new int[] { i, map.get(complement) };
+            }
+        }
+        throw new IllegalArgumentException(&amp;quot;No two sum solution&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;哈希表的概念&#34;&gt;哈希表的概念&lt;/h3&gt;
+&lt;p&gt;参考博客 &lt;a href=&#34;https://blog.csdn.net/woshimaxiao1/article/details/83661464&#34;&gt;https://blog.csdn.net/woshimaxiao1/article/details/83661464&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;哈希表通过哈希函数，在记录的存储位置和它的关键字之间建立一个确定的对应关系，使每个关键字和结构中一个唯一的存储位置相对应。&lt;/p&gt;
+&lt;p&gt;哈希表的实现，与普通数组相比，是以空间换时间，将查找时间从O(n)降低到(近似)O(1)。&lt;/p&gt;
+&lt;p&gt;哈希函数f: 存储位置 = f(关键字) ，这个函数f一般称为哈希函数，这个函数的设计好坏会直接影响到哈希表的优劣。&lt;/p&gt;
+&lt;h3 id=&#34;java中的集合hashmap的用法&#34;&gt;Java中的集合HashMap的用法&lt;/h3&gt;
+&lt;p&gt;参考博客 &lt;a href=&#34;https://blog.csdn.net/weixin_43263961/article/details/86427533&#34;&gt;https://blog.csdn.net/weixin_43263961/article/details/86427533&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考博客 &lt;a href=&#34;https://blog.csdn.net/zhaobin0731/article/details/98962624?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&#34;&gt;https://blog.csdn.net/zhaobin0731/article/details/98962624?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;增 — map.put(“4”, “c”);&lt;/p&gt;
+&lt;p&gt;删 — map.remove(“4”);&lt;/p&gt;
+&lt;p&gt;改 — map.put(“4”, “d”);&lt;/p&gt;
+&lt;p&gt;查 — map.containsKey(“2”); 和 map.containsValue(“b”);&lt;/p&gt;
+- https://wondrouswisdomcard.gitee.io/posts/nightnote1/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 4</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework4/</link>
+        <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework4/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework4/ -&lt;h2 id=&#34;名词解释&#34;&gt;名词解释&lt;/h2&gt;
+&lt;h3 id=&#34;ascii&#34;&gt;ASCII&lt;/h3&gt;
+&lt;p&gt;ASCII abbreviated from American Standard Code for Information Interchange, is a character encoding standard.
+ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework4/ASCII.png&#34; alt=&#34;ASCII&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;color&#34;&gt;Color&lt;/h3&gt;
+&lt;p&gt;Color is the characteristic of human visual perception described through color categories. This perception of color derives from the stimulation of cone cells in the human eye by electromagnetic radiation in the spectrum of light. Color categories and physical specifications of color are associated with objects through the wavelength of the light that is reflected from them.
+By defining a color space, colors can be identified numerically by coordinates. The RGB color space for instance is a color space corresponding to human trichromacy and to the three cone cell types that respond to three bands of light: long wavelengths, peaking near 564–580 nm (red); medium-wavelength, peaking near 534–545 nm (green); and short-wavelength light, near 420–440 nm (blue).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;问题简答&#34;&gt;问题简答&lt;/h2&gt;
+&lt;h4 id=&#34;1-写出字符a中的-ascii-码unicode-码utf-8-编码&#34;&gt;1) 写出字符“A”,“中”的 ASCII 码、Unicode 码、UTF-8 编码&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Character&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;ASCII&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unicode&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;UTF-8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0x41&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0x0041&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0x41&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;0x表示十六进制&#34;&gt;0x表示十六进制&lt;/h5&gt;
+&lt;h4 id=&#34;2-yellow的rgb编码&#34;&gt;2) Yellow的RGB编码&lt;/h4&gt;
+&lt;p&gt;Yellow的RGB编码是 (R:255, G:255, B:0)&lt;/p&gt;
+&lt;h4 id=&#34;3-从网上下载一个-bmp-格式图像用图片编辑工具另存在-jpg-pngtiff-格式问三种格式中哪种格式显示质量好相对于bmp-格式压缩率各是多少&#34;&gt;3) 从网上下载一个 BMP 格式图像,用图片编辑工具另存在 jpg、 png、tiff 格式。问三种格式中,哪种格式显示质量好?相对于BMP 格式,压缩率各是多少?&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;FORMAT&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;NAME&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;CHARACTERISTICS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BMP&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Windows bitmap&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Uncompressed format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;TIFF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Tagged Image File Format&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Lossless: Document scanning and imaging format.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;PNG&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Portable Network Graphics&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Lossless: improve and replace GIF. Based on the DEFLATE algorithm.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;JPEG&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Joint Photographic Experts Group&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Lossy: big compression ratio, good for photographic images&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Patel Ranna Jayantibhai，Dr. Bhadresh Pravinbhai Patel An Analytical Study on Comparison of Different Image Compression Formats 2015&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;实验图片:
+&lt;img src=&#34;../../images/homework4/test2.bmp&#34; alt=&#34;test&#34;&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;文件格式&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;大小&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;显示质量&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;压缩率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BMP&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;696KB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;差&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1:1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;PNG&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;391KB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;别&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.78:1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;TIFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;467KB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;不&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.49:1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;JPG&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77.4KB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8.99:1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The ratio of compression for TIFF is around 1.49:1, for PNG is around 1.78:1 and for JPEG we obtained a compression ratio of 8.99:1.&lt;/p&gt;
+&lt;h4 id=&#34;4-qwinrar压缩文件是lossless还是lossy方法&#34;&gt;4) Q:Winrar压缩文件是lossless还是lossy方法？&lt;/h4&gt;
+&lt;p&gt;Winrar压缩文件是无损压缩(lossless)&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework4/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 3</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework3/</link>
+        <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework3/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework3/ -&lt;h2 id=&#34;用二进制表示数值&#34;&gt;用二进制表示数值&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Problem&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Solution&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Overflow&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accuracy Error&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t x = 67&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;01000011&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t y = -7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11111001&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t z = y - x&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10110110&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Problem&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Solution&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Overflow&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accuracy Error&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t x = 0xd3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11010011&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;uint8_t = 0xd3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11010011&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Problem&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Solution&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Overflow&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accuracy Error&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t x = 127&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;01111111&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t y = -7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11111001&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;int8_t z = y - x&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;01111010&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Problem&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Solution&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Overflow&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accuracy Error&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;float x = 1.125&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0 01111111 00100000000000000000000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;float x = 23.0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0 10000011 01110000000000000000000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;float x = 0.45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0 01111101 11001100110011001100110&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;名词解释&#34;&gt;名词解释&lt;/h2&gt;
+&lt;h3 id=&#34;method-of-complements&#34;&gt;Method Of Complements&lt;/h3&gt;
+&lt;p&gt;In mathematics and computing, the method of complements is a technique used to subtract one number from another using only addition of positive numbers. This method was commonly used in mechanical calculators and is still used in modern computers.
+&lt;strong&gt;The nines&amp;rsquo; complement&lt;/strong&gt;  of a number is formed &lt;strong&gt;by replacing each digit with nine minus that digit&lt;/strong&gt;. To subtract a decimal number y (the subtrahend) from another number x (the minuend) two methods may be used:
+In the first method &lt;strong&gt;the nines&amp;rsquo; complement of x is added to y&lt;/strong&gt;. Then the nines&amp;rsquo; complement of the result obtained is formed to produce the desired result.
+In the second method &lt;strong&gt;the nines&amp;rsquo; complement of y is added to x and one is added to the sum&lt;/strong&gt;. The leading digit &amp;lsquo;1&amp;rsquo; of the result is then discarded. Discarding the initial &amp;lsquo;1&amp;rsquo; is especially convenient on calculators or computers that use a fixed number of digits: there is nowhere for it to go so it is simply lost during the calculation. The nines&amp;rsquo; complement plus one is known as the tens&amp;rsquo; complement.
+The method of complements can be extended to other number bases (radices); in particular, &lt;strong&gt;it is used on most digital computers to perform subtraction, represent negative numbers in base 2 or binary arithmetic and test underflow and overflow in calculation.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;byte&#34;&gt;Byte&lt;/h3&gt;
+&lt;p&gt;The byte is a unit of digital information that most commonly &lt;strong&gt;consists of eight bits&lt;/strong&gt;. Historically, the byte (symbol B) was the number of bits used to encode a single character of text in a computer and for this reason it is the smallest addressable unit of memory in many computer architectures.&lt;/p&gt;
+&lt;h3 id=&#34;integer&#34;&gt;Integer&lt;/h3&gt;
+&lt;p&gt;In computer science, an integer is a datum of integral data type, a data type that represents some finite subset of the mathematical integers. Integral data types may be of different sizes and may or may not be allowed to contain negative values. Integers are commonly represented in a computer as a group of binary digits (bits). The size of the grouping varies so the set of integer sizes available varies between different types of computers. Computer hardware, including virtual machines, nearly always provide a way to represent a processor register or memory address as an integer.&lt;/p&gt;
+&lt;h3 id=&#34;floating-point&#34;&gt;Floating Point&lt;/h3&gt;
+&lt;p&gt;In computing, floating point is the formulaic representation that approximates a real number so as to support a trade-off between range and precision. A number is, in general, represented approximately to a fixed number of significant digits (the significand) and scaled using an exponent in some fixed base; the base for the scaling is normally two, ten, or sixteen. A number that can be represented exactly is of the following form:&lt;/p&gt;
+&lt;p&gt;$$
+significand \times base ^{exponment}
+$$&lt;/p&gt;
+&lt;p&gt;where significand is an integer (i.e., in Z), base is an integer greater than or equal to two, and exponent is also an integer.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;证明&#34;&gt;证明&lt;/h2&gt;
+&lt;h6 id=&#34;对使用latex编译出的进行了截图&#34;&gt;对使用Latex编译出的进行了截图&lt;/h6&gt;
+&lt;h4 id=&#34;1证明二进制负数的补码等于对应正数的反码加一&#34;&gt;1）证明二进制负数的补码等于对应正数的反码加一&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework3/1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2int8_t-x---017用8进制描述变量x&#34;&gt;2）Int8_t x = -017，用8进制描述变量X&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework3/2.jpg&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3int8_t-x---0x1f-int-y--x-用16进制表示x和y并说明计算过程&#34;&gt;3）Int8_t x = -0x1f; int y = x; 用16进制表示x和y,并说明计算过程&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework3/3.jpg&#34; alt=&#34;3&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;4证明第三问问什么可以这样算符号位扩展的正确性&#34;&gt;4）证明第三问问什么可以这样算，（符号位扩展的正确性）&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework3/4(1).jpg&#34; alt=&#34;4(1)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/homework3/4(2).jpg&#34; alt=&#34;4(2)&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5nan的含义&#34;&gt;5）NaN的含义&lt;/h4&gt;
+&lt;p&gt;NaN (&amp;ldquo;Not a Number&amp;rdquo;) An IEEE floating point representation for the result of a numerical operation which cannot return a valid number value. A NaN can result from multiplying an infinity by a zero, or from subtracting one infinity from another NaN is encoded as a special bit pattern which would otherwise represent a floating-point number.&lt;/p&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework3/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 2</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework2/</link>
+        <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework2/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework2/ -&lt;h2 id=&#34;进制转换&#34;&gt;进制转换&lt;/h2&gt;
+&lt;p&gt;1分12秒 等于 7200毫秒&lt;/p&gt;
+&lt;p&gt;(7A)&lt;!-- raw HTML omitted --&gt;13&lt;!-- raw HTML omitted --&gt; = (101)&lt;!-- raw HTML omitted --&gt;10&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(7A)&lt;!-- raw HTML omitted --&gt;16&lt;!-- raw HTML omitted --&gt; = (122)&lt;!-- raw HTML omitted --&gt;10&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(7A)&lt;!-- raw HTML omitted --&gt;16&lt;!-- raw HTML omitted --&gt; = (1111010)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; = (172)&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(1011011)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; = (133)&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt; = (5B)&lt;!-- raw HTML omitted --&gt;16&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(678)&lt;!-- raw HTML omitted --&gt;10&lt;!-- raw HTML omitted --&gt; = (1010100110)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; = (1246)&lt;!-- raw HTML omitted --&gt;8&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;(111)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; + (101)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; = (1100)&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;关键词解释-from-wikipedia&#34;&gt;关键词解释 from Wikipedia&lt;/h2&gt;
+&lt;h3 id=&#34;information&#34;&gt;Information&lt;/h3&gt;
+&lt;p&gt;At its most fundamental level, information is any propagation of cause and effect within a system. Information is conveyed either as the content of a message or through direct or indirect observation of anything.&lt;/p&gt;
+&lt;h3 id=&#34;position-notation&#34;&gt;Position notation&lt;/h3&gt;
+&lt;p&gt;Positional notation is a method of representing or encoding numbers. Positional notation is distinguished from other notations (such as Roman numerals) for its use of the same symbol for the different orders of magnitude (for example, the &amp;ldquo;ones place&amp;rdquo;, &amp;ldquo;tens place&amp;rdquo;, &amp;ldquo;hundreds place&amp;rdquo;). This greatly simplified arithmetic, leading to the rapid spread of the notation across the world.&lt;/p&gt;
+&lt;h3 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h3&gt;
+&lt;p&gt;In mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.
+&lt;strong&gt;Usually, a good algorithm has five characteristics:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;: The algorithm has at least zero or more inputs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;: The algorithm has at least one or more outputs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certainty&lt;/strong&gt;: Every step in the algorithm has a certain meaning and no ambiguity&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feasibility&lt;/strong&gt;: Every step of the algorithm is feasible and can be implemented in the current environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation&lt;/strong&gt;: The algorithm ends automatically after a limited number of steps without infinite loops, and each step can be completed in an acceptable amount of time.&lt;/p&gt;
+&lt;h3 id=&#34;software-bug&#34;&gt;Software bug&lt;/h3&gt;
+&lt;p&gt;A software bug is an error, flaw, failure or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.&lt;/p&gt;
+&lt;h2 id=&#34;概念英文单词&#34;&gt;概念英文单词&lt;/h2&gt;
+&lt;p&gt;十进制 Decimal&lt;/p&gt;
+&lt;p&gt;二进制 Binary&lt;/p&gt;
+&lt;p&gt;八进制 Octal&lt;/p&gt;
+&lt;p&gt;十六进制 Hexadecimal&lt;/p&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework2/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Git - The Learning Experience</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/blog1/</link>
+        <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/blog1/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/blog1/ -&lt;h1 id=&#34;gitnote主要篇&#34;&gt;GitNote主要篇&lt;/h1&gt;
+&lt;h4 id=&#34;本学习经验来源-learn-git-branching&#34;&gt;本学习经验来源 Learn Git Branching&lt;/h4&gt;
+&lt;h5 id=&#34;httpslearngitbranchingjsorglocalezh_cn&#34;&gt;&lt;a href=&#34;https://learngitbranching.js.org/?locale=zh_CN&#34;&gt;https://learngitbranching.js.org/?locale=zh_CN&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/blog1/webpage.png&#34; alt=&#34;Learngitbranching&#34;&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基础篇&#34;&gt;基础篇&lt;/h2&gt;
+&lt;h3 id=&#34;git-commit&#34;&gt;git commit&lt;/h3&gt;
+&lt;p&gt;修改了代码库并保存成一个新的提交记录（这个提交记录的内容可以是你对本地项目的改动），把它看作一个节点，它的父亲节点是上一个提交记录
+可以加入commit，如 git commit -m &amp;ldquo;A Little Try&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;git-branch-分支名&#34;&gt;git branch 分支名&lt;/h3&gt;
+&lt;p&gt;创建一个新的分支 我想基于这个提交记录以及他的所有父提交进行新的工作
+操作方法 git branch 分支名
+例如 git branch newImage 创造了一个叫做newImage的新分支
+创建之后 输入 git commit 只有master分支前进了，而newImage保持不动，因为此时星号*标注在master上，星号表示当前所在的分支&lt;/p&gt;
+&lt;h3 id=&#34;git-checkout-分支名&#34;&gt;git checkout 分支名&lt;/h3&gt;
+&lt;p&gt;表示将星号移动到我们要求的分支上&lt;/p&gt;
+&lt;h3 id=&#34;git-merge-分支名&#34;&gt;git merge 分支名&lt;/h3&gt;
+&lt;p&gt;表示把我们提到的分支名合并到当前带星号的分支上
+注意这个merge会形成一个新的提交，然后当前星号指示的分支指向这个新的提交&lt;/p&gt;
+&lt;h3 id=&#34;git-rebase-分支名&#34;&gt;git rebase 分支名&lt;/h3&gt;
+&lt;p&gt;我们在我们提到的分支名下建立了新的提交，此时星号指示的分支指向这个新的提交，我们得到一个线性的提交序列，星号分支原来指向的提交没有消失。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;提高篇在提交树上移动&#34;&gt;提高篇—在提交树上移动&lt;/h2&gt;
+&lt;h3 id=&#34;head&#34;&gt;HEAD&lt;/h3&gt;
+&lt;p&gt;指向你正在其基础上进行工作的提交记录，总是指向当前分支的最近一次提交记录
+分离的HEAD就是让其指向某个具体的提交记录而不是分支名
+比如只有master分支时，HEAD指向master，master指向提交记录C1（C1是哈希值）可以使用git log来查看提交记录的哈希值
+使用 git checkout C1 后，变成了 HEAD 指向C1&lt;/p&gt;
+&lt;h3 id=&#34;相对引用&#34;&gt;相对引用&lt;/h3&gt;
+&lt;p&gt;使用 ^ 向上移动一个提交记录 使用例子 git checkout master^
+使用 ~&amp;lt; num &amp;gt; 向上移动多个提交记录，如 ~3 例子 git checkout~4&lt;/p&gt;
+&lt;h3 id=&#34;强制修改分支位置&#34;&gt;强制修改分支位置&lt;/h3&gt;
+&lt;p&gt;移动分支，可以直接使用 -f 选项让分支指向另一个提交
+如 git branch -f master HEAD~3 会将master分支强制指向 HEAD的第三级父提交&lt;/p&gt;
+&lt;h3 id=&#34;撤销变更-git-reset-和-git-revert&#34;&gt;撤销变更 git reset 和 git revert&lt;/h3&gt;
+&lt;p&gt;git reset 把分支记录会退几个提交记录来撤销改动 git reset 向上移动分支，例如 git reset HEAD~1 而在reset后，之前的变更（在移动HEAD之前HEAD的指向内容还在，只是处于未加入暂存区状态 （这种改写方式对远程分支是无效的)
+git revert 可以用于远程分支，撤销更改并分享给别人 使用git revert HEAD后，在我们要撤销的记录后面多了一个新提交，这个新提交记录引入了更改—这些更改用来撤销原提交&lt;/p&gt;
+&lt;h3 id=&#34;整理提交记录-git-cherry-pick&#34;&gt;整理提交记录 git cherry-pick&lt;/h3&gt;
+&lt;p&gt;如果你想将一些提交复制到当前位置（HEAD）下面的话
+git cherry-pick 记录名（哈希值）（多个 依次），git就回吧这多个记录一一复制到当前分支下。&lt;/p&gt;
+&lt;h3 id=&#34;交互式的rebase&#34;&gt;交互式的rebase&lt;/h3&gt;
+&lt;p&gt;它会打开一个UI界面 你可以通过鼠标拖放来调整提交记录的顺序；或删除你不想要的提交（通过切换pick的状态来完成；或合并提交，允许你把多个记录合并成一个
+例子有一条从C0到C5的提交记录，master指向C5
+git rebase -i HEAD~4
+git会严格按照你在对话框中指定的方式进行复制&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;杂项&#34;&gt;杂项&lt;/h2&gt;
+&lt;h3 id=&#34;提交的技巧&#34;&gt;提交的技巧&lt;/h3&gt;
+&lt;p&gt;用git rebase -i来重新提交排序，把想修改的移到前面
+再用git commit —amend 来进行小修改
+再用git rebase -i 来讲它们调回原来的顺序
+再把master移到最前面&lt;/p&gt;
+&lt;p&gt;因为cherry-pick可以将提交树上的任何地方的提交记录取过来追加到HEAD上（只要不是HEAD上游就行）&lt;/p&gt;
+&lt;h3 id=&#34;git-tag&#34;&gt;git tag&lt;/h3&gt;
+&lt;p&gt;永远指向某个分支的标识，可以像分支一样对其进行引用了
+git tag v1 c1 
+c1为提交记录（哈希值），给他标记v1
+如果不指定提交记录，默认会用HEAD所指向的位置
+但不能直接在标签下做commit&lt;/p&gt;
+&lt;h3 id=&#34;git-describe&#34;&gt;git describe&lt;/h3&gt;
+&lt;p&gt;用来描述离你最近的标签
+git describe &amp;lt; ref &amp;gt;
+&amp;lt; ref &amp;gt;指任何能被git识别成提交记录的引用（可以是分支名，提交哈希值，标签），如果没有指定，会默认HEAD
+他的输出结果： &amp;lt; tag &amp;gt;_&amp;lt; numCommits &amp;gt;_g&amp;lt; hash &amp;gt;
+tag是离你最近的标签 numCommit指ref与tag相差多少个提交记录，hash表示你所给定的ref所表示的提交记录哈希值的前几位，而如果当ref提交记录上有某个标签时，则只输出标签名称&lt;/p&gt;
+&lt;h3 id=&#34;选择父提交记录&#34;&gt;选择父提交记录&lt;/h3&gt;
+&lt;p&gt;如果有两个父提交，git checkout master^ 表示返回第一个 git checkout master^2 表示返回第二个父提交上
+还支持链式操作 git checkout HEAD~ ^2~2 &lt;em&gt;(在 ~ 与 ^ 之间没有空格)&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;本文是我学习Learngitbranching的一些学记笔记，Learngitbranching中还有&lt;strong&gt;远程篇&lt;/strong&gt;，（包括我们很多常用的操作）该兴趣的读者也可以进入 Learngitbranching &lt;a href=&#34;https://learngitbranching.js.org/?locale=zh_CN&#34;&gt;https://learngitbranching.js.org/?locale=zh_CN&lt;/a&gt; 学习。&lt;/em&gt;
+&lt;em&gt;由于小作者学习精力有限，不少步骤没有进行实际操作，如有错误望举出[跪]。&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git学习的推荐阅读&#34;&gt;Git学习的推荐阅读：&lt;/h3&gt;
+&lt;p&gt;[1] 菜鸟教程git教程 &lt;a href=&#34;https://www.runoob.com/git/git-tutorial.html&#34;&gt;https://www.runoob.com/git/git-tutorial.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] Git完整指令手册 &lt;a href=&#34;https://git-scm.com/docs&#34;&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+- https://wondrouswisdomcard.gitee.io/posts/blog1/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Homework of Week 1</title>
+        <link>https://wondrouswisdomcard.gitee.io/posts/homework1/</link>
+        <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://wondrouswisdomcard.gitee.io/posts/homework1/</guid>
+        <description>Wondrous WindomCard&#39;s Blog https://wondrouswisdomcard.gitee.io/posts/homework1/ -&lt;h2 id=&#34;关键词解释-from-wikipedia&#34;&gt;关键词解释 from Wikipedia&lt;/h2&gt;
+&lt;h3 id=&#34;computer&#34;&gt;Computer：&lt;/h3&gt;
+&lt;p&gt;A computer is a device that can be instructed to carry out an arbitrary set of arithmetic or logical operations &lt;strong&gt;automatically&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;computer-science&#34;&gt;Computer Science：&lt;/h3&gt;
+&lt;p&gt;Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It is the scientific and practical approach to computation and its applications and the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information.&lt;/p&gt;
+&lt;h3 id=&#34;software&#34;&gt;Software：&lt;/h3&gt;
+&lt;p&gt;Computer software, or simply software, is a part of a computer system that consists of data or computer instructions, in contrast to the physical hardware from which the system is built.&lt;/p&gt;
+&lt;h3 id=&#34;software-engineering&#34;&gt;Software Engineering：&lt;/h3&gt;
+&lt;p&gt;Software engineering (SWE) is the application of engineering to the development of software in a systematic method.&lt;/p&gt;
+&lt;h3 id=&#34;alan-turing&#34;&gt;Alan Turing:&lt;/h3&gt;
+&lt;p&gt;Alan Mathison Turing OBE FRS (/ˈtjʊərɪŋ/; 23 June 1912 – 7 June 1954) was an English computer scientist, mathematician, logician, cryptanalyst, philosopher and theoretical biologist.
+He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general purpose computer.
+Turing is widely considered to be the father of theoretical computer science and artificial intelligence.&lt;/p&gt;
+&lt;h3 id=&#34;moores-law&#34;&gt;Moore’s Law:&lt;/h3&gt;
+&lt;p&gt;Moore’s Law A term that dignifies the trend, first recognised by George E Moore, co-founder of Intel, in 1965, that the number of transistors on integrated circuits doubles about every two years.&lt;/p&gt;
+- https://wondrouswisdomcard.gitee.io/posts/homework1/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+    
+  </channel>
+</rss> 

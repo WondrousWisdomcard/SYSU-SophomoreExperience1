@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/categories/</link>
+    <description>Recent content in Categories on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experience &amp; Practice</title>
+      <link>https://wondrouswisdomcard.gitee.io/categories/experience-practice/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/categories/experience-practice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talk</title>
+      <link>https://wondrouswisdomcard.gitee.io/categories/talk/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/categories/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaNote</title>
+      <link>https://wondrouswisdomcard.gitee.io/categories/javanote/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/categories/javanote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Homework</title>
+      <link>https://wondrouswisdomcard.gitee.io/categories/homework/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/categories/homework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NightNote</title>
+      <link>https://wondrouswisdomcard.gitee.io/categories/nightnote/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/categories/nightnote/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

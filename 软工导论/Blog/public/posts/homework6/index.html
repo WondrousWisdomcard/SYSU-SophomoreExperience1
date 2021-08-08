@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html><head>
+<title>Homework of Week 6</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Homework of Week 6" />
+<meta property="og:description" content="1. According to the von Neumann architecture, List basic parts of a computer: 运算器(processing unit)、控制器(control unit)、存储器(memory)、输入设备、输出设备(input and output mechanisms)
+ 2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? The memory address space is 64 MB, or 2^26 (2^6 x 2^20). This means it needs log2(2^26) or 26 bits, to address each single byte.
+ 3. List basic parts of a CPU, include cache or not?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wondrouswisdomcard.gitee.io/posts/homework6/" />
+<meta property="article:published_time" content="2020-10-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-07T00:00:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Homework of Week 6"/>
+<meta name="twitter:description" content="1. According to the von Neumann architecture, List basic parts of a computer: 运算器(processing unit)、控制器(control unit)、存储器(memory)、输入设备、输出设备(input and output mechanisms)
+ 2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? The memory address space is 64 MB, or 2^26 (2^6 x 2^20). This means it needs log2(2^26) or 26 bits, to address each single byte.
+ 3. List basic parts of a CPU, include cache or not?"/>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/journal.min.c116bc90d171283f099f173854157ec8f183f9073b93443b2c8ad82899ee9025.css" integrity="sha256-wRa8kNFxKD8Jnxc4VBV&#43;yPGD&#43;Qc7k0Q7LIrYKJnukCU=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/dark-mode.min.552aae4638a84aa57cf0b195750a49ea9131d3bb621d1ed3ebc9b14b18166536.css" integrity="sha256-VSquRjioSqV88LGVdQpJ6pEx07tiHR7T68mxSxgWZTY=" media="screen">
+
+
+<script src="https://wondrouswisdomcard.gitee.io/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+  
+    <script src="https://wondrouswisdomcard.gitee.io/js/toc-collapse.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
+
+
+</head>
+<body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://wondrouswisdomcard.gitee.io">
+    
+        <div class="nav-title">
+            Wondrous WindomCard&#39;s Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer" onclick="onNavClick(`#1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer-nav`)" id="1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer-nav">
+									1. According to the von Neumann architecture, List basic parts of a computer:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory" onclick="onNavClick(`#2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory-nav`)" id="2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory-nav">
+									2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3-list-basic-parts-of-a-cpu-include-cache-or-not" onclick="onNavClick(`#3-list-basic-parts-of-a-cpu-include-cache-or-not-nav`)" id="3-list-basic-parts-of-a-cpu-include-cache-or-not-nav">
+									3. List basic parts of a CPU, include cache or not?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#4what-mean-secondary-storage-list-some-on-your-pc" onclick="onNavClick(`#4what-mean-secondary-storage-list-some-on-your-pc-nav`)" id="4what-mean-secondary-storage-list-some-on-your-pc-nav">
+									4.What mean secondary storage. List some on your PC.
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#5%e4%bd%bf%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91%e8%a7%a3%e9%87%8a%e4%bb%a5%e4%b8%8b%e6%a6%82%e5%bf%b5-cpuramrombus-computingparallel-computing" onclick="onNavClick(`#5使用维基百科解释以下概念-cpuramrombus-computingparallel-computing-nav`)" id="5使用维基百科解释以下概念-cpuramrombus-computingparallel-computing-nav">
+									5.使用维基百科，解释以下概念： CPU、RAM、ROM、Bus (computing)、Parallel Computing
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#cpu" onclick="onNavClick(`#cpu-nav`)" id="cpu-nav">
+									CPU
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#ram" onclick="onNavClick(`#ram-nav`)" id="ram-nav">
+									RAM
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#rom" onclick="onNavClick(`#rom-nav`)" id="rom-nav">
+									ROM
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#buscomputing" onclick="onNavClick(`#buscomputing-nav`)" id="buscomputing-nav">
+									Bus(computing)
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#parallel-computing" onclick="onNavClick(`#parallel-computing-nav`)" id="parallel-computing-nav">
+									Parallel Computing
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#6-%e5%86%99%e4%b8%80%e6%ae%b5%e6%96%87%e5%ad%97%e7%ae%80%e5%8d%95%e8%a7%a3%e9%87%8a%e4%ba%91%e8%ae%a1%e7%ae%97cloud-computing" onclick="onNavClick(`#6-写一段文字简单解释云计算cloud-computing-nav`)" id="6-写一段文字简单解释云计算cloud-computing-nav">
+									6. 写一段文字，简单解释云计算（cloud computing）
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#7-%e5%b0%8f%e5%ad%99%e4%b9%b0%e4%ba%86%e8%ae%a1%e7%ae%97%e6%9c%ba%e4%b8%bb%e6%9d%bf%e8%af%b4%e6%98%8e%e4%b9%a6%e8%a1%a8%e6%98%8e%e6%94%af%e6%8c%81%e5%8f%8c%e9%80%9a%e9%81%93ddr3-1333%e5%86%85%e5%ad%98%e6%9c%80%e5%a4%a7%e6%94%af%e6%8c%8116g" onclick="onNavClick(`#7-小孙买了计算机主板说明书表明支持双通道ddr3-1333内存最大支持16g-nav`)" id="7-小孙买了计算机主板说明书表明支持双通道ddr3-1333内存最大支持16g-nav">
+									7. 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存，最大支持16G”
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1ddr3%e5%86%85%e5%ad%983%e5%92%8c1333%e7%9a%84%e5%90%ab%e4%b9%89%e6%98%af%e4%bb%80%e4%b9%88" onclick="onNavClick(`#1ddr3内存3和1333的含义是什么-nav`)" id="1ddr3内存3和1333的含义是什么-nav">
+									1）DDR3内存，“3”和“1333”的含义是什么？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2%e5%b0%8f%e5%ad%99%e4%b9%b08g-ddr3-1600%e7%9a%84%e5%86%85%e5%ad%98%e8%83%bd%e6%8f%90%e9%ab%98%e6%80%a7%e8%83%bd%e5%90%97" onclick="onNavClick(`#2小孙买8g-ddr3-1600的内存能提高性能吗-nav`)" id="2小孙买8g-ddr3-1600的内存能提高性能吗-nav">
+									2）小孙买8G DDR3-1600的内存能提高性能吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3%e5%b0%8f%e5%ad%99%e4%b9%b04g2-ddr3-1333%e7%9a%84%e5%86%85%e5%ad%98%e8%83%bd%e6%8f%90%e9%ab%98%e6%80%a7%e8%83%bd%e5%90%97" onclick="onNavClick(`#3小孙买4g2-ddr3-1333的内存能提高性能吗-nav`)" id="3小孙买4g2-ddr3-1333的内存能提高性能吗-nav">
+									3）小孙买4G*2 DDR3-1333的内存能提高性能吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#416g%e9%9c%80%e8%a6%81%e5%a4%9a%e5%b0%91%e4%bd%8d%e5%9c%b0%e5%9d%80" onclick="onNavClick(`#416g需要多少位地址-nav`)" id="416g需要多少位地址-nav">
+									4）16G需要多少位地址？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer" onclick="onNavClick(`#1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer-nav`)" id="1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer-nav">
+									1. According to the von Neumann architecture, List basic parts of a computer:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory" onclick="onNavClick(`#2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory-nav`)" id="2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory-nav">
+									2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3-list-basic-parts-of-a-cpu-include-cache-or-not" onclick="onNavClick(`#3-list-basic-parts-of-a-cpu-include-cache-or-not-nav`)" id="3-list-basic-parts-of-a-cpu-include-cache-or-not-nav">
+									3. List basic parts of a CPU, include cache or not?
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#4what-mean-secondary-storage-list-some-on-your-pc" onclick="onNavClick(`#4what-mean-secondary-storage-list-some-on-your-pc-nav`)" id="4what-mean-secondary-storage-list-some-on-your-pc-nav">
+									4.What mean secondary storage. List some on your PC.
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#5%e4%bd%bf%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91%e8%a7%a3%e9%87%8a%e4%bb%a5%e4%b8%8b%e6%a6%82%e5%bf%b5-cpuramrombus-computingparallel-computing" onclick="onNavClick(`#5使用维基百科解释以下概念-cpuramrombus-computingparallel-computing-nav`)" id="5使用维基百科解释以下概念-cpuramrombus-computingparallel-computing-nav">
+									5.使用维基百科，解释以下概念： CPU、RAM、ROM、Bus (computing)、Parallel Computing
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#cpu" onclick="onNavClick(`#cpu-nav`)" id="cpu-nav">
+									CPU
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#ram" onclick="onNavClick(`#ram-nav`)" id="ram-nav">
+									RAM
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#rom" onclick="onNavClick(`#rom-nav`)" id="rom-nav">
+									ROM
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#buscomputing" onclick="onNavClick(`#buscomputing-nav`)" id="buscomputing-nav">
+									Bus(computing)
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#parallel-computing" onclick="onNavClick(`#parallel-computing-nav`)" id="parallel-computing-nav">
+									Parallel Computing
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#6-%e5%86%99%e4%b8%80%e6%ae%b5%e6%96%87%e5%ad%97%e7%ae%80%e5%8d%95%e8%a7%a3%e9%87%8a%e4%ba%91%e8%ae%a1%e7%ae%97cloud-computing" onclick="onNavClick(`#6-写一段文字简单解释云计算cloud-computing-nav`)" id="6-写一段文字简单解释云计算cloud-computing-nav">
+									6. 写一段文字，简单解释云计算（cloud computing）
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#7-%e5%b0%8f%e5%ad%99%e4%b9%b0%e4%ba%86%e8%ae%a1%e7%ae%97%e6%9c%ba%e4%b8%bb%e6%9d%bf%e8%af%b4%e6%98%8e%e4%b9%a6%e8%a1%a8%e6%98%8e%e6%94%af%e6%8c%81%e5%8f%8c%e9%80%9a%e9%81%93ddr3-1333%e5%86%85%e5%ad%98%e6%9c%80%e5%a4%a7%e6%94%af%e6%8c%8116g" onclick="onNavClick(`#7-小孙买了计算机主板说明书表明支持双通道ddr3-1333内存最大支持16g-nav`)" id="7-小孙买了计算机主板说明书表明支持双通道ddr3-1333内存最大支持16g-nav">
+									7. 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存，最大支持16G”
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1ddr3%e5%86%85%e5%ad%983%e5%92%8c1333%e7%9a%84%e5%90%ab%e4%b9%89%e6%98%af%e4%bb%80%e4%b9%88" onclick="onNavClick(`#1ddr3内存3和1333的含义是什么-nav`)" id="1ddr3内存3和1333的含义是什么-nav">
+									1）DDR3内存，“3”和“1333”的含义是什么？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2%e5%b0%8f%e5%ad%99%e4%b9%b08g-ddr3-1600%e7%9a%84%e5%86%85%e5%ad%98%e8%83%bd%e6%8f%90%e9%ab%98%e6%80%a7%e8%83%bd%e5%90%97" onclick="onNavClick(`#2小孙买8g-ddr3-1600的内存能提高性能吗-nav`)" id="2小孙买8g-ddr3-1600的内存能提高性能吗-nav">
+									2）小孙买8G DDR3-1600的内存能提高性能吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3%e5%b0%8f%e5%ad%99%e4%b9%b04g2-ddr3-1333%e7%9a%84%e5%86%85%e5%ad%98%e8%83%bd%e6%8f%90%e9%ab%98%e6%80%a7%e8%83%bd%e5%90%97" onclick="onNavClick(`#3小孙买4g2-ddr3-1333的内存能提高性能吗-nav`)" id="3小孙买4g2-ddr3-1333的内存能提高性能吗-nav">
+									3）小孙买4G*2 DDR3-1333的内存能提高性能吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#416g%e9%9c%80%e8%a6%81%e5%a4%9a%e5%b0%91%e4%bd%8d%e5%9c%b0%e5%9d%80" onclick="onNavClick(`#416g需要多少位地址-nav`)" id="416g需要多少位地址-nav">
+									4）16G需要多少位地址？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://wondrouswisdomcard.gitee.io">
+            Wondrous WindomCard&#39;s Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://wondrouswisdomcard.gitee.io">
+        <div class="single-column-header-title">Wondrous WindomCard&#39;s Blog</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Homework of Week 6
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-10-07 00:00
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[Homework]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/computing-components">Computing Components</a>
+                                &nbsp;
+                            
+                                <a href="/tags/cpu">CPU</a>
+                                &nbsp;
+                            
+                                <a href="/tags/ram">RAM</a>
+                                &nbsp;
+                            
+                                <a href="/tags/rom">ROM</a>
+                                &nbsp;
+                            
+                                <a href="/tags/bus">Bus</a>
+                                &nbsp;
+                            
+                                <a href="/tags/parallel-computing">Parallel Computing</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h3 id="1-according-to-the-von-neumann-architecture-list-basic-parts-of-a-computer">1. According to the von Neumann architecture, List basic parts of a computer:</h3>
+<p>运算器(processing unit)、控制器(control unit)、存储器(memory)、输入设备、输出设备(input and output mechanisms)</p>
+<hr>
+<h3 id="2-a-computer-has-64-mb-megabytes-of-memory-how-many-bits-are-needed-to-address-any-single-byte-in-memory">2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory?</h3>
+<p>The memory address space is 64 MB, or 2^26 (2^6 x 2^20). This means it needs log2(2^26) or 26 bits, to address each single byte.</p>
+<hr>
+<h3 id="3-list-basic-parts-of-a-cpu-include-cache-or-not">3. List basic parts of a CPU, include cache or not?</h3>
+<p>传统上，CPU由<strong>控制器和运算器</strong>这两个主要部件组成。
+随着集成电路技术的不断发展和进步，新型CPU纷纷集成了一些原先置于CPU之外的分立功能部件，如浮点处理器、<strong>高速缓存Cache</strong>等，在大大提高CPU性能指标的同时，也使得CPU的内部组成日益复杂化。</p>
+<p>控制器通常由程序计数器（PC）、指令寄存器（IR）、指令译码器（ID）、时序发生器和操作控制器组成。</p>
+<p>运算器由算术逻辑单元(ALU)、累加寄存器（AC）、数据寄存器（DR）和程序状态字寄存器（PSW）组成。</p>
+<p><strong>因此是新型CPU集成了Cache。</strong></p>
+<p><em>内容来自
+<a href="https://software.intel.com/content/www/cn/zh/develop/articles/book-processor-architecture_cpu_function_and_composition.html">https://software.intel.com/content/www/cn/zh/develop/articles/book-processor-architecture_cpu_function_and_composition.html</a></em></p>
+<hr>
+<h3 id="4what-mean-secondary-storage-list-some-on-your-pc">4.What mean secondary storage. List some on your PC.</h3>
+<p>Secondary Storage: A data storage device that is not the main memory of a computer</p>
+<p>二级存储器也称为外部存储器,是指计算机用来存储数据和程序的各种存储介质。</p>
+<p>二级存储设备有（固定/移动）硬盘、光碟、闪存卡、U盘和其他速度缓慢但拥有很高容量的设备。</p>
+<hr>
+<h3 id="5使用维基百科解释以下概念-cpuramrombus-computingparallel-computing">5.使用维基百科，解释以下概念： CPU、RAM、ROM、Bus (computing)、Parallel Computing</h3>
+<h4 id="cpu">CPU</h4>
+<p>Central processing unit: the key component of a computer system, containing the circuitry necessary to interpret and execute program instructions.</p>
+<h4 id="ram">RAM</h4>
+<p>Random access memory: semiconductor memory in which all storage locations can be rapidly accessed in the same amount of time. It <strong>forms the main memory of a computer</strong>, used by applications to perform tasks while the device is operating.
+It is <strong>volatile</strong> computer memory, used for creating, loading, and running programs and for manipulating and temporarily storing data.</p>
+<h4 id="rom">ROM</h4>
+<p>Computer hardware that holds permanently stored data. After the data is installed in ROM, it cannot be added to, modified, or deleted. ROM usually contains instructions that enable the computer&rsquo;s operating system to communicate with other hardware.  It is a nonvolatile, nonmodifiable computer memory.</p>
+<h4 id="buscomputing">Bus(computing)</h4>
+<p>A bus is a communication system that transfers data between components inside a computer, or between computers. This expression covers all related hardware components (wire, optical fiber, etc.) and software, including communication protocols.</p>
+<p>The bus connecting the CPU and memory is one of the defining characteristics of the system, and often referred to simply as the system bus.</p>
+<h4 id="parallel-computing">Parallel Computing</h4>
+<p>Parallel computing is a type of computation in which many calculations or the execution of processes are carried out simultaneously.</p>
+<p>Large problems can often be divided into smaller ones, which can then be solved at the same time. There are several different forms of parallel computing: bit-level, instruction-level, data, and task parallelism.</p>
+<p>Parallelism has been employed for many years, mainly in high-performance computing, but interest in it has grown lately due to the physical constraints preventing frequency scaling.</p>
+<hr>
+<h3 id="6-写一段文字简单解释云计算cloud-computing">6. 写一段文字，简单解释云计算（cloud computing）</h3>
+<p>云计算是一种分布式计算，通过网络将巨大的数据计算处理程序分解成多个小程序，然后，通过多部服务器组成的系统进行处理和分析这些小程序得到结果并返回给用户。</p>
+<p>云计算是计算服务的提供，用户可以利用网络来享用服务器、存储、数据库、网络、软件、分析和智能等计算服务。云计算使得用户摆脱了对高性能硬件的需求，降低了用户的计算成本，同时云计算具备高性能和安全性高的优势。</p>
+<p>云计算有公用，私有，混合模型，公有云为第三方云服务提供商所拥有和运营，他们通过 Internet 提供其计算资源（如服务器和存储空间）；私有云是指专供一个企业或组织使用的云计算资源。</p>
+<p>云服务类型有：基础结构即服务 (IaaS)、平台即服务 (PaaS)、无服务器和软件即服务 (SaaS)。</p>
+<p><em>参考 <a href="https://azure.microsoft.com/zh-cn/overview/what-is-cloud-computing/#benefits">https://azure.microsoft.com/zh-cn/overview/what-is-cloud-computing/#benefits</a></em></p>
+<hr>
+<h3 id="7-小孙买了计算机主板说明书表明支持双通道ddr3-1333内存最大支持16g">7. 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存，最大支持16G”</h3>
+<h4 id="1ddr3内存3和1333的含义是什么">1）DDR3内存，“3”和“1333”的含义是什么？</h4>
+<p>3指第三代，DDR3为第三代双倍数据率同步动态随机存取存储器</p>
+<p>1333代表着内存频率，频率越高，内存运算速度越快，内存也就越好，价格也就越高。</p>
+<h4 id="2小孙买8g-ddr3-1600的内存能提高性能吗">2）小孙买8G DDR3-1600的内存能提高性能吗？</h4>
+<p>内存条的标注频率代表该内存最高可以稳定在这个频率下工作</p>
+<p>主板支持1333MHZ频率的内存，当使用了1600MHZ频率的内存之后，1600MHZ内存仍可以工作，但实际工作频率仅为1333MHZ，并不能提高性能。</p>
+<h4 id="3小孙买4g2-ddr3-1333的内存能提高性能吗">3）小孙买4G*2 DDR3-1333的内存能提高性能吗？</h4>
+<p>从理论上说双通道两个内存通过CPU可分别寻址、读取数据，从而使内存的带宽增加一倍，数据存取速度也相应增加一倍，所以能提高性能。</p>
+<h4 id="416g需要多少位地址">4）16G需要多少位地址？</h4>
+<p>内存地址空间为16 GB，即2^34 (2^4 x 2^30)，这意味着它需要log2(2^34)即34位来寻址每个字节。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2020-10-07</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://wondrouswisdomcard.gitee.io/posts/java3/">
+			Next<br>Java - The Learning Experience 3
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://wondrouswisdomcard.gitee.io/posts/blog3/">
+			Previous<br>Experiments On EveryCircuit
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+<div class="comments">
+    <vue-disqus shortname="Your disqus short name."></vue-disqus>
+</div>
+<noscript><noscript>Please activate JavaScript to view comments.</noscript></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="https://wondrouswisdomcard.gitee.io/js/journal.js"></script>
+    </body>
+</html>

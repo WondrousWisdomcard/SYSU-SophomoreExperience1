@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NightNote on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/categories/nightnote/</link>
+    <description>Recent content in NightNote on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/categories/nightnote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NightNote - 1</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/nightnote1/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/nightnote1/</guid>
+      <description>今天注册了Leetcode账号，并研究了第一道题 #1 两数之和 https://leetcode-cn.com/problems/two-sum/。 我分别使用C和Java写了题，还看了看使用哈希表的题解。
+C做法： Note: The returned array must be malloced, assume caller calls free().
+int* twoSum(int* nums, int numsSize, int target, int* returnSize){int * result = (int *)malloc(sizeof(int) * 2);for(int i = 0; i &amp;lt; numsSize-1 ; i++){for(int j = i + 1; j &amp;lt; numsSize; j++){if(nums[i] + nums[j] == target){result[0] = i;result[1] = j;*returnSize = 2;return result;}}}return result;} 这里需要注意的是malloc的语法，太久不用忘记了</description>
+    </item>
+    
+  </channel>
+</rss>

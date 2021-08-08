@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ROM on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/rom/</link>
+    <description>Recent content in ROM on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/rom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 6</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework6/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework6/</guid>
+      <description>1. According to the von Neumann architecture, List basic parts of a computer: 运算器(processing unit)、控制器(control unit)、存储器(memory)、输入设备、输出设备(input and output mechanisms)
+ 2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? The memory address space is 64 MB, or 2^26 (2^6 x 2^20). This means it needs log2(2^26) or 26 bits, to address each single byte.
+ 3. List basic parts of a CPU, include cache or not?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Top-down design on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/top-down-design/</link>
+    <description>Recent content in Top-down design on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/top-down-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 8</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework8/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework8/</guid>
+      <description>1、阅读 PseudocodeStandard。 1）用伪代码描述将十进制转换成16进制的方法 void octToHex(十进制数 num,十六进制存储数组 hex[10]){if num为负数 取num的绝对值;将hex数组的首字符置为负号;endifindex指向数组最后一位;while 若num大于零t = num对16取模;if t大于9hex[index] = (t-10) + &#39;A&#39;;endifelsehex[index] = t + &#39;0&#39;;end elseindex指向当前index的前一位;num = num/16得到的余数end while}void showHex(int num){// 对hex赋初始值为{0,0,0,0,0,0,0,0,&#39;0&#39;,0}// 调用octToHex(num,hex);// 遍历数组，输出非空字符;} 2）C语言实现（先用注释写好算法，然后翻译） void octToHex(int num,char hex[10]){if(num &amp;lt; 0){num = -num;hex[0] = &#39;-&#39;;}int i = 8;while(num !</description>
+    </item>
+    
+  </channel>
+</rss>

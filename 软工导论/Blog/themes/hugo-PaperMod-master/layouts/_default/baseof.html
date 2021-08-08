@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body
+    class="{{ if (and (eq .Kind `page` ) (ne .Layout `archives`)) }}single{{ else }}list{{ if .IsHome }} home {{ end }}{{ end }}{{ if eq $.Site.Params.defaultTheme `dark` }} dark {{ end }}"
+    id="top">
+    {{- partialCached "header.html" . }}
+    <main class="main">
+        {{- block "main" . }}
+        {{end }}
+    </main>
+    {{- partialCached "footer.html" . .Type }}
+</body>
+
+</html>

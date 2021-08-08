@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polymorphism on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/polymorphism/</link>
+    <description>Recent content in Polymorphism on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/polymorphism/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java - The Learning Experience 2</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java2/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java2/</guid>
+      <description>Chapter 6 Polymorphism 多态 In programming, polymorphism is the ability for same code to be used with several different types of objects and behave differently depending on the actual type of object used.
+Alternate views of polymorphism:
+One objects sends a message to another object without caring about the type of the receiving object.
+The receiving object responds to a message appropriately for its type.
+Java methods are polymorphic by default</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GreedySnake on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/greedysnake/</link>
+    <description>Recent content in GreedySnake on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/greedysnake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C - Smart Greedy Snake</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog9/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog9/</guid>
+      <description>字符游戏 - 智能蛇 文档和程序地址：
+https://gitee.com/WondrousWisdomcard/WondrousWisdomcard/tree/master/code/blog9
+ 编写智能算法 编写人工智能程序，使得 snake 每秒自动走一步。
+1、程序要求说明 初始化字符矩阵中有一些你设定的障碍物（墙），并且保证非满地图中永远有且仅有一个食物。
+决定蛇行走的方向的算法如下：
+char whereGoNext(int Hx, int Hy, int Fx, int Fy){char movable[4] = {&#39;A&#39;,&#39;D&#39;,&#39;W&#39;,&#39;S&#39;}; //记录可走的方向int distance[4] = {INF,INF,INF,INF}; //记录离食物的距离if(map[Hy][Hx-1] == BLANK_CELL || map[Hy][Hx-1] == SNAKE_FOOD){ //Adistance[0] = abs(Fx - (Hx-1)) + abs(Fy - Hy);}if(map[Hy][Hx+1] == BLANK_CELL || map[Hy][Hx+1] == SNAKE_FOOD){ //Ddistance[1] = abs(Fx - (Hx+1)) + abs(Fy - Hy);}if(map[Hy-1][Hx] == BLANK_CELL || map[Hy-1][Hx] == SNAKE_FOOD){ //Wdistance[2] = abs(Fx - Hx) + abs(Fy - (Hy-1));}if(map[Hy+1][Hx] == BLANK_CELL || map[Hy+1][Hx] == SNAKE_FOOD){ //Sdistance[3] = abs(Fx - Hx) + abs(Fy - (Hy+1));}int i, min = INF,j = INF; // j为最后决策方向的编号for(int i = 0; i &amp;lt; 4; i++){//printf(&amp;quot;%d\n&amp;quot;,distance[i]);if(distance[i] &amp;lt; min){min = distance[i];j = i;}}if(j !</description>
+    </item>
+    
+    <item>
+      <title>C - Greedy Snake</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog8/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog8/</guid>
+      <description>字符游戏 - 贪吃蛇 文档和程序地址：
+https://gitee.com/WondrousWisdomcard/WondrousWisdomcard/tree/master/code/blog8
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/java/</link>
+    <description>Recent content in Java on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 12 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java - The Learning Experience 4</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java4/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java4/</guid>
+      <description>Exceptions 异常处理  三种类型的异常： 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。例如：SQLException, IOException, FileNotFoundException
+运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。例如：ArithmeticException, ClassCastException, ArrayIndexOutOfBoundsException, NullPointerException
+错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。例如：System malfunction, OutOfMemoryException, StackOverflowError
+理解： 1、检查性异常: 不处理编译不能通过 2、非检查性异常:不处理编译可以通过，如果有抛出直接抛到控制台 3、运行时异常: 就是非检查性异常 4、非运行时异常: 就是检查性异常
+ Exception 类的层次 所有的异常类是从 java.lang.Exception 类继承的子类。 Exception 类是 Throwable 类的子类。除了Exception类外，Throwable还有一个子类Error。 Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。 Error 用来指示运行时环境发生的错误。
+ Java 内置异常类和方法 链接：https://www.runoob.com/java/java-exceptions.html  关键字 try catch throw finally throws / throw 如果一个方法没有捕获到一个检查性异常，那么该方法必须使用 throws 关键字来声明。throws 关键字放在方法签名的尾部。
+也可以使用 throw 关键字抛出一个异常，无论它是新实例化的还是刚捕获到的,多个异常之间用逗号隔开。 下面方法的声明抛出一个 RemoteException 异常：
+import java.io.*;public class className{public void deposit(double amount) throws RemoteException{// Method implementationthrow new RemoteException();}//Remainder of class definition} finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句。 finally 代码块出现在 catch 代码块最后。</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 5</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java5/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java5/</guid>
+      <description>Thread 线程 I Concurrent Programming
+Java 给多线程编程提供了内置的支持。
+基本概念：
+线程：指的是进程中一个单一顺序的控制流，一个进程中可以并发多个线程，每条线程并行执行不同的任务。
+进程：一个进程包括由操作系统分配的内存空间，包含一个或多个线程。一个线程不能独立的存在，它必须是进程的一部分。一个进程一直运行，直到所有的非守护线程都结束运行后才能结束。
+每个线程都是通过某个特定 Thread 对象所对应的方法 run() 来完成其操作的，方法 run() 称为线程体。通过调用 Thread 类的 start() 方法来启动一个线程。
+run 方法运行结束， 此线程终止。然后 CPU 再调度其它线程。
+线程的生命周期 新建状态New: 使用 new 关键字和 Thread 类或其子类建立一个线程对象后，该线程对象就处于新建状态。它保持这个状态直到程序 start() 这个线程。
+就绪状态Ready: 当线程对象调用了start()方法之后，该线程就进入就绪状态。就绪状态的线程处于就绪队列中，要等待JVM里线程调度器的调度。
+运行状态Running: 如果就绪状态的线程获取 CPU 资源，就可以执行 run()，此时线程便处于运行状态。处于运行状态的线程最为复杂，它可以变为阻塞状态、就绪状态和死亡状态。
+阻塞状态Waiting: 如果一个线程执行了sleep（睡眠）、suspend（挂起）等方法，失去所占用资源之后，该线程就从运行状态进入阻塞状态。在睡眠时间已到或获得设备资源后可以重新进入就绪状态。可以分为三种：
+等待阻塞：运行状态中的线程执行 wait() 方法，使线程进入到等待阻塞状态。
+同步阻塞：线程在获取 synchronized 同步锁失败(因为同步锁被其他线程占用)。
+其他阻塞：通过调用线程的 sleep() 或 join() 发出了 I/O 请求时，线程就会进入到阻塞状态。当sleep() 状态超时，join() 等待线程终止或超时，或者 I/O 处理完毕，线程重新转入就绪状态。
+死亡状态Dead: 一个运行状态的线程完成任务或者其他终止条件发生时，该线程就切换到终止状态。
+线程的创建 Java 提供了三种创建线程的方法：
+通过实现 Runnable 接口； 通过继承 Thread 类本身； 通过 Callable 和 Future 创建线程。</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 3</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java3/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java3/</guid>
+      <description>Interfaces 接口 In its most common form, an interface is a group of related methods with empty bodies. A bicycle&amp;rsquo;s behavior, if specified as an interface, might appear as follows：
+interface BicycleInterface { // constant declarations, if any// method signatures void changeCadence(int newValue); void changeGear(int newValue); void speedUp(int increment); void applyBrakes(int decrement); } Interfaces form a contract between the class and the outside world, and this contract is enforced at build time by the compiler.</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 2</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java2/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java2/</guid>
+      <description>Chapter 6 Polymorphism 多态 In programming, polymorphism is the ability for same code to be used with several different types of objects and behave differently depending on the actual type of object used.
+Alternate views of polymorphism:
+One objects sends a message to another object without caring about the type of the receiving object.
+The receiving object responds to a message appropriately for its type.
+Java methods are polymorphic by default</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 1</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java1/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java1/</guid>
+      <description>Chapter 1 &amp;amp; 2 Introduction to Objects  Background Java technology includes Java programming languages and Java platform
+文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序
+Java Platform has two components: The Java Virtual Machine(JavaVM) and The Java Application Programming Interface (API)
+The API(https://docs.oracle.com/javase/6/docs/index.html) is a large collection of ready-made software components. The API provides many useful capabilities:
+It is grouped into libraries of related classes and interfaces; These libraries are known as packages .</description>
+    </item>
+    
+  </channel>
+</rss>

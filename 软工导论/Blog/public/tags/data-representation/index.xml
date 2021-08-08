@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Representation on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/data-representation/</link>
+    <description>Recent content in Data Representation on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/data-representation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 4</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework4/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework4/</guid>
+      <description>名词解释 ASCII ASCII abbreviated from American Standard Code for Information Interchange, is a character encoding standard. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters.
+Color Color is the characteristic of human visual perception described through color categories. This perception of color derives from the stimulation of cone cells in the human eye by electromagnetic radiation in the spectrum of light.</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 3</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework3/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework3/</guid>
+      <description>用二进制表示数值    Problem Solution Overflow Accuracy Error     int8_t x = 67 01000011 No No   int8_t y = -7 11111001 No No   int8_t z = y - x 10110110 No No       Problem Solution Overflow Accuracy Error     int8_t x = 0xd3 11010011 Yes No   uint8_t = 0xd3 11010011 No No       Problem Solution Overflow Accuracy Error     int8_t x = 127 01111111 No No   int8_t y = -7 11111001 No No   int8_t z = y - x 01111010 Yes No       Problem Solution Overflow Accuracy Error     float x = 1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html><head>
+<title>Homework of Week 5</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Homework of Week 5" />
+<meta property="og:description" content="1) AND Gate 与门 解释
+与门有n个输入,1个输出,当且仅当所有输入为1时输出为1,否则输出为0.
+Representation
+设 A,B 为输入, X 为输出
+  Truth Table
+   A B X     0 0 0   0 1 0   1 0 0   1 1 1      Boolean Expression
+X = A &#43; B
+  Logic Diagram Symbol (Image Below)
+  2) XOR Gate 异或门 解释" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wondrouswisdomcard.gitee.io/posts/homework5/" />
+<meta property="article:published_time" content="2020-09-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-30T00:00:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Homework of Week 5"/>
+<meta name="twitter:description" content="1) AND Gate 与门 解释
+与门有n个输入,1个输出,当且仅当所有输入为1时输出为1,否则输出为0.
+Representation
+设 A,B 为输入, X 为输出
+  Truth Table
+   A B X     0 0 0   0 1 0   1 0 0   1 1 1      Boolean Expression
+X = A &#43; B
+  Logic Diagram Symbol (Image Below)
+  2) XOR Gate 异或门 解释"/>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/journal.min.c116bc90d171283f099f173854157ec8f183f9073b93443b2c8ad82899ee9025.css" integrity="sha256-wRa8kNFxKD8Jnxc4VBV&#43;yPGD&#43;Qc7k0Q7LIrYKJnukCU=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/dark-mode.min.552aae4638a84aa57cf0b195750a49ea9131d3bb621d1ed3ebc9b14b18166536.css" integrity="sha256-VSquRjioSqV88LGVdQpJ6pEx07tiHR7T68mxSxgWZTY=" media="screen">
+
+
+<script src="https://wondrouswisdomcard.gitee.io/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+  
+    <script src="https://wondrouswisdomcard.gitee.io/js/toc-collapse.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
+
+
+</head>
+<body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://wondrouswisdomcard.gitee.io">
+    
+        <div class="nav-title">
+            Wondrous WindomCard&#39;s Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1-and-gate-%e4%b8%8e%e9%97%a8" onclick="onNavClick(`#1-and-gate-与门-nav`)" id="1-and-gate-与门-nav">
+									1) AND Gate 与门
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-xor-gate-%e5%bc%82%e6%88%96%e9%97%a8" onclick="onNavClick(`#2-xor-gate-异或门-nav`)" id="2-xor-gate-异或门-nav">
+									2) XOR Gate 异或门
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3-draw-a-circuit-diagram-about-xabcd" onclick="onNavClick(`#3-draw-a-circuit-diagram-about-xabcd-nav`)" id="3-draw-a-circuit-diagram-about-xabcd-nav">
+									3) Draw a circuit diagram about X=(A&#43;B)(C&#43;D)
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#4--show-the-behavior-of-the-following-circuit-with-a-truth-table" onclick="onNavClick(`#4--show-the-behavior-of-the-following-circuit-with-a-truth-table-nav`)" id="4--show-the-behavior-of-the-following-circuit-with-a-truth-table-nav">
+									4) Show the behavior of the following circuit with a truth table
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula" onclick="onNavClick(`#5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula-nav`)" id="5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula-nav">
+									5) What is circuit equivalence? Use truth table to prove the following formula.
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#6--combine-8-full-adders-to-8bit-adder-circuit" onclick="onNavClick(`#6--combine-8-full-adders-to-8bit-adder-circuit-nav`)" id="6--combine-8-full-adders-to-8bit-adder-circuit-nav">
+									6) Combine 8 Full Adders to 8bit adder circuit
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#7-fill-the-follow-expression" onclick="onNavClick(`#7-fill-the-follow-expression-nav`)" id="7-fill-the-follow-expression-nav">
+									7) Fill the follow expression
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e5%85%b3%e9%94%ae%e8%af%8d%e8%a7%a3%e9%87%8a-from-wikipedia" onclick="onNavClick(`#关键词解释-from-wikipedia-nav`)" id="关键词解释-from-wikipedia-nav">
+									关键词解释 from Wikipedia
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#logic-gate" onclick="onNavClick(`#logic-gate-nav`)" id="logic-gate-nav">
+									Logic Gate
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#boolean-algebra" onclick="onNavClick(`#boolean-algebra-nav`)" id="boolean-algebra-nav">
+									Boolean Algebra
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#flip-flops" onclick="onNavClick(`#flip-flops-nav`)" id="flip-flops-nav">
+									Flip-Flops
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1-and-gate-%e4%b8%8e%e9%97%a8" onclick="onNavClick(`#1-and-gate-与门-nav`)" id="1-and-gate-与门-nav">
+									1) AND Gate 与门
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-xor-gate-%e5%bc%82%e6%88%96%e9%97%a8" onclick="onNavClick(`#2-xor-gate-异或门-nav`)" id="2-xor-gate-异或门-nav">
+									2) XOR Gate 异或门
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3-draw-a-circuit-diagram-about-xabcd" onclick="onNavClick(`#3-draw-a-circuit-diagram-about-xabcd-nav`)" id="3-draw-a-circuit-diagram-about-xabcd-nav">
+									3) Draw a circuit diagram about X=(A&#43;B)(C&#43;D)
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#4--show-the-behavior-of-the-following-circuit-with-a-truth-table" onclick="onNavClick(`#4--show-the-behavior-of-the-following-circuit-with-a-truth-table-nav`)" id="4--show-the-behavior-of-the-following-circuit-with-a-truth-table-nav">
+									4) Show the behavior of the following circuit with a truth table
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula" onclick="onNavClick(`#5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula-nav`)" id="5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula-nav">
+									5) What is circuit equivalence? Use truth table to prove the following formula.
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#6--combine-8-full-adders-to-8bit-adder-circuit" onclick="onNavClick(`#6--combine-8-full-adders-to-8bit-adder-circuit-nav`)" id="6--combine-8-full-adders-to-8bit-adder-circuit-nav">
+									6) Combine 8 Full Adders to 8bit adder circuit
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#7-fill-the-follow-expression" onclick="onNavClick(`#7-fill-the-follow-expression-nav`)" id="7-fill-the-follow-expression-nav">
+									7) Fill the follow expression
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e5%85%b3%e9%94%ae%e8%af%8d%e8%a7%a3%e9%87%8a-from-wikipedia" onclick="onNavClick(`#关键词解释-from-wikipedia-nav`)" id="关键词解释-from-wikipedia-nav">
+									关键词解释 from Wikipedia
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#logic-gate" onclick="onNavClick(`#logic-gate-nav`)" id="logic-gate-nav">
+									Logic Gate
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#boolean-algebra" onclick="onNavClick(`#boolean-algebra-nav`)" id="boolean-algebra-nav">
+									Boolean Algebra
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#flip-flops" onclick="onNavClick(`#flip-flops-nav`)" id="flip-flops-nav">
+									Flip-Flops
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://wondrouswisdomcard.gitee.io">
+            Wondrous WindomCard&#39;s Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://wondrouswisdomcard.gitee.io">
+        <div class="single-column-header-title">Wondrous WindomCard&#39;s Blog</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Homework of Week 5
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-09-30 00:00
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[Homework]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/logic-gate">Logic Gate</a>
+                                &nbsp;
+                            
+                                <a href="/tags/boolean-algebra">Boolean Algebra</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <hr>
+<h3 id="1-and-gate-与门">1) AND Gate 与门</h3>
+<p><strong>解释</strong></p>
+<p>与门有n个输入,1个输出,当且仅当所有输入为1时输出为1,否则输出为0.</p>
+<p><strong>Representation</strong></p>
+<p>设 A,B 为输入, X 为输出</p>
+<ol>
+<li>
+<p>Truth Table</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Boolean Expression</p>
+<p>X = A + B</p>
+</li>
+<li>
+<p>Logic Diagram Symbol (Image Below)</p>
+</li>
+</ol>
+<h3 id="2-xor-gate-异或门">2) XOR Gate 异或门</h3>
+<p><strong>解释</strong></p>
+<p>与门有2个输入,1个输出,当且仅当所有输入相同时输出为0,否则输出为1.</p>
+<p><strong>Representation</strong></p>
+<p>设 A,B 为输入, X 为输出</p>
+<ol>
+<li>
+<p>Truth Table</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Boolean Expression</p>
+<p>令A&rsquo;表示A的非,B&rsquo;表示B的非</p>
+<p>X = A ⊕ B = A B&rsquo; + A&rsquo; B</p>
+</li>
+<li>
+<p>Logic Diagram Symbol (Image Below)</p>
+</li>
+</ol>
+<p><img src="../../images/homework5/1.jpg" alt="1"></p>
+<h3 id="3-draw-a-circuit-diagram-about-xabcd">3) Draw a circuit diagram about X=(A+B)(C+D)</h3>
+<p><img src="../../images/homework5/2.jpg" alt="2"></p>
+<h3 id="4--show-the-behavior-of-the-following-circuit-with-a-truth-table">4)  Show the behavior of the following circuit with a truth table</h3>
+<p><img src="../../images/homework5/3.png" alt="3"></p>
+<p>设输出为X,令A&rsquo;表示A的非，有 X = (A&rsquo;) ⊕ (AB),真值表如下:</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-what-is-circuit-equivalence-use-truth-table-to-prove-the-following-formula">5) What is circuit equivalence? Use truth table to prove the following formula.</h3>
+<p>(AB)&rsquo; = A&rsquo; + B&rsquo; 等价</p>
+<pre><code>|A|B| AB | (AB)' | A' | B' | A'+B' | (AB)'=A'+B' |
+|:--:| :--: | :--: | :--: |  :--: | :--: | :--: | :--: |
+|0|0|0| 1 | 1 | 1 | 1 | 1 |
+|0|1|0| 1 | 1 | 0 | 1 | 1 |
+|1|0|0| 1 | 0 | 1 | 1 | 1 |
+|1|1|1| 0 | 0 | 0 | 0 | 1 |
+</code></pre>
+<p>从真值表可以看出(AB)&lsquo;=A'+B&rsquo;为永真式,所以(AB)&lsquo;和A'+B&rsquo;等价。</p>
+<h3 id="6--combine-8-full-adders-to-8bit-adder-circuit">6)  Combine 8 Full Adders to 8bit adder circuit</h3>
+<p><img src="../../images/homework5/4.jpg" alt="4"></p>
+<h3 id="7-fill-the-follow-expression">7) Fill the follow expression</h3>
+<p>令X&rsquo;表示X的非:</p>
+<p>(1) (X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->X<!-- raw HTML omitted -->4<!-- raw HTML omitted -->X<!-- raw HTML omitted -->3<!-- raw HTML omitted -->X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->X<!-- raw HTML omitted -->1<!-- raw HTML omitted -->)<!-- raw HTML omitted -->2<!-- raw HTML omitted --> or (00001111)<!-- raw HTML omitted -->2<!-- raw HTML omitted --> = ((X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->1111)<!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+<p>(2) (X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->X<!-- raw HTML omitted -->4<!-- raw HTML omitted -->X<!-- raw HTML omitted -->3<!-- raw HTML omitted -->X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->X<!-- raw HTML omitted -->1<!-- raw HTML omitted -->)<!-- raw HTML omitted -->2<!-- raw HTML omitted --> xor (00001111)<!-- raw HTML omitted -->2<!-- raw HTML omitted --> = (X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->X<!-- raw HTML omitted -->4<!-- raw HTML omitted -->'X<!-- raw HTML omitted -->3<!-- raw HTML omitted -->'X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->'X<!-- raw HTML omitted -->1<!-- raw HTML omitted -->&rsquo;)<!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+<p>(3) ((X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->X<!-- raw HTML omitted -->4<!-- raw HTML omitted -->X<!-- raw HTML omitted -->3<!-- raw HTML omitted -->X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->X<!-- raw HTML omitted -->1<!-- raw HTML omitted -->)<!-- raw HTML omitted -->2<!-- raw HTML omitted --> and (11110000)<!-- raw HTML omitted -->2<!-- raw HTML omitted -->)
+or (not (X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->X<!-- raw HTML omitted -->4<!-- raw HTML omitted -->X<!-- raw HTML omitted -->3<!-- raw HTML omitted -->X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->X<!-- raw HTML omitted -->1<!-- raw HTML omitted -->)<!-- raw HTML omitted -->2<!-- raw HTML omitted --> and (00001111)<!-- raw HTML omitted -->2<!-- raw HTML omitted -->) = (X<!-- raw HTML omitted -->8<!-- raw HTML omitted -->X<!-- raw HTML omitted -->7<!-- raw HTML omitted -->X<!-- raw HTML omitted -->6<!-- raw HTML omitted -->X<!-- raw HTML omitted -->5<!-- raw HTML omitted -->X<!-- raw HTML omitted -->4<!-- raw HTML omitted -->'X<!-- raw HTML omitted -->3<!-- raw HTML omitted -->'X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->'X<!-- raw HTML omitted -->1<!-- raw HTML omitted -->&rsquo;)<!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+<hr>
+<h2 id="关键词解释-from-wikipedia">关键词解释 from Wikipedia</h2>
+<h3 id="logic-gate">Logic Gate</h3>
+<p>In electronics, a logic gate is an idealized or physical device implementing a Boolean function; that is, it performs a logical operation on one or more binary inputs and produces a single binary output.</p>
+<h3 id="boolean-algebra">Boolean Algebra</h3>
+<p>In mathematics and mathematical logic, Boolean algebra is the branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively. the main operations of Boolean algebra are the conjunction and denoted as ∧, the disjunction or denoted as ∨, and the negation not denoted as ¬.</p>
+<h3 id="flip-flops">Flip-Flops</h3>
+<p>(1). 中文翻译：(双稳态)触发器</p>
+<p>(2). Q: How many bits information does a SR latch store? A: <strong>1 Bit</strong>.</p>
+<hr>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2020-09-30</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://wondrouswisdomcard.gitee.io/posts/java2/">
+			Next<br>Java - The Learning Experience 2
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://wondrouswisdomcard.gitee.io/posts/blog2/">
+			Previous<br>Game Making - Flappy Bird
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+<div class="comments">
+    <vue-disqus shortname="Your disqus short name."></vue-disqus>
+</div>
+<noscript><noscript>Please activate JavaScript to view comments.</noscript></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="https://wondrouswisdomcard.gitee.io/js/journal.js"></script>
+    </body>
+</html>

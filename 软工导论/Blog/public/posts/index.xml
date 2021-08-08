@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/posts/</link>
+    <description>Recent content in Posts on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Index Page Of Homework</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/index0/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/index0/</guid>
+      <description>【19335286】 的软导作业索引页 课后作业  01-Homework Of First Week 02-Homework Of Second Week 03-Homework Of Third Week 04-Homework Of Fourth Week 05-Homework Of Fifth Week 06-Homework Of Sixth Week 07-Homework Of Seventh Week 08-Homework Of Eighth Week 09-Homework Of Ninth Week 10-Homework Of Tenth Week  实践与实验  01-我的第一篇博客 02-零基础游戏设计与制作 03-实验:电路与二进制运算 04-实验:机器语言编程 05-伪代码描述洗衣机 06-实验:用python做计算 07-博客:IT伦理与道德 08-编程:C语言实现贪吃蛇 09-编程:C语言实现智能蛇 10-博客：互联网时代的热点领域选择与营销方法  </description>
+    </item>
+    
+    <item>
+      <title>Introduction of Hot Areas And Marketing Methods on Interet</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog10/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog10/</guid>
+      <description>互联网时代的热点领域选择、营销方法 在互联网时代的浪潮下，万物皆可互联网+，区块链，人工智能，大数据成为互联网时代的热点领域，与此同时，在互联网时代的背景下，新的营销方法如雨后春笋般被提出，应用，造就新的品牌，本篇博客着眼几个互联网时代的热点领域和营销方法，作简要的介绍。
+热点领域 区块链技术 所谓区块链技术，简称BT(Blockchain technology)，也被称之为分布式账本技术，是一种互联网数据库技术，其特点是去中心化、公开透明，让每个人均可参与数据库记录。最早是比特币的基础技术，目前世界各地均在研究，可广泛应用于金融等各领域。
+区块链技术就像互联网一样，它具有内置的稳健性。通过存储在其网络中相同的信息块，区块链不能: 1、受任何单一实体控制。2、没有单点故障。
+区块链技术具有的不可篡改、可以追溯等特点，可以和物联网技术具有的连接随手可及、计算无处不在等特点结合起来，借助物联网，在某一产品单元生产完成后，可以生成该产品的关键信息，比如生产设备加工该产品时采用的工艺数据，测试设备对该产品进行质检后得到的量测数据，这些数据打包成消息（比如JSON格式）。
+引用自知乎 https://zhuanlan.zhihu.com/p/338784867
+大数据 大数据（big data），指无法在一定时间范围内用常规软件工具进行捕捉、管理和处理的数据集合，是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的信息资产。 在维克托·迈尔-舍恩伯格及肯尼斯·库克耶编写的《大数据时代》中大数据指不用随机分析法（抽样调查）这样捷径，而采用所有数据进行分析处理。大数据的5V特点（IBM提出）：Volume（大量）、Velocity（高速）、Variety（多样）、Value（低价值密度）、Veracity（真实性）。
+转载自知乎 https://www.zhihu.com/topic/19740929/intro
+人工智能 人工智能（Artificial Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。 人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器，该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。人工智能从诞生以来，理论和技术日益成熟，应用领域也不断扩大，可以设想，未来人工智能带来的科技产品，将会是人类智慧的“容器”。人工智能可以对人的意识、思维的信息过程的模拟。人工智能不是人的智能，但能像人那样思考、也可能超过人的智能。 人工智能是一门极富挑战性的科学，从事这项工作的人必须懂得计算机知识，心理学和哲学。人工智能是包括十分广泛的科学，它由不同的领域组成，如机器学习，计算机视觉等等，总的说来，人工智能研究的一个主要目标是使机器能够胜任一些通常需要人类智能才能完成的复杂工作。
+源自百度百科 https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/9180
+工作流技术 工作流就是“业务过程的部分或整体在计算机应用环境下的自动化”，它主要解决的是“使在多个参与者之间按照某种预定义的规则传递文档、信息或任务的过程自动进行，从而实现某个预期的业务目标，或者促使此目标的实现”。
+工作流系统，实现了工作流程的自动化，提高了企业运营效率，改善企业资源利用，提高企业运作的灵活性和适应性，提高量化考核业务处理的效率，减少浪费。 在java领域中，JBPM和Actvity是两个主流的工作流系统，而Flowable的出现无疑将会取代两个主流的工作流系统。
+摘自博客 https://blog.csdn.net/weixin_42809672/article/details/82503011
+云计算 云计算（cloud computing）是分布式计算的一种，指的是通过网络“云”将巨大的数据计算处理程序分解成无数个小程序，然后，通过多部服务器组成的系统进行处理和分析这些小程序得到结果并返回给用户。云计算早期，简单地说，就是简单的分布式计算，解决任务分发，并进行计算结果的合并。因而，云计算又称为网格计算。通过这项技术，可以在很短的时间内（几秒钟）完成对数以万计的数据的处理，从而达到强大的网络服务。 现阶段所说的云服务已经不单单是一种分布式计算，而是分布式计算、效用计算、负载均衡、并行计算、网络存储、热备份冗杂和虚拟化等计算机技术混合演进并跃升的结果。
+摘自百度百科 https://baike.baidu.com/item/%E4%BA%91%E8%AE%A1%E7%AE%97/9969353
+量子计算 量子计算是一种遵循量子力学规律调控量子信息单元进行计算的新型计算模式。对照于传统的通用计算机，其理论模型是通用图灵机；通用的量子计算机，其理论模型是用量子力学规律重新诠释的通用图灵机。从可计算的问题来看，量子计算机只能解决传统计算机所能解决的问题，但是从计算的效率上，由于量子力学叠加性的存在，某些已知的量子算法在处理问题时速度要快于传统的通用计算机。
+摘自百度百科 https://baike.baidu.com/item/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/11035661?fr=aladdin
+营销方法 O2O经济 O2O，是Online To Offline的缩写即在线离线/线上到线下，是指将线下的商务机会与互联网结合，让互联网成为线下交易的平台，这个概念最早来源于美国。O2O的概念非常广泛，既可涉及到线上，又可涉及到线下,可以通称为O2O。主流商业管理课程均对O2O这种新型的商业模式有所介绍及关注。
+O2O营销模式又称离线商务模式，是指线上营销线上购买带动线下经营和线下消费。O2O通过打折、提供信息、服务预订等方式，把线下商店的消息推送给互联网用户，从而将他们转换为自己的线下客户，这就特别适合必须到店消费的商品和服务，比如餐饮、健身、看电影和演出、美容美发、摄影等。 实现O2O营销模式的核心是在线支付。
+和O2O类似的还有B2B（也有写成 BTB，是Business-to-Business的缩写）是指企业与企业之间通过专用网络或Internet，进行数据信息的交换、传递，开展交易活动的商业模式。它将企业内部网和企业的产品及服务，通过 B2B 网站或移动客户端与客户紧密结合起来，通过网络的快速反应，为客户提供更好的服务，从而促进企业的业务发展。
+·参考百度百科 O2O O2O营销模式 B2B
+小米的饥饿营销 “饥饿营销”，运用于商品或服务的商业推广，是指商品提供者有意调低产量，以期达到调控供求关系、制造供不应求“假象”、以维护产品形象并维持商品较高售价和利润率的营销策略。
+·参考 https://new.qq.com/omn/20200510/20200510A0IMJQ00.html
+·参考知乎 https://zhuanlan.zhihu.com/p/31692491
+微软的软件捆绑 案例： 微软向企业发布365软件包：捆绑销售Windows和Office
+·参考网页 http://tech.sina.com.cn/roll/2017-07-11/doc-ifyhvyie0996429.shtml
+·参考简书 https://www.jianshu.com/p/0af0740c96b2</description>
+    </item>
+    
+    <item>
+      <title>C - Smart Greedy Snake</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog9/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog9/</guid>
+      <description>字符游戏 - 智能蛇 文档和程序地址：
+https://gitee.com/WondrousWisdomcard/WondrousWisdomcard/tree/master/code/blog9
+ 编写智能算法 编写人工智能程序，使得 snake 每秒自动走一步。
+1、程序要求说明 初始化字符矩阵中有一些你设定的障碍物（墙），并且保证非满地图中永远有且仅有一个食物。
+决定蛇行走的方向的算法如下：
+char whereGoNext(int Hx, int Hy, int Fx, int Fy){char movable[4] = {&#39;A&#39;,&#39;D&#39;,&#39;W&#39;,&#39;S&#39;}; //记录可走的方向int distance[4] = {INF,INF,INF,INF}; //记录离食物的距离if(map[Hy][Hx-1] == BLANK_CELL || map[Hy][Hx-1] == SNAKE_FOOD){ //Adistance[0] = abs(Fx - (Hx-1)) + abs(Fy - Hy);}if(map[Hy][Hx+1] == BLANK_CELL || map[Hy][Hx+1] == SNAKE_FOOD){ //Ddistance[1] = abs(Fx - (Hx+1)) + abs(Fy - Hy);}if(map[Hy-1][Hx] == BLANK_CELL || map[Hy-1][Hx] == SNAKE_FOOD){ //Wdistance[2] = abs(Fx - Hx) + abs(Fy - (Hy-1));}if(map[Hy+1][Hx] == BLANK_CELL || map[Hy+1][Hx] == SNAKE_FOOD){ //Sdistance[3] = abs(Fx - Hx) + abs(Fy - (Hy+1));}int i, min = INF,j = INF; // j为最后决策方向的编号for(int i = 0; i &amp;lt; 4; i++){//printf(&amp;quot;%d\n&amp;quot;,distance[i]);if(distance[i] &amp;lt; min){min = distance[i];j = i;}}if(j !</description>
+    </item>
+    
+    <item>
+      <title>C - Greedy Snake</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog8/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog8/</guid>
+      <description>字符游戏 - 贪吃蛇 文档和程序地址：
+https://gitee.com/WondrousWisdomcard/WondrousWisdomcard/tree/master/code/blog8
+ </description>
+    </item>
+    
+    <item>
+      <title>Talk 1 - Introduction of Scholarship</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/talk1/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/talk1/</guid>
+      <description>第一次课业辅导 - 奖学金介绍部分 19软工 郑有为 下面为匆忙之中的收集 如有错误，请指出:)
+ 因为不同专业的具体奖学金评定和种类稍有不同， 又考虑到这次参加辅导的小朋友来自下面几个学院： 航空航天学院 智能工程学院 计算机学院 生物医学工程 下面的资料尽可能考虑专业的差异，对于不同专业不同的地方会特殊声明。
+ 1. 绩点，平均绩点和综合测评 绩点：(科目成绩-50)*0.1 满绩5.0,不合格就无绩点了(需补考/重修)
+比如 课程A的期末成绩为90分，绩点为 (90-50)*0.1=4.0课程B的期末成绩为60分，绩点为 (60-50)*0.1=1.0课程C的期末成绩为49分，需补考 平均学分绩点：   平均学分绩点GPA:考虑加权，学分越高的课(比如军理，高数等等)占比重更大
+  必修专选平均绩点:与GPA的差别在于不考虑公选。
+  综测：必修专选平均绩点 + (综测加分 * 一定比例)   综合测评成绩为学业成绩、综合测评加分、综合 测评扣分三部分的总和。
+  考虑专必，专选，公必(包括体育，英语，马原思修等等)的成绩，不算入公选(不代表公选考多少都没关系,出国要考虑公选)
+  综测还考虑综测加分:但是不同学院加分比例不一样：
+ 航院 综测 = 平均绩点 + 综测加分*0.06计院,生医工,智工 综测 = 平均绩点 + 综测加分*0.1   综测加分：
+  关于加分细则，不同学院不同安排，到时候学院会发完整的通知。</description>
+    </item>
+    
+    <item>
+      <title>Talk 2 - My Experience of Exam Reviews</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/talk2/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/talk2/</guid>
+      <description>第二次课业辅导 - 个人复习经验 19软工 郑有为 个人摸索的收获，仅供参考，希望能给你一点启发
+ 1、工程化的复习方式： 系统化 准备：如果你还没有… 整理老师课件/整理自己的作业
+  什么时候开始复习？我还有课/论文/大作业？不用焦虑，优先把任务做完留时间复习
+  推荐考试周前一周开始陆陆续续利用零散的时间复习，考试周是留给考试和考试复习的，不是用来赶DDL的
+  提前制定时间表和任务清单：考试时间，考试间隙的复习安排？
+  规范化   图书馆（考试周图书馆爆满，看你能不能早起了） &amp;gt; 自习室/教室（人相对不会那么多） &amp;gt; 宿舍（看情况）
+  消遣软件？报复性反弹，不如卸载
+  屏幕管理APP比如Forest
+  可度量   复习笔记反应复习效果
+  心理激励：成果汇报
+   2、数学类 笔者没有学高数，可能复习思路有些不同
+  优质的考前笔记：知识点照搬(x) 错题摘抄(x) 总结型笔记(ok)
+总结型笔记：必要的整合归纳，关键词，容易忘的/容易忽略的 这一节会考什么题 部分题的解法和思路（技巧收集贴） 易错点/易疏忽点
+存着！别扔！以后有用
+XMind/纸质版都OK
+  证明题
+对于课后习题，如果不懂，看答案写大体思路（以关键词形式呈现）
+不交白卷，没有思路则优先把自己能想到的东西写上去（比如写定理）
+   3、编程类   机试考前复习： （每周都有编程训练的话，一般没啥好复习的）</description>
+    </item>
+    
+    <item>
+      <title>Ethics&amp;Morality on IT</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog7/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog7/</guid>
+      <description>IT伦理与道德讨论：流氓软件与垃圾广告 在互联网快速发展的今天，我们享受着互联网和软件给我们的服务与便利，而与此同时，提供软件的开发商为了利润向我们发送花样百出的广告，甚至利用用户对计算机不了解而修改用户内容，强制启动，强制弹出低质量的甚至具有欺骗性的广告。
+一方面，我们免费使用软件，我们理应接受服务者提供广告，另一方面，服务商为了利润，不惜干涉我们对电脑的正常使用。流氓软件和垃圾广告充斥着整个软件市场，在法律尚未完善的情况下在试探伦理与道德的底线。
+1. 流氓软件的概念  “流氓软件”是介于病毒和正规软件之间的软件。如果电脑中有流氓软件，可能会出现以下几种情况：用户使用电脑上网时，会有窗口不断跳出；电脑浏览器被莫名修改增加了许多工作条；当用户打开网页时，网页会变成不相干的奇怪画面，甚至是黄色广告。^[百度百科：流氓软件]
+ 流氓软件有着如下几个特点：
+它采用多种社会和技术手段，强行或者秘密安装，并抵制卸载；能强行修改用户软件设置，如浏览器的主页，软件自动启动选项，安全选项；强行弹出广告，或者其他干扰用户、占用系统资源行为；有侵害用户信息和财产安全的潜在因素或者隐患；未经用户许可，或者利用用户疏忽，或者利用用户缺乏相关知识，秘密收集用户个人信息、秘密和隐私；威胁恐吓或误导用户安装其他的产品。 ^[百度百科：流氓软件]
+2. 流氓软件的灰色产业链： “流氓软件”的最大商业用途就是散布广告，并形成了整条灰色产业链：企业为增加注册用户、提高访问量或推销产品，向网络广告公司购买广告窗口流量，网络广告公司用自己控制的广告插件程序，在用户电脑中强行弹出广告窗口。 而为了让广告插件神不知鬼不觉地进入用户电脑，大多数时候广告公司是通过联系热门免费共享软件的作者，以每次几分钱的价格把广告程序通过插件的形式捆绑到免费共享软件中，用户在下载安装这些免费共享软件时广告程序也就趁虚而入。 据称，网络广告的计费是按弹出次数进行的，使用“流氓软件”可以在用户根本没有授权的情况下随意弹出广告，提高广告弹出次数，籍此提高广告收益。一个“装机量”大的广告插件公司，凭“流氓软件”月收入在百万元以上。^[百度百科：流氓软件]
+3. 用户体验观感 案例1：2345浏览器
+在知乎的一篇文章 https://zhuanlan.zhihu.com/p/150785825 中， 2345 浏览器，2345 好压被列入了强烈不建议安装的软件，起因是2345 浏览器会强制改变浏览器主页绑定，有着难删除，难彻底删除，频繁推送广告的特点。
+在知乎讨论 最流氓的软件可以流氓到什么程度？ 中有这么一篇回答：
+让人哭笑不得的伴随安装
+案例二：虚假的套路式广告
+来自知乎用户风雨的回答：
+4. 垃圾广告 参考知乎提问：如何看待中国互联网垃圾广告问题？ https://www.zhihu.com/question/39396173
+大多数人认为垃圾广告严重影响了上网的质量，低俗的，虚假的广告不仅会扭曲青少年儿童等群体，还可能使人受骗上当，净化互联网迫在眉睫。
+而另一部分人认为：网站要生存，但这些流量小的网站不受那些大（正常）广告主的青睐，但他们要生存，要挣钱，所以只能有这些低级甚至虚假广告存在。而且在我们日常生活中处处存在着垃圾广告，电线杆，甚至是共享单车上都会有各种广告，单单对互联网，软件上的广告眼红是不公平的。
+5. 误导性广告新花样 案例：拼多多 参考文章：令人讨厌的“拼多多” https://zhuanlan.zhihu.com/p/102700604
+ 没有选择把自己的logo放在显著位置而是将之“隐藏”起来已经说明拼多多“做贼心虚”。
+  仔细分析一下这三个广告，其中一个是“签到福利”，意思是在app签到即可获得现金50～100元不等的转账，然而我翻遍了整个APP也没有看到一个“签到”功能。
+  拿不存在的功能出来投放广告，这是实打实的欺骗了？
+  再看另外两个广告，一个宣传的是充值送话费，另一个宣传的则是“天天领现金”的诱导分享活动，都是非常有技巧地将“最高10/100元，金额以实际为准”的字眼用接近背景色的深色隐藏起来，在两三秒的开屏广告时间内，很难被注意到。
+  这种做法不可谓不“鸡贼”，也着实令人讨厌
+ 个人使用软件体验：像拼多多，抖音，淘宝这样的广告经常出现在某些应用软件启动时，首先这些软件借助虚假的宣传含糊的说明引诱用户点进去，而一旦点击进去，不经过用户同意，后台就自动开始下载拼多多。如果多加注意还好，然而用户经常由于不小心触摸显示屏而“触发了这些扳机”，不小心下载软件。除此之外，广告会被做的非常有欺骗性：比如说广告投屏上会做一个虚假的“关闭”按钮，欺骗用户点进去下载软件，稍不注意或缺乏经验就会中招。
+显然着不含欺骗性诱导性的因素，但由于执法难和定法难等因素使得这些“操作”猖狂地进行。
+ 小结 总的来说，互联网环境还不够成熟，出现了花样百出令人不悦的流氓软件和垃圾广告；很大程度上，用户在去适应他们，就和适应如何对待骚扰电话一样，在我去浏览器上搜索“垃圾广告”，“流氓软件”时，出现非常多的话题是“如何彻底卸载软件”，“如何关闭广告投放”等等，在互联网发达的世界，用户们也自己去营造自己“舒适的冲浪之旅”，与流氓软件，垃圾广告抗衡。
+有违背用户需要的软件不可能长期发展，那些曾经喧哗一时的流氓软件也慢慢被时代淘汰，一句话说得好：“时间在检验这一切”，在这个光速发展的互联网世界也是如此。</description>
+    </item>
+    
+    <item>
+      <title>Computing By Using Python</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog6/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog6/</guid>
+      <description>Python 编程实验报告 实验目的   用Python求解高数题
+ 求解一元方程 求导 求积分 求泰勒展开    用Python求解线代题
+ 求解矩阵方程组 求行列式 求矩阵的逆    实验准备 下载并安装软件 Anaconda3
+实验步骤和实验结果 用Python求解高数题 求解一元方程 1.设 f(x) = (1 - x) / (1 + x), 求证 f(f(x)) = x.(参考数分上册课本 Page24 第一题)
+代码：
+x = Symbol(&#39;x&#39;)def f(x): return (1-x)/(1+x)def g(x): return f(f(x))simplify(g(x) - x) 运行结果与截屏：
+2.解 x + 1/x = 0
+运行结果与截屏：答案是两个虚数 i 和 -i</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 4</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java4/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java4/</guid>
+      <description>Exceptions 异常处理  三种类型的异常： 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。例如：SQLException, IOException, FileNotFoundException
+运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。例如：ArithmeticException, ClassCastException, ArrayIndexOutOfBoundsException, NullPointerException
+错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。例如：System malfunction, OutOfMemoryException, StackOverflowError
+理解： 1、检查性异常: 不处理编译不能通过 2、非检查性异常:不处理编译可以通过，如果有抛出直接抛到控制台 3、运行时异常: 就是非检查性异常 4、非运行时异常: 就是检查性异常
+ Exception 类的层次 所有的异常类是从 java.lang.Exception 类继承的子类。 Exception 类是 Throwable 类的子类。除了Exception类外，Throwable还有一个子类Error。 Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。 Error 用来指示运行时环境发生的错误。
+ Java 内置异常类和方法 链接：https://www.runoob.com/java/java-exceptions.html  关键字 try catch throw finally throws / throw 如果一个方法没有捕获到一个检查性异常，那么该方法必须使用 throws 关键字来声明。throws 关键字放在方法签名的尾部。
+也可以使用 throw 关键字抛出一个异常，无论它是新实例化的还是刚捕获到的,多个异常之间用逗号隔开。 下面方法的声明抛出一个 RemoteException 异常：
+import java.io.*;public class className{public void deposit(double amount) throws RemoteException{// Method implementationthrow new RemoteException();}//Remainder of class definition} finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句。 finally 代码块出现在 catch 代码块最后。</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 5</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java5/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java5/</guid>
+      <description>Thread 线程 I Concurrent Programming
+Java 给多线程编程提供了内置的支持。
+基本概念：
+线程：指的是进程中一个单一顺序的控制流，一个进程中可以并发多个线程，每条线程并行执行不同的任务。
+进程：一个进程包括由操作系统分配的内存空间，包含一个或多个线程。一个线程不能独立的存在，它必须是进程的一部分。一个进程一直运行，直到所有的非守护线程都结束运行后才能结束。
+每个线程都是通过某个特定 Thread 对象所对应的方法 run() 来完成其操作的，方法 run() 称为线程体。通过调用 Thread 类的 start() 方法来启动一个线程。
+run 方法运行结束， 此线程终止。然后 CPU 再调度其它线程。
+线程的生命周期 新建状态New: 使用 new 关键字和 Thread 类或其子类建立一个线程对象后，该线程对象就处于新建状态。它保持这个状态直到程序 start() 这个线程。
+就绪状态Ready: 当线程对象调用了start()方法之后，该线程就进入就绪状态。就绪状态的线程处于就绪队列中，要等待JVM里线程调度器的调度。
+运行状态Running: 如果就绪状态的线程获取 CPU 资源，就可以执行 run()，此时线程便处于运行状态。处于运行状态的线程最为复杂，它可以变为阻塞状态、就绪状态和死亡状态。
+阻塞状态Waiting: 如果一个线程执行了sleep（睡眠）、suspend（挂起）等方法，失去所占用资源之后，该线程就从运行状态进入阻塞状态。在睡眠时间已到或获得设备资源后可以重新进入就绪状态。可以分为三种：
+等待阻塞：运行状态中的线程执行 wait() 方法，使线程进入到等待阻塞状态。
+同步阻塞：线程在获取 synchronized 同步锁失败(因为同步锁被其他线程占用)。
+其他阻塞：通过调用线程的 sleep() 或 join() 发出了 I/O 请求时，线程就会进入到阻塞状态。当sleep() 状态超时，join() 等待线程终止或超时，或者 I/O 处理完毕，线程重新转入就绪状态。
+死亡状态Dead: 一个运行状态的线程完成任务或者其他终止条件发生时，该线程就切换到终止状态。
+线程的创建 Java 提供了三种创建线程的方法：
+通过实现 Runnable 接口； 通过继承 Thread 类本身； 通过 Callable 和 Future 创建线程。</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 10</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework10/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework10/</guid>
+      <description>1. Bubble Sort the list: 33, 56, 17, 8, 95, 22。Make sure the final result is from small to large. Write out the list after the 2nd pass. Starting with the last list element, we compare successive pairs of elements, swapping whenever the bottom element of the pair is smaller than the one above it
+1st:33 56 17 8 22 9533 56 17 8 22 9533 56 8 17 22 9533 8 56 17 22 958 33 56 17 22 952nd:8 33 56 17 22 958 33 56 17 22 958 33 17 56 22 958 17 33 56 22 958 17 33 56 22 95after the 2nd pass:8 17 33 56 22 95 2.</description>
+    </item>
+    
+    <item>
+      <title>Programming in Pippin CPUSim</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog4/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog4/</guid>
+      <description>实验名称：硬件编程-机器指令编程 学号：19335286 姓名：郑有为  目录  1.实验目标 2. 实验步骤与结果  2.1. 任务一：简单程序 2.2. 任务二：简单循环   3. 实验小结   实验目标   理解冯·诺伊曼计算机的结构
+  理解机器指令的构成
+  理解机器指令执行周期
+  用汇编编写简单程序
+   实验步骤与结果 任务一：简单程序 （1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number （2）点step after step。观察并回答下面问题： PC，IR 寄存器的作用。 PC全称Program counter程序计数器，用于存放当前程序执行的下一行指令的地址，并会随着时钟信号更新。用于实现程序的顺序执行和条件跳转，循环跳转。 IR全称Instruction Register指针寄存器，存放指令内容，以便于译码器译码识别指令。
+ACC 寄存器的全称与作用。 ACC（Accumulator）的全称是累加器。累加器是一个具有特殊用途的寄存器，专门用来存放操作数或运算结果。在CPU执行某种运算前，两个操作数中的一个通常应放在累加器中，运算完成后累加器中便可得到运算结果。
+用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取等号（进行赋值运算），同时译码器发出控制信号将指令中存储的立即数输入到ALU中，计算结果保留在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。
+用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取加号（进行加运算），译码器将寄存器ACC中的数据取到ALU中，同时译码器发出控制信号将指令中存储的立即数取出，并通过这段立即数（W的地址）找到内存的相应位置取出数据，取出来的数据经过数据选择器进入ALU，在ALU中，该数据原本ACC的值相加，结果保存在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 9</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework9/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework9/</guid>
+      <description>根据素材，识别类和对象。 阅读牧师与恶魔过河的游戏介绍并玩游戏，然后回答问题 游戏涉及哪些类。请列表说明 类：图层，文字，按钮，计时器，精灵
+游戏中有哪些对象，各几个。例如，船（一个） 对象：三个牧师，三个恶魔，一个船，三个背景图层（开始图层，游戏图层，结束图层），多个文字，一个计时器，多个按钮
+类和对象的区别是什么？举一个例子说明 对象是例化的类。类是对一类事物的抽象描述，对象是可操作的实例。 类：精灵是一个个体的抽象，有移动等操作； 对象：牧师是精灵类的例化，可以被恶魔杀死，可以上船下船。
+游戏中的魔鬼，有哪些属性和方法？ 属性：大小形状图案，名字； 行为：上船，下船上岸，杀死牧师。
+假设魔鬼被鼠标点中，会执行onclick事件，请用文字 （伪代码）描述这个事件中魔鬼与其他对象沟通的过程。 if (恶魔在左岸 || 恶魔在右岸) &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来少于两个跳上船else if 恶魔在船上 &amp;amp;&amp;amp; 船停在左岸 &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来大于一个跳上左岸else if 恶魔在船上 &amp;amp;&amp;amp; 船停在右岸 &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来大于一个跳上右岸 类或对象会是动词吗？ 类与对象模拟的是现实世界的事物，必须是名词，不可为动词。
+ </description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 8</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework8/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework8/</guid>
+      <description>1、阅读 PseudocodeStandard。 1）用伪代码描述将十进制转换成16进制的方法 void octToHex(十进制数 num,十六进制存储数组 hex[10]){if num为负数 取num的绝对值;将hex数组的首字符置为负号;endifindex指向数组最后一位;while 若num大于零t = num对16取模;if t大于9hex[index] = (t-10) + &#39;A&#39;;endifelsehex[index] = t + &#39;0&#39;;end elseindex指向当前index的前一位;num = num/16得到的余数end while}void showHex(int num){// 对hex赋初始值为{0,0,0,0,0,0,0,0,&#39;0&#39;,0}// 调用octToHex(num,hex);// 遍历数组，输出非空字符;} 2）C语言实现（先用注释写好算法，然后翻译） void octToHex(int num,char hex[10]){if(num &amp;lt; 0){num = -num;hex[0] = &#39;-&#39;;}int i = 8;while(num !</description>
+    </item>
+    
+    <item>
+      <title>Pseudocode of Washing Machine</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog5/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog5/</guid>
+      <description>项目5：用伪代码描述算法。 介绍“自顶向下，逐步求精”的编程方法；以你观察的洗衣机为案例，用伪代码描述洗衣机洗衣的程序。 “自顶向下”的具体内涵是将复杂、大的问题划分为小问题，找出问题的关键、重点所在，然后用精确的思维定性、定量地去描述问题。而“逐步求精”的具体内涵是是将现实世界的问题经抽象转化为逻辑空间或求解空间的问题。复杂问题经抽象化处理变为相对比较简单的问题。经若干步抽象（精化）处理，最后到求解域中只是比较简单的编程问题。1
+假设洗衣机可执行的基本操作如下：
+water_in_switch(open_close) // open 打开上水开关，close关闭 water_out_switch(open_close) // open 打开排水开关，close关闭 get_water_volume() //返回洗衣机内部水的高度motor_run(direction) // 电机转动。left左转，right右转，stop停 time_counter() // 返回当前时间计数，以秒为单位halt(returncode) //停机，success 成功 failure 失败 1）伪代码分解“正常洗衣”程序的大步骤。 洗衣机洗衣服时，这些子程序被顺序地一一调用
+start_up(); //开机mode_selection(); //模式选择get_water(num_of_mode); //注水soak_clothes(num_of_mode); //浸泡wash_clothes(num_of_mode); //洗衣drain_away_water(); //排水spin_dry(); //甩干power_off(); //关机 2）进一步用基本操作、控制语句（IF、FOR、WHILE等）、变量与表达式，写出每个步骤的伪代码 这台洗衣机有三种洗衣模式1，2，3，分别对应不同的洗衣量。不同模式的注水体积，浸泡时间，洗衣，甩干时间有所不同。
+start_up(open_close){}mode_selection(){get num_of_mode;return num_of_mode;}get_water(num_of_mode){switch(num_of_mode){case 1: target_volume_of_water = 2L;case 2: target_volume_of_water = 3L;case 3: target_volume_of_water = 4L;}water_in_switch(open);while(get_water_volume() &amp;lt; target_water_volume);water_in_switch(close);}soak_clothes(num_of_mode){switch(num_of_mode){case 1: target_soak_time = 1min;case 2: target_soak_time = 2min;case 3: target_soak_time = 3min;}init time_counter();while(time_counter() &amp;gt;= target_soak_time);}wash_clothes(num_of_mode){switch(num_of_mode){case 1: target_wash_time = 10min;case 2: target_wash_time = 15min;case 3: target_wash_time = 20min;}init time_counter;while(time_counter() &amp;lt;= target_wash_time){if(time_counter() % 2 == 0)motor_run(left);elsemotor_run(right);}motor_run(stop);}drain_away_water(){water_out_switch(open);while(get_water_volume() &amp;gt; 0);water_out_switch(close);}spin_dry(){switch(num_of_mode){case 1: target_dry_time = 4min;case 2: target_dry_time = 6min;case 3: target_dry_time = 8min;}init time_counter();motor_run(left);while(time_counter() &amp;lt;= target_dry_time);motor_run(stop);}power_off(){halt(success);}  -[1] “自顶向下，逐步求精”的方法</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 7</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework7/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework7/</guid>
+      <description>1、Program with machine language according to the following c. int_8 a = 1; int_8 c = a + 3;  1）Write your assembly code &amp;amp; machine code ;assembly codeLOD # 1STO X LOD XADD # 3 STO Y HLT 我们假设LOD STO LOD ADD HLT对应的操作码是 0001 0010 0011 0100 1111，设X的存储地址是01010000，Y的存储地址是01010100
+根据ppt中的指令格式：
+The 8-bit instruction specifier（命令指示）
+And optionally, the 8-bit operand specifier（操作数）
+0 0 0 X Z Z Z Z b b b b b b b b  b b b b b b b b operand specifier： 一个数值，或者 一个内存地址</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 3</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java3/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java3/</guid>
+      <description>Interfaces 接口 In its most common form, an interface is a group of related methods with empty bodies. A bicycle&amp;rsquo;s behavior, if specified as an interface, might appear as follows：
+interface BicycleInterface { // constant declarations, if any// method signatures void changeCadence(int newValue); void changeGear(int newValue); void speedUp(int increment); void applyBrakes(int decrement); } Interfaces form a contract between the class and the outside world, and this contract is enforced at build time by the compiler.</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 6</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework6/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework6/</guid>
+      <description>1. According to the von Neumann architecture, List basic parts of a computer: 运算器(processing unit)、控制器(control unit)、存储器(memory)、输入设备、输出设备(input and output mechanisms)
+ 2. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? The memory address space is 64 MB, or 2^26 (2^6 x 2^20). This means it needs log2(2^26) or 26 bits, to address each single byte.
+ 3. List basic parts of a CPU, include cache or not?</description>
+    </item>
+    
+    <item>
+      <title>Experiments On EveryCircuit</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog3/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog3/</guid>
+      <description>硬件编程-电路与二进制运算  任务一：门电路的设计与功能验证    In A In B Out     0 0 0   0 1 0   1 0 0   1 1 1    电路图如下：其中电压设置为5伏，电阻为400欧，两个开关分别代表In A和In B
+验证如下：
+用XOR门作非门 电路如下，异或门一个输入接高电平： 实验验证：  任务二：验证电路 A(B+C) 和 AB+AC 等价 电路搭建及验证：三个开关从上到下依次代表A，B，C
+真值表：O1代表A(B+C),02代表AB+AC | A | B | C | O1 | O2 | |:-:|:-:|:-:|:-:|:-:| |0|0|0|0|0| |0|0|1|0|0| |0|1|0|0|0| |0|1|1|0|0| |1|0|0|0|0| |1|0|1|1|1| |1|1|0|1|1| |1|1|1|1|1|</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 2</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java2/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java2/</guid>
+      <description>Chapter 6 Polymorphism 多态 In programming, polymorphism is the ability for same code to be used with several different types of objects and behave differently depending on the actual type of object used.
+Alternate views of polymorphism:
+One objects sends a message to another object without caring about the type of the receiving object.
+The receiving object responds to a message appropriately for its type.
+Java methods are polymorphic by default</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 5</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework5/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework5/</guid>
+      <description>1) AND Gate 与门 解释
+与门有n个输入,1个输出,当且仅当所有输入为1时输出为1,否则输出为0.
+Representation
+设 A,B 为输入, X 为输出
+  Truth Table
+   A B X     0 0 0   0 1 0   1 0 0   1 1 1      Boolean Expression
+X = A + B
+  Logic Diagram Symbol (Image Below)
+  2) XOR Gate 异或门 解释</description>
+    </item>
+    
+    <item>
+      <title>Game Making - Flappy Bird</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog2/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog2/</guid>
+      <description>笨比飞扬鸟 笨比飞扬鸟简单地模仿了经典游戏Flappy Bird 游戏链接: https://www.construct.net/en/free-online-games/free-game-17945/play (手机端和PC端都可以玩)
+视频链接: https://www.bilibili.com/video/BV1S54y1y7P7/
+ 设计思路   游戏规则
+玩家需要通过点击鼠标/屏幕来使小鸟跳起来来避免迎面而来的绿柱子，在玩家不进行操作的情况下，笨比小蓝鸟会因为重力而往下掉。当小鸟撞上绿柱子时，游戏结束。
+  界面的设定
+我们需要三个界面：游戏启动界面，游戏界面和游戏结束界面。通过游戏启动界面的start按钮，玩家可以进入游戏界面进行游戏，当小鸟撞上绿柱子时界面转入游戏结束界面，游戏结束界面显示玩家本轮游戏的分数，并且玩家可以通过restart按钮重新进入游戏启动界面。
+  对象和对象行为
+小鸟(bird)可以进行跳跃，否则坠落，具有平台(Platform)属性,需要考虑小鸟的下落速度(和加速度)，还有小鸟跳跃一次的高度。
+柱子(上柱子up和下柱子down)需要系统以一定的速率生成，并且能够向左移动，并在出界后自动销毁。其中上下柱子需要同时生成，并具有一样的速率，之间留出的间隔需要合理（保证小鸟能过去）,还需要用到随机生成器来是系统每次生成的柱子高度不同。
+计分器(全局变量count)需要在小鸟通过一对柱子后计分，并显示在游戏页面左上方。
+其余对象还包括文本显示对象(text)和输入对象(touch),按钮(button)和背景(background),他们都是游戏不可缺的元素。
+  事件表
+将事件表的事件进行分组有利于我们更清晰地安排事件。
+分组包括“界面的跳转”，“小鸟的碰撞”，“障碍物的生成和销毁”，“得分的判定”。(在制作过程中有体现)
+   制作过程   收集素材
+素材来自张羿九学长！
+  基本过程
+  先创建一个新的项目   创建了三个背景板和对应的事件表，分别处理不同界面的事件：(下图出现在construct3界面的右侧)   单击右键创建对象，也可以直接将图片拖入场景版中直接创建对象   给对象赋予行为(右键单击对象-添加-行为)，以小鸟为例，需要给他赋予平台，并在左栏中给小鸟的速度等赋值，可参考图片：   构建事件表，可参考下面几张图(有一点乱)：
+游戏界面的事件表: 开始界面的事件表: 结束界面的事件表:   最后可以耍小聪明美化一下开始结束界面，点击顶部菜单旁边的三角形预览游戏试玩（记得保存项目）。   小经验
+可以先看construct3里的游戏实例(https://editor.construct.net/ 里的demo)，体验一下，刚开始不用担心看不明白或者看不全游戏的对象，事件表等是如何安排的，先有个大致印象。到自己实现小游戏时，对一个功能或逻辑不清楚的时候想想之前看的游戏案例有没有实现，再去翻看找到答案！
+     问题思考 “0基础”用户为什么能较好编程制作游戏？例如，使用 Events sheet 和 Script 选择的区别  相对于编程，图形化的游戏设计程序显然能降低设计游戏的门槛，使用construct3或迷你世界设计游戏，设计者无需掌握脚本语言的，底层的技术被封装好，设计者能专注于处理游戏的安排的设计，减少了设计者的工作量。给予我个人的体验，使用construct3做游戏的全过程包括学习案例，参考案例，设计游戏；若使用脚本语言则需要先学习并熟悉脚本语言，才能设计并编写游戏，耗时长成本高。 相比于脚本语言，显然显示成表的事件表具有更高的可读性，设计者无需掌握脚本语言的。  这些平台如何表达游戏世界的事物和行为？ 如同C++的类，可以通过类的数据成员和成员函数来模拟现实世界的事物和这些事物的行为，而这些平台则是通过对象和对象的动作来模拟游戏世界，同时这些平台提供的对象更针对于游戏的设计，比如精灵和子弹等概念。</description>
+    </item>
+    
+    <item>
+      <title>Java - The Learning Experience 1</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java1/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java1/</guid>
+      <description>Chapter 1 &amp;amp; 2 Introduction to Objects  Background Java technology includes Java programming languages and Java platform
+文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序
+Java Platform has two components: The Java Virtual Machine(JavaVM) and The Java Application Programming Interface (API)
+The API(https://docs.oracle.com/javase/6/docs/index.html) is a large collection of ready-made software components. The API provides many useful capabilities:
+It is grouped into libraries of related classes and interfaces; These libraries are known as packages .</description>
+    </item>
+    
+    <item>
+      <title>NightNote - 1</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/nightnote1/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/nightnote1/</guid>
+      <description>今天注册了Leetcode账号，并研究了第一道题 #1 两数之和 https://leetcode-cn.com/problems/two-sum/。 我分别使用C和Java写了题，还看了看使用哈希表的题解。
+C做法： Note: The returned array must be malloced, assume caller calls free().
+int* twoSum(int* nums, int numsSize, int target, int* returnSize){int * result = (int *)malloc(sizeof(int) * 2);for(int i = 0; i &amp;lt; numsSize-1 ; i++){for(int j = i + 1; j &amp;lt; numsSize; j++){if(nums[i] + nums[j] == target){result[0] = i;result[1] = j;*returnSize = 2;return result;}}}return result;} 这里需要注意的是malloc的语法，太久不用忘记了</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 4</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework4/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework4/</guid>
+      <description>名词解释 ASCII ASCII abbreviated from American Standard Code for Information Interchange, is a character encoding standard. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters.
+Color Color is the characteristic of human visual perception described through color categories. This perception of color derives from the stimulation of cone cells in the human eye by electromagnetic radiation in the spectrum of light.</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 3</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework3/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework3/</guid>
+      <description>用二进制表示数值    Problem Solution Overflow Accuracy Error     int8_t x = 67 01000011 No No   int8_t y = -7 11111001 No No   int8_t z = y - x 10110110 No No       Problem Solution Overflow Accuracy Error     int8_t x = 0xd3 11010011 Yes No   uint8_t = 0xd3 11010011 No No       Problem Solution Overflow Accuracy Error     int8_t x = 127 01111111 No No   int8_t y = -7 11111001 No No   int8_t z = y - x 01111010 Yes No       Problem Solution Overflow Accuracy Error     float x = 1.</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 2</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework2/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework2/</guid>
+      <description>进制转换 1分12秒 等于 7200毫秒
+(7A)13= (101)10(7A)16= (122)10(7A)16= (1111010)2= (172)8(1011011)2= (133)8= (5B)16(678)10= (1010100110)2= (1246)8(111)2+ (101)2= (1100)2关键词解释 from Wikipedia Information At its most fundamental level, information is any propagation of cause and effect within a system. Information is conveyed either as the content of a message or through direct or indirect observation of anything.
+Position notation Positional notation is a method of representing or encoding numbers. Positional notation is distinguished from other notations (such as Roman numerals) for its use of the same symbol for the different orders of magnitude (for example, the &amp;ldquo;ones place&amp;rdquo;, &amp;ldquo;tens place&amp;rdquo;, &amp;ldquo;hundreds place&amp;rdquo;).</description>
+    </item>
+    
+    <item>
+      <title>Git - The Learning Experience</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog1/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog1/</guid>
+      <description>GitNote主要篇 本学习经验来源 Learn Git Branching https://learngitbranching.js.org/?locale=zh_CN  基础篇 git commit 修改了代码库并保存成一个新的提交记录（这个提交记录的内容可以是你对本地项目的改动），把它看作一个节点，它的父亲节点是上一个提交记录 可以加入commit，如 git commit -m &amp;ldquo;A Little Try&amp;rdquo;
+git branch 分支名 创建一个新的分支 我想基于这个提交记录以及他的所有父提交进行新的工作 操作方法 git branch 分支名 例如 git branch newImage 创造了一个叫做newImage的新分支 创建之后 输入 git commit 只有master分支前进了，而newImage保持不动，因为此时星号*标注在master上，星号表示当前所在的分支
+git checkout 分支名 表示将星号移动到我们要求的分支上
+git merge 分支名 表示把我们提到的分支名合并到当前带星号的分支上 注意这个merge会形成一个新的提交，然后当前星号指示的分支指向这个新的提交
+git rebase 分支名 我们在我们提到的分支名下建立了新的提交，此时星号指示的分支指向这个新的提交，我们得到一个线性的提交序列，星号分支原来指向的提交没有消失。
+ 提高篇—在提交树上移动 HEAD 指向你正在其基础上进行工作的提交记录，总是指向当前分支的最近一次提交记录 分离的HEAD就是让其指向某个具体的提交记录而不是分支名 比如只有master分支时，HEAD指向master，master指向提交记录C1（C1是哈希值）可以使用git log来查看提交记录的哈希值 使用 git checkout C1 后，变成了 HEAD 指向C1
+相对引用 使用 ^ 向上移动一个提交记录 使用例子 git checkout master^ 使用 ~&amp;lt; num &amp;gt; 向上移动多个提交记录，如 ~3 例子 git checkout~4</description>
+    </item>
+    
+    <item>
+      <title>Homework of Week 1</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework1/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework1/</guid>
+      <description>关键词解释 from Wikipedia Computer： A computer is a device that can be instructed to carry out an arbitrary set of arithmetic or logical operations automatically.
+Computer Science： Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It is the scientific and practical approach to computation and its applications and the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

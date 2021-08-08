@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IO Basics on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/io-basics/</link>
+    <description>Recent content in IO Basics on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/io-basics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java - The Learning Experience 1</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/java1/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/java1/</guid>
+      <description>Chapter 1 &amp;amp; 2 Introduction to Objects  Background Java technology includes Java programming languages and Java platform
+文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序
+Java Platform has two components: The Java Virtual Machine(JavaVM) and The Java Application Programming Interface (API)
+The API(https://docs.oracle.com/javase/6/docs/index.html) is a large collection of ready-made software components. The API provides many useful capabilities:
+It is grouped into libraries of related classes and interfaces; These libraries are known as packages .</description>
+    </item>
+    
+  </channel>
+</rss>

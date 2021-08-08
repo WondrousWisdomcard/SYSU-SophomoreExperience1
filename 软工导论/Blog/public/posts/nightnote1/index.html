@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html><head>
+<title>NightNote - 1</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="NightNote - 1" />
+<meta property="og:description" content="今天注册了Leetcode账号，并研究了第一道题 #1 两数之和 https://leetcode-cn.com/problems/two-sum/。 我分别使用C和Java写了题，还看了看使用哈希表的题解。
+C做法： Note: The returned array must be malloced, assume caller calls free().
+int* twoSum(int* nums, int numsSize, int target, int* returnSize){int * result = (int *)malloc(sizeof(int) * 2);for(int i = 0; i &lt; numsSize-1 ; i&#43;&#43;){for(int j = i &#43; 1; j &lt; numsSize; j&#43;&#43;){if(nums[i] &#43; nums[j] == target){result[0] = i;result[1] = j;*returnSize = 2;return result;}}}return result;} 这里需要注意的是malloc的语法，太久不用忘记了" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wondrouswisdomcard.gitee.io/posts/nightnote1/" />
+<meta property="article:published_time" content="2020-09-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-24T00:00:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NightNote - 1"/>
+<meta name="twitter:description" content="今天注册了Leetcode账号，并研究了第一道题 #1 两数之和 https://leetcode-cn.com/problems/two-sum/。 我分别使用C和Java写了题，还看了看使用哈希表的题解。
+C做法： Note: The returned array must be malloced, assume caller calls free().
+int* twoSum(int* nums, int numsSize, int target, int* returnSize){int * result = (int *)malloc(sizeof(int) * 2);for(int i = 0; i &lt; numsSize-1 ; i&#43;&#43;){for(int j = i &#43; 1; j &lt; numsSize; j&#43;&#43;){if(nums[i] &#43; nums[j] == target){result[0] = i;result[1] = j;*returnSize = 2;return result;}}}return result;} 这里需要注意的是malloc的语法，太久不用忘记了"/>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/journal.min.c116bc90d171283f099f173854157ec8f183f9073b93443b2c8ad82899ee9025.css" integrity="sha256-wRa8kNFxKD8Jnxc4VBV&#43;yPGD&#43;Qc7k0Q7LIrYKJnukCU=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/dark-mode.min.552aae4638a84aa57cf0b195750a49ea9131d3bb621d1ed3ebc9b14b18166536.css" integrity="sha256-VSquRjioSqV88LGVdQpJ6pEx07tiHR7T68mxSxgWZTY=" media="screen">
+
+
+<script src="https://wondrouswisdomcard.gitee.io/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+  
+    <script src="https://wondrouswisdomcard.gitee.io/js/toc-collapse.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
+
+
+</head>
+<body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://wondrouswisdomcard.gitee.io">
+    
+        <div class="nav-title">
+            Wondrous WindomCard&#39;s Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#c%e5%81%9a%e6%b3%95" onclick="onNavClick(`#c做法-nav`)" id="c做法-nav">
+									C做法：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%85%b3%e4%ba%8emalloc%e5%92%8cfree%e7%9a%84%e8%af%ad%e6%b3%95%e7%9a%84%e5%a4%8d%e4%b9%a0" onclick="onNavClick(`#关于malloc和free的语法的复习-nav`)" id="关于malloc和free的语法的复习-nav">
+									关于malloc和free的语法的复习
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#java%e5%81%9a%e6%b3%95" onclick="onNavClick(`#java做法-nav`)" id="java做法-nav">
+									Java做法：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8%e5%93%88%e5%b8%8c%e8%a1%a8%e7%9a%84on%e5%a4%8d%e6%9d%82%e5%ba%a6%e4%bb%a3%e7%a0%81" onclick="onNavClick(`#使用哈希表的on复杂度代码-nav`)" id="使用哈希表的on复杂度代码-nav">
+									使用哈希表的O(n)复杂度代码
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%93%88%e5%b8%8c%e8%a1%a8%e7%9a%84%e6%a6%82%e5%bf%b5" onclick="onNavClick(`#哈希表的概念-nav`)" id="哈希表的概念-nav">
+									哈希表的概念
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#java%e4%b8%ad%e7%9a%84%e9%9b%86%e5%90%88hashmap%e7%9a%84%e7%94%a8%e6%b3%95" onclick="onNavClick(`#java中的集合hashmap的用法-nav`)" id="java中的集合hashmap的用法-nav">
+									Java中的集合HashMap的用法
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#c%e5%81%9a%e6%b3%95" onclick="onNavClick(`#c做法-nav`)" id="c做法-nav">
+									C做法：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%85%b3%e4%ba%8emalloc%e5%92%8cfree%e7%9a%84%e8%af%ad%e6%b3%95%e7%9a%84%e5%a4%8d%e4%b9%a0" onclick="onNavClick(`#关于malloc和free的语法的复习-nav`)" id="关于malloc和free的语法的复习-nav">
+									关于malloc和free的语法的复习
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#java%e5%81%9a%e6%b3%95" onclick="onNavClick(`#java做法-nav`)" id="java做法-nav">
+									Java做法：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8%e5%93%88%e5%b8%8c%e8%a1%a8%e7%9a%84on%e5%a4%8d%e6%9d%82%e5%ba%a6%e4%bb%a3%e7%a0%81" onclick="onNavClick(`#使用哈希表的on复杂度代码-nav`)" id="使用哈希表的on复杂度代码-nav">
+									使用哈希表的O(n)复杂度代码
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%93%88%e5%b8%8c%e8%a1%a8%e7%9a%84%e6%a6%82%e5%bf%b5" onclick="onNavClick(`#哈希表的概念-nav`)" id="哈希表的概念-nav">
+									哈希表的概念
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#java%e4%b8%ad%e7%9a%84%e9%9b%86%e5%90%88hashmap%e7%9a%84%e7%94%a8%e6%b3%95" onclick="onNavClick(`#java中的集合hashmap的用法-nav`)" id="java中的集合hashmap的用法-nav">
+									Java中的集合HashMap的用法
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://wondrouswisdomcard.gitee.io">
+            Wondrous WindomCard&#39;s Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://wondrouswisdomcard.gitee.io">
+        <div class="single-column-header-title">Wondrous WindomCard&#39;s Blog</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    NightNote - 1
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-09-24 00:00
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[NightNote]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/leetcode">Leetcode</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>今天注册了Leetcode账号，并研究了第一道题 <strong>#1 两数之和</strong> <a href="https://leetcode-cn.com/problems/two-sum/">https://leetcode-cn.com/problems/two-sum/</a>。
+我分别使用C和Java写了题，还看了看使用哈希表的题解。</p>
+<h2 id="c做法">C做法：</h2>
+<p>Note: The returned array must be malloced, assume caller calls free().</p>
+<pre><code>int* twoSum(int* nums, int numsSize, int target, int* returnSize){
+    int * result = (int *)malloc(sizeof(int) * 2);
+    for(int i = 0; i &lt; numsSize-1 ; i++)
+    {
+        for(int j = i + 1; j &lt; numsSize; j++)
+        {
+            if(nums[i] + nums[j] == target)
+            {
+                result[0] = i;
+                result[1] = j;
+                *returnSize = 2;
+                return result;
+            }
+        }
+    }
+    return result;
+}
+</code></pre>
+<p>这里需要注意的是malloc的语法，太久不用忘记了</p>
+<h3 id="关于malloc和free的语法的复习">关于malloc和free的语法的复习</h3>
+<pre><code>#include &lt;stdlib.h&gt;
+    void *malloc(size_t size);
+        //功能：在堆中申请空间
+        //size:要申请的空间的大小（字节数）　　　
+        //返回值类型：void * 该类型表明malloc返回的地址空间中的数据类型是不确定，必须经过强制类型转换才可以使用。
+        //返回值：成功时，返回malloc申请的空间的起始地址，失败时，返回NULL。
+        //特点：malloc申请的空间为连续空间；
+        //malloc申请的是没有初始化的空间；
+    void free(void *ptr);
+        //参数ptr: 
+        //1)不能传NULL 
+        //2)不能给ptr传申请的空间的一部分 
+        //3)不能释放已经被释放的空间
+        //4)不能使用已经被释放的空间
+</code></pre>
+<hr>
+<h2 id="java做法">Java做法：</h2>
+<pre><code>class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for(int i = 0; i &lt; nums.length; i++)
+        {
+            for(int j = i + 1; j &lt; nums.length; j++)
+            {
+                if(nums[i] + nums[j] == target)
+                {
+                    return new int [] {i,j};
+                }
+            }
+        }
+        return new int [2];
+    }
+}
+</code></pre>
+<p>数组的长度的获取：<strong>数组名.length</strong> （没有括号）</p>
+<p>注意一下return的形式：<strong>return new int [] {i,j};</strong></p>
+<hr>
+<h2 id="使用哈希表的on复杂度代码">使用哈希表的O(n)复杂度代码</h2>
+<p>参考题解 <a href="https://leetcode-cn.com/problems/two-sum/solution/liang-shu-zhi-he-by-leetcode-2/">https://leetcode-cn.com/problems/two-sum/solution/liang-shu-zhi-he-by-leetcode-2/</a></p>
+<pre><code>class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();
+        for (int i = 0; i &lt; nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i &lt; nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) &amp;&amp; map.get(complement) != i) {
+                return new int[] { i, map.get(complement) };
+            }
+        }
+        throw new IllegalArgumentException(&quot;No two sum solution&quot;);
+    }
+}
+</code></pre>
+<h3 id="哈希表的概念">哈希表的概念</h3>
+<p>参考博客 <a href="https://blog.csdn.net/woshimaxiao1/article/details/83661464">https://blog.csdn.net/woshimaxiao1/article/details/83661464</a></p>
+<p>哈希表通过哈希函数，在记录的存储位置和它的关键字之间建立一个确定的对应关系，使每个关键字和结构中一个唯一的存储位置相对应。</p>
+<p>哈希表的实现，与普通数组相比，是以空间换时间，将查找时间从O(n)降低到(近似)O(1)。</p>
+<p>哈希函数f: 存储位置 = f(关键字) ，这个函数f一般称为哈希函数，这个函数的设计好坏会直接影响到哈希表的优劣。</p>
+<h3 id="java中的集合hashmap的用法">Java中的集合HashMap的用法</h3>
+<p>参考博客 <a href="https://blog.csdn.net/weixin_43263961/article/details/86427533">https://blog.csdn.net/weixin_43263961/article/details/86427533</a></p>
+<p>参考博客 <a href="https://blog.csdn.net/zhaobin0731/article/details/98962624?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">https://blog.csdn.net/zhaobin0731/article/details/98962624?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
+<p>增 — map.put(“4”, “c”);</p>
+<p>删 — map.remove(“4”);</p>
+<p>改 — map.put(“4”, “d”);</p>
+<p>查 — map.containsKey(“2”); 和 map.containsValue(“b”);</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2020-09-24</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://wondrouswisdomcard.gitee.io/posts/java1/">
+			Next<br>Java - The Learning Experience 1
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://wondrouswisdomcard.gitee.io/posts/homework4/">
+			Previous<br>Homework of Week 4
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+<div class="comments">
+    <vue-disqus shortname="Your disqus short name."></vue-disqus>
+</div>
+<noscript><noscript>Please activate JavaScript to view comments.</noscript></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="https://wondrouswisdomcard.gitee.io/js/journal.js"></script>
+    </body>
+</html>

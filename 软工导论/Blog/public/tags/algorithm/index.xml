@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/algorithm/</link>
+    <description>Recent content in Algorithm on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 2</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework2/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework2/</guid>
+      <description>进制转换 1分12秒 等于 7200毫秒
+(7A)13= (101)10(7A)16= (122)10(7A)16= (1111010)2= (172)8(1011011)2= (133)8= (5B)16(678)10= (1010100110)2= (1246)8(111)2+ (101)2= (1100)2关键词解释 from Wikipedia Information At its most fundamental level, information is any propagation of cause and effect within a system. Information is conveyed either as the content of a message or through direct or indirect observation of anything.
+Position notation Positional notation is a method of representing or encoding numbers. Positional notation is distinguished from other notations (such as Roman numerals) for its use of the same symbol for the different orders of magnitude (for example, the &amp;ldquo;ones place&amp;rdquo;, &amp;ldquo;tens place&amp;rdquo;, &amp;ldquo;hundreds place&amp;rdquo;).</description>
+    </item>
+    
+  </channel>
+</rss>

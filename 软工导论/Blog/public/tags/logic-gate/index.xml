@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logic Gate on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/logic-gate/</link>
+    <description>Recent content in Logic Gate on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Wed, 30 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/logic-gate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 5</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework5/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework5/</guid>
+      <description>1) AND Gate 与门 解释
+与门有n个输入,1个输出,当且仅当所有输入为1时输出为1,否则输出为0.
+Representation
+设 A,B 为输入, X 为输出
+  Truth Table
+   A B X     0 0 0   0 1 0   1 0 0   1 1 1      Boolean Expression
+X = A + B
+  Logic Diagram Symbol (Image Below)
+  2) XOR Gate 异或门 解释</description>
+    </item>
+    
+  </channel>
+</rss>

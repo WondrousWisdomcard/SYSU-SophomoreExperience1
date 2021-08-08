@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Circuit on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/circuit/</link>
+    <description>Recent content in Circuit on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/circuit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experiments On EveryCircuit</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog3/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog3/</guid>
+      <description>硬件编程-电路与二进制运算  任务一：门电路的设计与功能验证    In A In B Out     0 0 0   0 1 0   1 0 0   1 1 1    电路图如下：其中电压设置为5伏，电阻为400欧，两个开关分别代表In A和In B
+验证如下：
+用XOR门作非门 电路如下，异或门一个输入接高电平： 实验验证：  任务二：验证电路 A(B+C) 和 AB+AC 等价 电路搭建及验证：三个开关从上到下依次代表A，B，C
+真值表：O1代表A(B+C),02代表AB+AC | A | B | C | O1 | O2 | |:-:|:-:|:-:|:-:|:-:| |0|0|0|0|0| |0|0|1|0|0| |0|1|0|0|0| |0|1|1|0|0| |1|0|0|0|0| |1|0|1|1|1| |1|1|0|1|1| |1|1|1|1|1|</description>
+    </item>
+    
+  </channel>
+</rss>

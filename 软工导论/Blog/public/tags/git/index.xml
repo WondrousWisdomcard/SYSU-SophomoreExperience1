@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/git/</link>
+    <description>Recent content in Git on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git - The Learning Experience</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog1/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog1/</guid>
+      <description>GitNote主要篇 本学习经验来源 Learn Git Branching https://learngitbranching.js.org/?locale=zh_CN  基础篇 git commit 修改了代码库并保存成一个新的提交记录（这个提交记录的内容可以是你对本地项目的改动），把它看作一个节点，它的父亲节点是上一个提交记录 可以加入commit，如 git commit -m &amp;ldquo;A Little Try&amp;rdquo;
+git branch 分支名 创建一个新的分支 我想基于这个提交记录以及他的所有父提交进行新的工作 操作方法 git branch 分支名 例如 git branch newImage 创造了一个叫做newImage的新分支 创建之后 输入 git commit 只有master分支前进了，而newImage保持不动，因为此时星号*标注在master上，星号表示当前所在的分支
+git checkout 分支名 表示将星号移动到我们要求的分支上
+git merge 分支名 表示把我们提到的分支名合并到当前带星号的分支上 注意这个merge会形成一个新的提交，然后当前星号指示的分支指向这个新的提交
+git rebase 分支名 我们在我们提到的分支名下建立了新的提交，此时星号指示的分支指向这个新的提交，我们得到一个线性的提交序列，星号分支原来指向的提交没有消失。
+ 提高篇—在提交树上移动 HEAD 指向你正在其基础上进行工作的提交记录，总是指向当前分支的最近一次提交记录 分离的HEAD就是让其指向某个具体的提交记录而不是分支名 比如只有master分支时，HEAD指向master，master指向提交记录C1（C1是哈希值）可以使用git log来查看提交记录的哈希值 使用 git checkout C1 后，变成了 HEAD 指向C1
+相对引用 使用 ^ 向上移动一个提交记录 使用例子 git checkout master^ 使用 ~&amp;lt; num &amp;gt; 向上移动多个提交记录，如 ~3 例子 git checkout~4</description>
+    </item>
+    
+  </channel>
+</rss>

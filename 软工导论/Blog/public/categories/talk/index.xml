@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talk on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/categories/talk/</link>
+    <description>Recent content in Talk on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/categories/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk 1 - Introduction of Scholarship</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/talk1/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/talk1/</guid>
+      <description>第一次课业辅导 - 奖学金介绍部分 19软工 郑有为 下面为匆忙之中的收集 如有错误，请指出:)
+ 因为不同专业的具体奖学金评定和种类稍有不同， 又考虑到这次参加辅导的小朋友来自下面几个学院： 航空航天学院 智能工程学院 计算机学院 生物医学工程 下面的资料尽可能考虑专业的差异，对于不同专业不同的地方会特殊声明。
+ 1. 绩点，平均绩点和综合测评 绩点：(科目成绩-50)*0.1 满绩5.0,不合格就无绩点了(需补考/重修)
+比如 课程A的期末成绩为90分，绩点为 (90-50)*0.1=4.0课程B的期末成绩为60分，绩点为 (60-50)*0.1=1.0课程C的期末成绩为49分，需补考 平均学分绩点：   平均学分绩点GPA:考虑加权，学分越高的课(比如军理，高数等等)占比重更大
+  必修专选平均绩点:与GPA的差别在于不考虑公选。
+  综测：必修专选平均绩点 + (综测加分 * 一定比例)   综合测评成绩为学业成绩、综合测评加分、综合 测评扣分三部分的总和。
+  考虑专必，专选，公必(包括体育，英语，马原思修等等)的成绩，不算入公选(不代表公选考多少都没关系,出国要考虑公选)
+  综测还考虑综测加分:但是不同学院加分比例不一样：
+ 航院 综测 = 平均绩点 + 综测加分*0.06计院,生医工,智工 综测 = 平均绩点 + 综测加分*0.1   综测加分：
+  关于加分细则，不同学院不同安排，到时候学院会发完整的通知。</description>
+    </item>
+    
+    <item>
+      <title>Talk 2 - My Experience of Exam Reviews</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/talk2/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/talk2/</guid>
+      <description>第二次课业辅导 - 个人复习经验 19软工 郑有为 个人摸索的收获，仅供参考，希望能给你一点启发
+ 1、工程化的复习方式： 系统化 准备：如果你还没有… 整理老师课件/整理自己的作业
+  什么时候开始复习？我还有课/论文/大作业？不用焦虑，优先把任务做完留时间复习
+  推荐考试周前一周开始陆陆续续利用零散的时间复习，考试周是留给考试和考试复习的，不是用来赶DDL的
+  提前制定时间表和任务清单：考试时间，考试间隙的复习安排？
+  规范化   图书馆（考试周图书馆爆满，看你能不能早起了） &amp;gt; 自习室/教室（人相对不会那么多） &amp;gt; 宿舍（看情况）
+  消遣软件？报复性反弹，不如卸载
+  屏幕管理APP比如Forest
+  可度量   复习笔记反应复习效果
+  心理激励：成果汇报
+   2、数学类 笔者没有学高数，可能复习思路有些不同
+  优质的考前笔记：知识点照搬(x) 错题摘抄(x) 总结型笔记(ok)
+总结型笔记：必要的整合归纳，关键词，容易忘的/容易忽略的 这一节会考什么题 部分题的解法和思路（技巧收集贴） 易错点/易疏忽点
+存着！别扔！以后有用
+XMind/纸质版都OK
+  证明题
+对于课后习题，如果不懂，看答案写大体思路（以关键词形式呈现）
+不交白卷，没有思路则优先把自己能想到的东西写上去（比如写定理）
+   3、编程类   机试考前复习： （每周都有编程训练的话，一般没啥好复习的）</description>
+    </item>
+    
+  </channel>
+</rss>

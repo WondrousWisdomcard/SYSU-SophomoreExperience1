@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html><head>
+<title>Programming in Pippin CPUSim</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Programming in Pippin CPUSim" />
+<meta property="og:description" content="实验名称：硬件编程-机器指令编程 学号：19335286 姓名：郑有为  目录  1.实验目标 2. 实验步骤与结果  2.1. 任务一：简单程序 2.2. 任务二：简单循环   3. 实验小结   实验目标   理解冯·诺伊曼计算机的结构
+  理解机器指令的构成
+  理解机器指令执行周期
+  用汇编编写简单程序
+   实验步骤与结果 任务一：简单程序 （1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number （2）点step after step。观察并回答下面问题： PC，IR 寄存器的作用。 PC全称Program counter程序计数器，用于存放当前程序执行的下一行指令的地址，并会随着时钟信号更新。用于实现程序的顺序执行和条件跳转，循环跳转。 IR全称Instruction Register指针寄存器，存放指令内容，以便于译码器译码识别指令。
+ACC 寄存器的全称与作用。 ACC（Accumulator）的全称是累加器。累加器是一个具有特殊用途的寄存器，专门用来存放操作数或运算结果。在CPU执行某种运算前，两个操作数中的一个通常应放在累加器中，运算完成后累加器中便可得到运算结果。
+用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取等号（进行赋值运算），同时译码器发出控制信号将指令中存储的立即数输入到ALU中，计算结果保留在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。
+用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取加号（进行加运算），译码器将寄存器ACC中的数据取到ALU中，同时译码器发出控制信号将指令中存储的立即数取出，并通过这段立即数（W的地址）找到内存的相应位置取出数据，取出来的数据经过数据选择器进入ALU，在ALU中，该数据原本ACC的值相加，结果保存在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wondrouswisdomcard.gitee.io/posts/blog4/" />
+<meta property="article:published_time" content="2020-10-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-27T00:00:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Programming in Pippin CPUSim"/>
+<meta name="twitter:description" content="实验名称：硬件编程-机器指令编程 学号：19335286 姓名：郑有为  目录  1.实验目标 2. 实验步骤与结果  2.1. 任务一：简单程序 2.2. 任务二：简单循环   3. 实验小结   实验目标   理解冯·诺伊曼计算机的结构
+  理解机器指令的构成
+  理解机器指令执行周期
+  用汇编编写简单程序
+   实验步骤与结果 任务一：简单程序 （1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number （2）点step after step。观察并回答下面问题： PC，IR 寄存器的作用。 PC全称Program counter程序计数器，用于存放当前程序执行的下一行指令的地址，并会随着时钟信号更新。用于实现程序的顺序执行和条件跳转，循环跳转。 IR全称Instruction Register指针寄存器，存放指令内容，以便于译码器译码识别指令。
+ACC 寄存器的全称与作用。 ACC（Accumulator）的全称是累加器。累加器是一个具有特殊用途的寄存器，专门用来存放操作数或运算结果。在CPU执行某种运算前，两个操作数中的一个通常应放在累加器中，运算完成后累加器中便可得到运算结果。
+用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取等号（进行赋值运算），同时译码器发出控制信号将指令中存储的立即数输入到ALU中，计算结果保留在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。
+用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取加号（进行加运算），译码器将寄存器ACC中的数据取到ALU中，同时译码器发出控制信号将指令中存储的立即数取出，并通过这段立即数（W的地址）找到内存的相应位置取出数据，取出来的数据经过数据选择器进入ALU，在ALU中，该数据原本ACC的值相加，结果保存在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。"/>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/journal.min.c116bc90d171283f099f173854157ec8f183f9073b93443b2c8ad82899ee9025.css" integrity="sha256-wRa8kNFxKD8Jnxc4VBV&#43;yPGD&#43;Qc7k0Q7LIrYKJnukCU=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/dark-mode.min.552aae4638a84aa57cf0b195750a49ea9131d3bb621d1ed3ebc9b14b18166536.css" integrity="sha256-VSquRjioSqV88LGVdQpJ6pEx07tiHR7T68mxSxgWZTY=" media="screen">
+
+
+<script src="https://wondrouswisdomcard.gitee.io/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+  
+    <script src="https://wondrouswisdomcard.gitee.io/js/toc-collapse.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
+
+
+</head>
+<body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://wondrouswisdomcard.gitee.io">
+    
+        <div class="nav-title">
+            Wondrous WindomCard&#39;s Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e5%90%8d%e7%a7%b0%e7%a1%ac%e4%bb%b6%e7%bc%96%e7%a8%8b-%e6%9c%ba%e5%99%a8%e6%8c%87%e4%bb%a4%e7%bc%96%e7%a8%8b" onclick="onNavClick(`#实验名称硬件编程-机器指令编程-nav`)" id="实验名称硬件编程-机器指令编程-nav">
+									实验名称：硬件编程-机器指令编程
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%ad%a6%e5%8f%b719335286" onclick="onNavClick(`#学号19335286-nav`)" id="学号19335286-nav">
+									学号：19335286
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%a7%93%e5%90%8d%e9%83%91%e6%9c%89%e4%b8%ba" onclick="onNavClick(`#姓名郑有为-nav`)" id="姓名郑有为-nav">
+									姓名：郑有为
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%9b%ae%e5%bd%95" onclick="onNavClick(`#目录-nav`)" id="目录-nav">
+									目录
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e7%9b%ae%e6%a0%87" onclick="onNavClick(`#实验目标-nav`)" id="实验目标-nav">
+									实验目标
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e6%ad%a5%e9%aa%a4%e4%b8%8e%e7%bb%93%e6%9e%9c" onclick="onNavClick(`#实验步骤与结果-nav`)" id="实验步骤与结果-nav">
+									实验步骤与结果
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e4%bb%bb%e5%8a%a1%e4%b8%80%e7%ae%80%e5%8d%95%e7%a8%8b%e5%ba%8f" onclick="onNavClick(`#任务一简单程序-nav`)" id="任务一简单程序-nav">
+									任务一：简单程序
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1%e6%89%93%e5%bc%80%e7%bd%91%e9%a1%b5-the-pippin-users-guideslidesthe-pippin-users-guidehtml-%e7%84%b6%e5%90%8e%e8%be%93%e5%85%a5-program-1add-2-number" onclick="onNavClick(`#1打开网页-the-pippin-users-guideslidesthe-pippin-users-guidehtml-然后输入-program-1add-2-number-nav`)" id="1打开网页-the-pippin-users-guideslidesthe-pippin-users-guidehtml-然后输入-program-1add-2-number-nav">
+									（1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2%e7%82%b9step-after-step%e8%a7%82%e5%af%9f%e5%b9%b6%e5%9b%9e%e7%ad%94%e4%b8%8b%e9%9d%a2%e9%97%ae%e9%a2%98" onclick="onNavClick(`#2点step-after-step观察并回答下面问题-nav`)" id="2点step-after-step观察并回答下面问题-nav">
+									（2）点step after step。观察并回答下面问题：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3%e7%82%b9%e5%87%bbbinary%e8%a7%82%e5%af%9f%e5%9b%9e%e7%ad%94%e4%b8%8b%e9%9d%a2%e9%97%ae%e9%a2%98" onclick="onNavClick(`#3点击binary观察回答下面问题-nav`)" id="3点击binary观察回答下面问题-nav">
+									（3）点击“Binary”,观察回答下面问题
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%bb%bb%e5%8a%a1%e4%ba%8c%e7%ae%80%e5%8d%95%e5%be%aa%e7%8e%af" onclick="onNavClick(`#任务二简单循环-nav`)" id="任务二简单循环-nav">
+									任务二：简单循环
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1-%e8%be%93%e5%85%a5%e7%a8%8b%e5%ba%8fprogram-2%e8%bf%90%e8%a1%8c%e5%b9%b6%e5%9b%9e%e7%ad%94%e9%97%ae%e9%a2%98" onclick="onNavClick(`#1-输入程序program-2运行并回答问题-nav`)" id="1-输入程序program-2运行并回答问题-nav">
+									（1） 输入程序Program 2，运行并回答问题：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-%e4%bf%ae%e6%94%b9%e8%af%a5%e7%a8%8b%e5%ba%8f%e7%94%a8%e6%9c%ba%e5%99%a8%e8%af%ad%e8%a8%80%e5%ae%9e%e7%8e%b0-10981-%e8%be%93%e5%87%ba%e7%bb%93%e6%9e%9c%e5%ad%98%e6%94%be%e4%ba%8e%e5%86%85%e5%ad%98-y" onclick="onNavClick(`#2-修改该程序用机器语言实现-10981-输出结果存放于内存-y-nav`)" id="2-修改该程序用机器语言实现-10981-输出结果存放于内存-y-nav">
+									（2） 修改该程序，用机器语言实现 10&#43;9&#43;8&#43;..1 ，输出结果存放于内存 Y
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e5%b0%8f%e7%bb%93" onclick="onNavClick(`#实验小结-nav`)" id="实验小结-nav">
+									实验小结
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e8%be%be%e6%88%90%e6%83%85%e5%86%b5" onclick="onNavClick(`#实验达成情况-nav`)" id="实验达成情况-nav">
+									实验达成情况
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e5%90%8d%e7%a7%b0%e7%a1%ac%e4%bb%b6%e7%bc%96%e7%a8%8b-%e6%9c%ba%e5%99%a8%e6%8c%87%e4%bb%a4%e7%bc%96%e7%a8%8b" onclick="onNavClick(`#实验名称硬件编程-机器指令编程-nav`)" id="实验名称硬件编程-机器指令编程-nav">
+									实验名称：硬件编程-机器指令编程
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%ad%a6%e5%8f%b719335286" onclick="onNavClick(`#学号19335286-nav`)" id="学号19335286-nav">
+									学号：19335286
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%a7%93%e5%90%8d%e9%83%91%e6%9c%89%e4%b8%ba" onclick="onNavClick(`#姓名郑有为-nav`)" id="姓名郑有为-nav">
+									姓名：郑有为
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%9b%ae%e5%bd%95" onclick="onNavClick(`#目录-nav`)" id="目录-nav">
+									目录
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e7%9b%ae%e6%a0%87" onclick="onNavClick(`#实验目标-nav`)" id="实验目标-nav">
+									实验目标
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e6%ad%a5%e9%aa%a4%e4%b8%8e%e7%bb%93%e6%9e%9c" onclick="onNavClick(`#实验步骤与结果-nav`)" id="实验步骤与结果-nav">
+									实验步骤与结果
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e4%bb%bb%e5%8a%a1%e4%b8%80%e7%ae%80%e5%8d%95%e7%a8%8b%e5%ba%8f" onclick="onNavClick(`#任务一简单程序-nav`)" id="任务一简单程序-nav">
+									任务一：简单程序
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1%e6%89%93%e5%bc%80%e7%bd%91%e9%a1%b5-the-pippin-users-guideslidesthe-pippin-users-guidehtml-%e7%84%b6%e5%90%8e%e8%be%93%e5%85%a5-program-1add-2-number" onclick="onNavClick(`#1打开网页-the-pippin-users-guideslidesthe-pippin-users-guidehtml-然后输入-program-1add-2-number-nav`)" id="1打开网页-the-pippin-users-guideslidesthe-pippin-users-guidehtml-然后输入-program-1add-2-number-nav">
+									（1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2%e7%82%b9step-after-step%e8%a7%82%e5%af%9f%e5%b9%b6%e5%9b%9e%e7%ad%94%e4%b8%8b%e9%9d%a2%e9%97%ae%e9%a2%98" onclick="onNavClick(`#2点step-after-step观察并回答下面问题-nav`)" id="2点step-after-step观察并回答下面问题-nav">
+									（2）点step after step。观察并回答下面问题：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3%e7%82%b9%e5%87%bbbinary%e8%a7%82%e5%af%9f%e5%9b%9e%e7%ad%94%e4%b8%8b%e9%9d%a2%e9%97%ae%e9%a2%98" onclick="onNavClick(`#3点击binary观察回答下面问题-nav`)" id="3点击binary观察回答下面问题-nav">
+									（3）点击“Binary”,观察回答下面问题
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%bb%bb%e5%8a%a1%e4%ba%8c%e7%ae%80%e5%8d%95%e5%be%aa%e7%8e%af" onclick="onNavClick(`#任务二简单循环-nav`)" id="任务二简单循环-nav">
+									任务二：简单循环
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#1-%e8%be%93%e5%85%a5%e7%a8%8b%e5%ba%8fprogram-2%e8%bf%90%e8%a1%8c%e5%b9%b6%e5%9b%9e%e7%ad%94%e9%97%ae%e9%a2%98" onclick="onNavClick(`#1-输入程序program-2运行并回答问题-nav`)" id="1-输入程序program-2运行并回答问题-nav">
+									（1） 输入程序Program 2，运行并回答问题：
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-%e4%bf%ae%e6%94%b9%e8%af%a5%e7%a8%8b%e5%ba%8f%e7%94%a8%e6%9c%ba%e5%99%a8%e8%af%ad%e8%a8%80%e5%ae%9e%e7%8e%b0-10981-%e8%be%93%e5%87%ba%e7%bb%93%e6%9e%9c%e5%ad%98%e6%94%be%e4%ba%8e%e5%86%85%e5%ad%98-y" onclick="onNavClick(`#2-修改该程序用机器语言实现-10981-输出结果存放于内存-y-nav`)" id="2-修改该程序用机器语言实现-10981-输出结果存放于内存-y-nav">
+									（2） 修改该程序，用机器语言实现 10&#43;9&#43;8&#43;..1 ，输出结果存放于内存 Y
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e5%b0%8f%e7%bb%93" onclick="onNavClick(`#实验小结-nav`)" id="实验小结-nav">
+									实验小结
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e5%ae%9e%e9%aa%8c%e8%be%be%e6%88%90%e6%83%85%e5%86%b5" onclick="onNavClick(`#实验达成情况-nav`)" id="实验达成情况-nav">
+									实验达成情况
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://wondrouswisdomcard.gitee.io">
+            Wondrous WindomCard&#39;s Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://wondrouswisdomcard.gitee.io">
+        <div class="single-column-header-title">Wondrous WindomCard&#39;s Blog</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Programming in Pippin CPUSim
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-10-27 00:00
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[Experience &amp; Practice]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/hardware-programming">Hardware Programming</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h2 id="实验名称硬件编程-机器指令编程">实验名称：硬件编程-机器指令编程</h2>
+<h4 id="学号19335286">学号：19335286</h4>
+<h4 id="姓名郑有为">姓名：郑有为</h4>
+<hr>
+<h2 id="目录"><strong>目录</strong></h2>
+<ul>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E7%9B%AE%E6%A0%87">1.实验目标</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E6%AD%A5%E9%AA%A4%E4%B8%8E%E7%BB%93%E6%9E%9C">2. 实验步骤与结果</a>
+<ul>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E4%B8%80%E7%AE%80%E5%8D%95%E7%A8%8B%E5%BA%8F">2.1. 任务一：简单程序</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E4%BA%8C%E7%AE%80%E5%8D%95%E5%BE%AA%E7%8E%AF">2.2. 任务二：简单循环</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E5%B0%8F%E7%BB%93">3. 实验小结</a></li>
+</ul>
+<hr>
+<h2 id="实验目标">实验目标</h2>
+<ol>
+<li>
+<p>理解冯·诺伊曼计算机的结构</p>
+</li>
+<li>
+<p>理解机器指令的构成</p>
+</li>
+<li>
+<p>理解机器指令执行周期</p>
+</li>
+<li>
+<p>用汇编编写简单程序</p>
+</li>
+</ol>
+<hr>
+<h2 id="实验步骤与结果">实验步骤与结果</h2>
+<h3 id="任务一简单程序">任务一：简单程序</h3>
+<h4 id="1打开网页-the-pippin-users-guideslidesthe-pippin-users-guidehtml-然后输入-program-1add-2-number">（1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number</h4>
+<p><img src="../../images/blog4/0.png" alt=""></p>
+<h4 id="2点step-after-step观察并回答下面问题">（2）点step after step。观察并回答下面问题：</h4>
+<h5 id="pcir-寄存器的作用">PC，IR 寄存器的作用。</h5>
+<p>PC全称Program counter程序计数器，用于存放当前程序执行的下一行指令的地址，并会随着时钟信号更新。用于实现程序的顺序执行和条件跳转，循环跳转。
+IR全称Instruction Register指针寄存器，存放指令内容，以便于译码器译码识别指令。</p>
+<h5 id="acc-寄存器的全称与作用">ACC 寄存器的全称与作用。</h5>
+<p>ACC（Accumulator）的全称是累加器。累加器是一个具有特殊用途的寄存器，专门用来存放操作数或运算结果。在CPU执行某种运算前，两个操作数中的一个通常应放在累加器中，运算完成后累加器中便可得到运算结果。</p>
+<h5 id="用lod-3指令的执行过程解释fetch-execute周期">用“LOD #3”指令的执行过程，解释Fetch-Execute周期。</h5>
+<p>Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。
+Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取等号（进行赋值运算），同时译码器发出控制信号将指令中存储的立即数输入到ALU中，计算结果保留在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。</p>
+<h5 id="用add-w-指令的执行过程解释fetch-execute周期">用“ADD W” 指令的执行过程，解释Fetch-Execute周期。</h5>
+<p>Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。
+Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取加号（进行加运算），译码器将寄存器ACC中的数据取到ALU中，同时译码器发出控制信号将指令中存储的立即数取出，并通过这段立即数（W的地址）找到内存的相应位置取出数据，取出来的数据经过数据选择器进入ALU，在ALU中，该数据原本ACC的值相加，结果保存在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。</p>
+<h5 id="lod-3-与-add-w-指令的执行在fetch-execute周期级别有什么不同">“LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。</h5>
+<p>ADD W的指令周期更长，它访问了两次ALU，并且还需要寻址，从内存中取数据，而LOD #3只需要将指令中包含的二进制数写进累加器中，更快。</p>
+<h4 id="3点击binary观察回答下面问题">（3）点击“Binary”,观察回答下面问题</h4>
+<h5 id="写出指令-lod-7-的二进制形式按指令结构解释每部分的含义">写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。</h5>
+<p>LOD #7 :</p>
+<p>00010100 00000111</p>
+<p>前四位：000<strong>1</strong>表示该操作数是数值；
+第五至第八位：0100 表示LOD指令的操作码；
+后八位：00000111 存储7的二进制数。</p>
+<h5 id="解释-ram-的地址">解释 RAM 的地址。</h5>
+<p>RAM指随机存取存储器。</p>
+<p>通过网站The PIPPIN User’s Guide的介绍，实验中的RAM共有256Bytes，也就是说他的地址可以用八位二进制数表示，在实验CPU中，地址为00000000到01111111的内存空间用来存储程序执行指令，从地址为10000000到11111111的内存空间用来存储数据，例如W对应的地址是10000000。</p>
+<p>需要注意的是，由于指令为16位，一条指令占两个字节，第一条指令的地址为00000000，而第二条指令的地址为00000010.</p>
+<h5 id="该机器cpu是几位的按累加器的位数">该机器CPU是几位的？（按累加器的位数）</h5>
+<p>16位</p>
+<h5 id="写出该程序对应的-c语言表达">写出该程序对应的 C语言表达。</h5>
+<pre><code>w = 3;
+x = 7;
+y = x + w;
+</code></pre>
+<hr>
+<h3 id="任务二简单循环">任务二：简单循环</h3>
+<h4 id="1-输入程序program-2运行并回答问题">（1） 输入程序Program 2，运行并回答问题：</h4>
+<p><img src="../../images/blog4/1.png" alt=""></p>
+<h5 id="用一句话总结程序的功能">用一句话总结程序的功能</h5>
+<p>将存储在X的数字递减，直到X内的数字小于等于1</p>
+<h5 id="写出对应的-c-语言程序">写出对应的 c 语言程序</h5>
+<pre><code>do{
+    x--;
+}
+while(x &gt;= 1);
+</code></pre>
+<h4 id="2-修改该程序用机器语言实现-10981-输出结果存放于内存-y">（2） 修改该程序，用机器语言实现 10+9+8+..1 ，输出结果存放于内存 Y</h4>
+<p>程序运行过程：</p>
+<p><img src="../../images/blog4/2.png" alt=""></p>
+<p>程序运行结果：</p>
+<p><img src="../../images/blog4/3.png" alt=""></p>
+<h5 id="写出-c-语言的计算过程">写出 c 语言的计算过程</h5>
+<pre><code>int x = 11;
+int y;
+do{
+    x--;
+    y = y + x;
+}
+while(x &gt; 0);
+</code></pre>
+<h5 id="写出机器语言的计算过程">写出机器语言的计算过程</h5>
+<pre><code>//我先将11存进了X中，否则则需要LOD 11 STO X两条指令来实现存入11.
+LOD X   //将X放入累加器
+SUB #1  //累加器内容-1
+JMZ 16  //分支判断，若累计器内容等于0则跳转到第8行指令
+STO X   //将累加器的内容存入X
+LOD Y   //将Y放入累加器
+ADD X   //取累加器中的数与X相加，结果存入累加器
+STO Y   //将累加器中的内容存入Y
+JMP 0   //跳转到第零条指令 LOD X处
+HLT     //结束程序
+</code></pre>
+<h5 id="用自己的语言简单总结高级语言与机器语言的区别与联系">用自己的语言，简单总结高级语言与机器语言的区别与联系。</h5>
+<p>区别：</p>
+<ol>
+<li>机器语言是计算机最原始的语言，是由0和1的代码构成，面向硬件，而高级语言采用接近于人类自然语言的单词和符号来表示一组低级语言程序，使编程变得更加简单，易学，且写出的程序可读性强。</li>
+<li>使用高级语言我们无需考虑数据是在寄存器中还是内存中，而机器语言需要考虑这些；</li>
+<li>高级语言的书写更加灵活，机器语言的指令语法更加严格，也更加精简；</li>
+<li>一条高级语言指令往往需要翻译成数条机器指令，意味着一般一条自然语言代码比一行汇编指令更加复杂。</li>
+<li>高级语言更偏向人的思考方式，机器语言则是“机器的思考方式”的体现。</li>
+</ol>
+<p>联系：</p>
+<ol>
+<li>为了在计算机中执行高级语言程序，需先翻译成机器语言；</li>
+<li>一条高级语言指令往往能翻译成数条机器指令。</li>
+</ol>
+<hr>
+<h2 id="实验小结">实验小结</h2>
+<p>通过本实验，我们了解了冯·诺伊曼计算机的基本体系结构和机器指令的构成，通过仿真工具Pippin CPUSim模拟了执行指令的动态过程，了解了其执行周期，并使用简单的语言编写了求和程序。</p>
+<h3 id="实验达成情况">实验达成情况</h3>
+<p>实验目标达成。</p>
+<hr>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2020-10-27</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://wondrouswisdomcard.gitee.io/posts/homework10/">
+			Next<br>Homework of Week 10
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://wondrouswisdomcard.gitee.io/posts/homework9/">
+			Previous<br>Homework of Week 9
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+<div class="comments">
+    <vue-disqus shortname="Your disqus short name."></vue-disqus>
+</div>
+<noscript><noscript>Please activate JavaScript to view comments.</noscript></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="https://wondrouswisdomcard.gitee.io/js/journal.js"></script>
+    </body>
+</html>

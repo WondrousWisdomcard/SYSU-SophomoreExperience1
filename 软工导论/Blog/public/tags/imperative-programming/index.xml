@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imperative programming on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/imperative-programming/</link>
+    <description>Recent content in Imperative programming on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Wed, 14 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/imperative-programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 7</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework7/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework7/</guid>
+      <description>1、Program with machine language according to the following c. int_8 a = 1; int_8 c = a + 3;  1）Write your assembly code &amp;amp; machine code ;assembly codeLOD # 1STO X LOD XADD # 3 STO Y HLT 我们假设LOD STO LOD ADD HLT对应的操作码是 0001 0010 0011 0100 1111，设X的存储地址是01010000，Y的存储地址是01010100
+根据ppt中的指令格式：
+The 8-bit instruction specifier（命令指示）
+And optionally, the 8-bit operand specifier（操作数）
+0 0 0 X Z Z Z Z b b b b b b b b  b b b b b b b b operand specifier： 一个数值，或者 一个内存地址</description>
+    </item>
+    
+  </channel>
+</rss>

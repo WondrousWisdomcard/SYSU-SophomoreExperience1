@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware Programming on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/hardware-programming/</link>
+    <description>Recent content in Hardware Programming on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/hardware-programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Programming in Pippin CPUSim</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog4/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog4/</guid>
+      <description>实验名称：硬件编程-机器指令编程 学号：19335286 姓名：郑有为  目录  1.实验目标 2. 实验步骤与结果  2.1. 任务一：简单程序 2.2. 任务二：简单循环   3. 实验小结   实验目标   理解冯·诺伊曼计算机的结构
+  理解机器指令的构成
+  理解机器指令执行周期
+  用汇编编写简单程序
+   实验步骤与结果 任务一：简单程序 （1）打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number （2）点step after step。观察并回答下面问题： PC，IR 寄存器的作用。 PC全称Program counter程序计数器，用于存放当前程序执行的下一行指令的地址，并会随着时钟信号更新。用于实现程序的顺序执行和条件跳转，循环跳转。 IR全称Instruction Register指针寄存器，存放指令内容，以便于译码器译码识别指令。
+ACC 寄存器的全称与作用。 ACC（Accumulator）的全称是累加器。累加器是一个具有特殊用途的寄存器，专门用来存放操作数或运算结果。在CPU执行某种运算前，两个操作数中的一个通常应放在累加器中，运算完成后累加器中便可得到运算结果。
+用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取等号（进行赋值运算），同时译码器发出控制信号将指令中存储的立即数输入到ALU中，计算结果保留在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。
+用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 Fetch：取指令过程，CPU根据PC中的地址从存储器RAM中找到对应的指令。 Execute：取出后放入IR，IR的内容经过译码器译码后，译码器发出控制信号使得累加器取加号（进行加运算），译码器将寄存器ACC中的数据取到ALU中，同时译码器发出控制信号将指令中存储的立即数取出，并通过这段立即数（W的地址）找到内存的相应位置取出数据，取出来的数据经过数据选择器进入ALU，在ALU中，该数据原本ACC的值相加，结果保存在累加寄存器中，PC改指向当前指令的下一条，指令执行结束。</description>
+    </item>
+    
+  </channel>
+</rss>

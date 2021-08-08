@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html><head>
+<title>Java - The Learning Experience 1</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Java - The Learning Experience 1" />
+<meta property="og:description" content="Chapter 1 &amp; 2 Introduction to Objects  Background Java technology includes Java programming languages and Java platform
+文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序
+Java Platform has two components: The Java Virtual Machine(JavaVM) and The Java Application Programming Interface (API)
+The API(https://docs.oracle.com/javase/6/docs/index.html) is a large collection of ready-made software components. The API provides many useful capabilities:
+It is grouped into libraries of related classes and interfaces; These libraries are known as packages ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wondrouswisdomcard.gitee.io/posts/java1/" />
+<meta property="article:published_time" content="2020-09-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-27T00:00:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java - The Learning Experience 1"/>
+<meta name="twitter:description" content="Chapter 1 &amp; 2 Introduction to Objects  Background Java technology includes Java programming languages and Java platform
+文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序
+Java Platform has two components: The Java Virtual Machine(JavaVM) and The Java Application Programming Interface (API)
+The API(https://docs.oracle.com/javase/6/docs/index.html) is a large collection of ready-made software components. The API provides many useful capabilities:
+It is grouped into libraries of related classes and interfaces; These libraries are known as packages ."/>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/journal.min.c116bc90d171283f099f173854157ec8f183f9073b93443b2c8ad82899ee9025.css" integrity="sha256-wRa8kNFxKD8Jnxc4VBV&#43;yPGD&#43;Qc7k0Q7LIrYKJnukCU=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://wondrouswisdomcard.gitee.io/scss/dark-mode.min.552aae4638a84aa57cf0b195750a49ea9131d3bb621d1ed3ebc9b14b18166536.css" integrity="sha256-VSquRjioSqV88LGVdQpJ6pEx07tiHR7T68mxSxgWZTY=" media="screen">
+
+
+<script src="https://wondrouswisdomcard.gitee.io/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+  
+    <script src="https://wondrouswisdomcard.gitee.io/js/toc-collapse.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
+
+
+</head>
+<body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://wondrouswisdomcard.gitee.io">
+    
+        <div class="nav-title">
+            Wondrous WindomCard&#39;s Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#chapter-1--2-introduction-to-objects" onclick="onNavClick(`#chapter-1--2-introduction-to-objects-nav`)" id="chapter-1--2-introduction-to-objects-nav">
+									Chapter 1 &amp; 2 Introduction to Objects
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#background" onclick="onNavClick(`#background-nav`)" id="background-nav">
+									Background
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#run-file-welcomejava" onclick="onNavClick(`#run-file-welcomejava-nav`)" id="run-file-welcomejava-nav">
+									Run file welcome.java
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%b1%bb%e5%92%8c%e5%af%b9%e8%b1%a1" onclick="onNavClick(`#类和对象-nav`)" id="类和对象-nav">
+									类和对象
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#chapter-3-language-basics" onclick="onNavClick(`#chapter-3-language-basics-nav`)" id="chapter-3-language-basics-nav">
+									Chapter 3 Language Basics
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#chapter-4-io-basics" onclick="onNavClick(`#chapter-4-io-basics-nav`)" id="chapter-4-io-basics-nav">
+									Chapter 4 IO Basics
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#chapter-5-inheritance" onclick="onNavClick(`#chapter-5-inheritance-nav`)" id="chapter-5-inheritance-nav">
+									Chapter 5 Inheritance
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#chapter-1--2-introduction-to-objects" onclick="onNavClick(`#chapter-1--2-introduction-to-objects-nav`)" id="chapter-1--2-introduction-to-objects-nav">
+									Chapter 1 &amp; 2 Introduction to Objects
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#background" onclick="onNavClick(`#background-nav`)" id="background-nav">
+									Background
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#run-file-welcomejava" onclick="onNavClick(`#run-file-welcomejava-nav`)" id="run-file-welcomejava-nav">
+									Run file welcome.java
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%b1%bb%e5%92%8c%e5%af%b9%e8%b1%a1" onclick="onNavClick(`#类和对象-nav`)" id="类和对象-nav">
+									类和对象
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#chapter-3-language-basics" onclick="onNavClick(`#chapter-3-language-basics-nav`)" id="chapter-3-language-basics-nav">
+									Chapter 3 Language Basics
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#chapter-4-io-basics" onclick="onNavClick(`#chapter-4-io-basics-nav`)" id="chapter-4-io-basics-nav">
+									Chapter 4 IO Basics
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#chapter-5-inheritance" onclick="onNavClick(`#chapter-5-inheritance-nav`)" id="chapter-5-inheritance-nav">
+									Chapter 5 Inheritance
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://wondrouswisdomcard.gitee.io">
+            Wondrous WindomCard&#39;s Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://wondrouswisdomcard.gitee.io">
+        <div class="single-column-header-title">Wondrous WindomCard&#39;s Blog</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Java - The Learning Experience 1
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-09-27 00:00
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[JavaNote]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/java">Java</a>
+                                &nbsp;
+                            
+                                <a href="/tags/io-basics">IO Basics</a>
+                                &nbsp;
+                            
+                                <a href="/tags/inheritance">Inheritance</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h1 id="chapter-1--2-introduction-to-objects">Chapter 1 &amp; 2 Introduction to Objects</h1>
+<hr>
+<h2 id="background">Background</h2>
+<p>Java technology includes <strong>Java programming languages</strong> and <strong>Java platform</strong></p>
+<p>文件扩展名 .java 被编译器javac编译成 .class 文件-Java虚拟机的机器语言，再通过Java启动器工具使用JavaVM的实例运行应用程序</p>
+<p>Java Platform has two components: The Java Virtual Machine(<strong>JavaVM</strong>) and The Java Application Programming Interface
+(<strong>API</strong>)</p>
+<p><img src="../../images/java1/1.png" alt="1"></p>
+<p>The API(<a href="https://docs.oracle.com/javase/6/docs/index.html">https://docs.oracle.com/javase/6/docs/index.html</a>) is a large collection of ready-made  software components. The API provides many useful capabilities:</p>
+<p>It is grouped into libraries of related classes and  interfaces; 
+These libraries are known as packages .</p>
+<p>The Java Runtime Environment (<strong>JRE</strong>) provides the libraries, the Java Virtual Machine, and other components to run applets and applications written in the Java programming language. The Java Development Kit (<strong>JDK</strong>) is a superset of the JRE, and contains everything that is in the JRE, plus tools such as the compilers and debuggers necessary for developing applets and applications.</p>
+<hr>
+<h2 id="run-file-welcomejava">Run file welcome.java</h2>
+<pre><code>public class Welcome{  //class name: welcome
+    public static void main(String[] args){ //main method 
+        System.out.println(&quot;Welcome toJava!&quot;); 
+        } 
+    }
+</code></pre>
+<p>Save the text to the file: <strong>Welcome.java</strong></p>
+<p>Compile the program typing: <strong>javac Welcome.java</strong></p>
+<p>Run the program typing: <strong>java Welcome</strong></p>
+<p>Output of theprogram: Welcome to Java!</p>
+<p>Every Java program must have at least one class. Each class has a name,并且文件名需与类名相同。</p>
+<hr>
+<h2 id="类和对象">类和对象</h2>
+<p>An object stores its state in fields (variables in some programming languages).
+An object exposes its behavior through  methods (functions in some programming  languages).（与C++大同小异）</p>
+<hr>
+<h1 id="chapter-3-language-basics">Chapter 3 Language Basics</h1>
+<p>非常多跟C都是一样的，下面是我选的一些有差异的语法</p>
+<p><img src="../../images/java1/2.png" alt="2"></p>
+<h5 id="1the-8-primitive-or-native-data-types-are-byte-char--short-int-long-float-double-and-boolean">1.The 8 primitive (or native) data types are: byte, char,  short, int, long, float, double, and <strong>boolean</strong></h5>
+<h5 id="2-char字符类型的定义是-16-bit-unicode-utf-16-character">2. char字符类型的定义是 16-bit Unicode UTF-16 character</h5>
+<h5 id="3-使用未初始化的局部变量会导致编译时错误">3. 使用未初始化的局部变量会导致编译时错误</h5>
+<h5 id="4-string-class-defined-in-javalang">4. String class (defined in <em>java.lang</em>)</h5>
+<pre><code>String s1 = new String(“this is a String”);
+String s2 = “this is another String”;
+String s2 = null; // no String object assigned 
+</code></pre>
+<h5 id="5-array-注意声明数组的语法和length">5. Array (注意声明数组的语法和length)</h5>
+<pre><code>int[] a1 = new int[5];  
+int[] a2 = { 1,2,3,4,5 };
+String[][] names = {{&quot;Mr. &quot;, &quot;Mrs. &quot;}, {&quot;Smith&quot;, &quot;Jones&quot;}}; 
+int aL = a1.length;
+a2.length = 6; //error
+</code></pre>
+<h5 id="6-null-it-represents-an-invalid-object-or-one-that-has-not-been-created-yet">6. <strong>null</strong> It represents an invalid object or one that has not been created yet.</h5>
+<h5 id="7-instanceof是java中的一个双目运算符用来测试一个对象是否为一个类的实例">7. <strong>instanceof</strong>是Java中的一个双目运算符，用来测试一个对象是否为一个类的实例</h5>
+<pre><code>boolean result = obj instanceof Class
+//其中 obj 为一个对象，Class 表示一个类或者一个接口，当 obj 为 Class 的对象，或者是其直接或间接子类，或者是其接口的实现类，结果result 都返回 true，否则返回false，并且 obj 必须为引用类型，不能是基本类型
+</code></pre>
+<h5 id="8-数组的拷贝方法-systemarraycopy">8. 数组的拷贝(方法 System.arrayCopy)</h5>
+<p><img src="../../images/java1/3.png" alt="3">
+<img src="../../images/java1/4.png" alt="4"></p>
+<hr>
+<h1 id="chapter-4-io-basics">Chapter 4 IO Basics</h1>
+<pre><code>import java.util.Scanner;
+public class Test {
+    public static void main(String args[]){        
+        Scanner s = new Scanner(System.in); 
+        String name = s.nextLine(); 
+        int ival = s.nextInt(); 
+        System.out.println(ival + &quot;,&quot; + name); 
+    } 
+}
+</code></pre>
+<hr>
+<h1 id="chapter-5-inheritance">Chapter 5 Inheritance</h1>
+<hr>
+<h5 id="1-keyword-extends">1. keyword <strong>extends</strong></h5>
+<pre><code>public class Bicycle {};
+public class MountainBike extends Bicycle {};
+</code></pre>
+<h5 id="2-every-class-has-one-and-only-one-direct-superclass-single-inheritance-only-javalangobject-has-no-superclass-every-class-is-implicitly-a-subclass-of-object">2. Every class has one and only one direct superclass (single inheritance). Only <strong>java.lang.Object</strong> has no superclass. Every class is implicitly a subclass of <strong>Object</strong>.</h5>
+<h5 id="3-the-constructor-of-the-superclass-can-be-invoked-from-the-subclass-by-using-the-keyword-super">3. The constructor of the superclass can be invoked from the subclass by using the keyword <strong>super</strong>.</h5>
+<pre><code>public MountainBike(int startHeight, int startCadence, int startSpeed, int startGear){ 
+    super(startCadence, startSpeed, startGear);//调用父类的构造函数 
+    seatHeight = startHeight; 
+} 
+</code></pre>
+<h5 id="4-声明一个对象">4. 声明一个对象</h5>
+<pre><code>MountainBike myBike = new MountainBike(); 
+</code></pre>
+<h5 id="5-casting-类型转换">5. casting 类型转换</h5>
+<pre><code>Object obj = new MountainBike(); //ok 隐式类型准换
+MountainBike myBike = obj; // error 
+if(obj instanceof MountainBike) { 
+    MountainBike myBike = (MountainBike)obj; // 显式类型转换 
+}
+</code></pre>
+<h5 id="6--you-can-write-a-new-instance-method-in-the-subclass-that-has-the-same-signature-as-the-one-in-the-superclass-thus-overriding-it--you-can-write-a-new-static-method-in-the-subclass-that-has-the-same-signature-as-the-one-in-the-superclass-thus-hiding-it">6.  You can write a new <strong>instance</strong> method in the subclass that has the same signature as the one in the superclass, thus <strong>overriding</strong> it.  You can write a new <strong>static</strong> method in the subclass that has the same signature as the one in the superclass, thus <strong>hiding</strong> it.</h5>
+<pre><code>public classAnimal { 
+    public static void testClassMethod() { 
+        System.out.println(&quot;The class method inAnimal.&quot;); 
+        } 
+        public void testInstanceMethod() { 
+            System.out.println(&quot;The instance method inAnimal.&quot;); 
+        } 
+    } // end of theAnimal 
+class public class Cat extends Animal { 
+    public static void testClassMethod() { 
+        System.out.println(&quot;The class method in Cat.&quot;); 
+        } 
+    public void testInstanceMethod() { 
+        System.out.println(&quot;The instance method in Cat.&quot;); 
+        } 
+    public static void main(String[] args) { 
+        Cat myCat = new Cat(); 
+        Animal myAnimal = myCat; 
+        Animal.testClassMethod(); 
+        myAnimal.testInstanceMethod(); 
+        } 
+    } // end of the Cat class
+</code></pre>
+<p>output:</p>
+<pre><code>The class method in Animal. //因为是static
+The instance method in Cat. //因为是动态绑定
+</code></pre>
+<p>The Cat class overrides the instance method in Animal and hides the class method in Animal.</p>
+<p>The version of the hidden method that gets invoked is the one in the superclass, and the version of the overridden method that gets invoked is the one in the subclass.</p>
+<p><img src="../../images/java1/5.png" alt="5">
+If your method overrides one of its superclass&rsquo;s methods, you can invoke the overridden method through the use of the keyword <strong>super</strong></p>
+<p>A subclass has no access to a <strong>private</strong> field or method of its superclass</p>
+<h5 id="7-super-and-constructors">7. <strong>super</strong> and Constructors</h5>
+<p>Invocation of a superclass constructor must be the first line in the subclass constructor</p>
+<p>If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass</p>
+<p>If the super class does not have a no-argument constructor, you will get a compile-time error</p>
+<pre><code>public class Animal{
+    public Animal(int i){} //删除这一行后下面就不会报错
+};
+public class Dog extends Animal{
+    public Dog(){
+        super();//报错
+    }
+}
+</code></pre>
+<h5 id="8-the-final-keyword">8. The <strong>final</strong> Keyword</h5>
+<p>A final method cannot be overridden by a subclass, for example: final void method() { … }</p>
+<p>An entire class can be declared final to prevent the class from being subclassed:  public final class String { … }</p>
+<hr>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2020-09-27</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://wondrouswisdomcard.gitee.io/posts/blog2/">
+			Next<br>Game Making - Flappy Bird
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://wondrouswisdomcard.gitee.io/posts/nightnote1/">
+			Previous<br>NightNote - 1
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+<div class="comments">
+    <vue-disqus shortname="Your disqus short name."></vue-disqus>
+</div>
+<noscript><noscript>Please activate JavaScript to view comments.</noscript></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="https://wondrouswisdomcard.gitee.io/js/journal.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pyhton on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/pyhton/</link>
+    <description>Recent content in Pyhton on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/pyhton/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computing By Using Python</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/blog6/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/blog6/</guid>
+      <description>Python 编程实验报告 实验目的   用Python求解高数题
+ 求解一元方程 求导 求积分 求泰勒展开    用Python求解线代题
+ 求解矩阵方程组 求行列式 求矩阵的逆    实验准备 下载并安装软件 Anaconda3
+实验步骤和实验结果 用Python求解高数题 求解一元方程 1.设 f(x) = (1 - x) / (1 + x), 求证 f(f(x)) = x.(参考数分上册课本 Page24 第一题)
+代码：
+x = Symbol(&#39;x&#39;)def f(x): return (1-x)/(1+x)def g(x): return f(f(x))simplify(g(x) - x) 运行结果与截屏：
+2.解 x + 1/x = 0
+运行结果与截屏：答案是两个虚数 i 和 -i</description>
+    </item>
+    
+  </channel>
+</rss>

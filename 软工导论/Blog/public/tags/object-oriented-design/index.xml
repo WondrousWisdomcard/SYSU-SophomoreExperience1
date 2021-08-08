@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object Oriented Design on Wondrous WindomCard&#39;s Blog</title>
+    <link>https://wondrouswisdomcard.gitee.io/tags/object-oriented-design/</link>
+    <description>Recent content in Object Oriented Design on Wondrous WindomCard&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wondrouswisdomcard.gitee.io/tags/object-oriented-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework of Week 9</title>
+      <link>https://wondrouswisdomcard.gitee.io/posts/homework9/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wondrouswisdomcard.gitee.io/posts/homework9/</guid>
+      <description>根据素材，识别类和对象。 阅读牧师与恶魔过河的游戏介绍并玩游戏，然后回答问题 游戏涉及哪些类。请列表说明 类：图层，文字，按钮，计时器，精灵
+游戏中有哪些对象，各几个。例如，船（一个） 对象：三个牧师，三个恶魔，一个船，三个背景图层（开始图层，游戏图层，结束图层），多个文字，一个计时器，多个按钮
+类和对象的区别是什么？举一个例子说明 对象是例化的类。类是对一类事物的抽象描述，对象是可操作的实例。 类：精灵是一个个体的抽象，有移动等操作； 对象：牧师是精灵类的例化，可以被恶魔杀死，可以上船下船。
+游戏中的魔鬼，有哪些属性和方法？ 属性：大小形状图案，名字； 行为：上船，下船上岸，杀死牧师。
+假设魔鬼被鼠标点中，会执行onclick事件，请用文字 （伪代码）描述这个事件中魔鬼与其他对象沟通的过程。 if (恶魔在左岸 || 恶魔在右岸) &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来少于两个跳上船else if 恶魔在船上 &amp;amp;&amp;amp; 船停在左岸 &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来大于一个跳上左岸else if 恶魔在船上 &amp;amp;&amp;amp; 船停在右岸 &amp;amp;&amp;amp; 船上的牧师和魔鬼加起来大于一个跳上右岸 类或对象会是动词吗？ 类与对象模拟的是现实世界的事物，必须是名词，不可为动词。
+ </description>
+    </item>
+    
+  </channel>
+</rss>
