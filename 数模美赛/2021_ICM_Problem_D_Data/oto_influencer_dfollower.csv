@@ -1,0 +1,632 @@
+,follower_id,influencer_id,influencer_name,influencer_main_genre,influencer_active_start,follower_name,follower_main_genre,follower_active_start
+0,74,759491,The Exploited,Pop/Rock,1980,Special Duties,Pop/Rock,1980
+1,1589,1528006,Olivier Messiaen,Classical,1930,GyÃ¶rgy KurtÃ¡g,Classical,1960
+2,1611,559405,Daddy Yankee,Latin,1990,Speedy,Electronic,2000
+3,2252,156886,Spyro Gyra,Jazz,1970,Allan Holdsworth,Pop/Rock,1970
+4,2578,133969,Joan Armatrading,Pop/Rock,1970,Tanita Tikaram,Pop/Rock,1980
+5,4358,178014,U-Roy,Reggae,1960,Tony Rebel,Reggae,1990
+6,4458,42234,Steven Halpern,New Age,1970,Parijat,New Age,2000
+7,4553,536122,George Duke,Jazz,1960,T-Connection,R&B;,1970
+8,6563,396372,Max Roach,Jazz,1940,Stan Levey,Jazz,1950
+9,6855,942252,Compay Segundo,Latin,1930,Pablo MilanÃ©s,Latin,1960
+10,7974,334740,Ronnie Milsap,Country,1960,T. Graham Brown,Country,1980
+11,11210,18258,Teena Marie,R&B;,1970,Tara Kemp,R&B;,1990
+12,11506,740833,Grant Lee Buffalo,Pop/Rock,1990,Palace,Pop/Rock,1990
+13,11664,112789,Korn,Pop/Rock,1990,American Head Charge,Pop/Rock,1990
+14,12877,66915,Bob Dylan,Pop/Rock,1960,Stealers Wheel,Pop/Rock,1970
+15,14073,140176,Eddie Fisher,Vocal,1940,Tab Hunter,Pop/Rock,1950
+16,14329,32071,Shirley Caesar,Religious,1950,Tramaine Hawkins,Religious,1970
+17,14959,112462,Cream,Pop/Rock,1960,Taste,Pop/Rock,1960
+18,16227,43714,Bee Gees,Pop/Rock,1960,Tavares,R&B;,1960
+19,16235,38466,Andy Williams,Vocal,1940,Tony Orlando,Pop/Rock,1960
+20,17882,857203,Kay Starr,Vocal,1930,Teresa Brewer,Vocal,1940
+21,18176,305501,Roger,R&B;,1970,Teddy Riley,R&B;,1980
+22,18513,489520,Mike Oldfield,New Age,1960,Paul Hardcastle,Jazz,1980
+23,18862,617196,Brian Eno,Pop/Rock,1970,Stars of the Lid,Pop/Rock,1990
+24,19740,608945,Brandy,R&B;,1990,Amerie,R&B;,2000
+25,20028,675495,Mannheim Steamroller,New Age,1970,Sky,Pop/Rock,1970
+26,20919,680522,Yaz,Pop/Rock,1980,Amber,Electronic,1990
+27,20984,189644,Doris Day,Vocal,1930,Shelley Fabares,Pop/Rock,1940
+28,22574,305541,Percy Faith,Easy Listening,1950,Paul Mauriat,Easy Listening,1960
+29,22602,62823,Bad Religion,Pop/Rock,1980,Ten Foot Pole,Pop/Rock,1990
+30,22875,130932,Crazy Horse,Pop/Rock,1960,Temple of the Dog,Pop/Rock,1990
+31,22981,228323,Death,Pop/Rock,1980,Terrorizer,Pop/Rock,1980
+32,23147,463527,Return to Forever,Jazz,1970,Steps Ahead,Jazz,1970
+33,23411,190632,Dottie West,Country,1950,Shelly West,Country,1980
+34,24152,502163,10cc,Pop/Rock,1970,Sherbet,Pop/Rock,1960
+35,25394,104714,Kraftwerk,Electronic,1970,Trio,Pop/Rock,1980
+36,25899,793845,Falco,Pop/Rock,1980,Technotronic,Electronic,1980
+37,26161,205180,Dr. John,Pop/Rock,1950,Terrance Simien,International,1990
+38,27102,180228,Elvis Presley,Pop/Rock,1950,Terry Stafford,Pop/Rock,1960
+39,28015,259529,Lester Young,Jazz,1930,Paul Quinichette,Jazz,1950
+40,28316,144458,Curtis Mayfield,R&B;,1950,Slim Smith,Reggae,1960
+41,28692,567325,The Modern Jazz Quartet,Jazz,1950,Terry Gibbs,Jazz,1940
+42,28918,121590,Jacques Brel,Vocal,1950,Terry Jacks,Pop/Rock,1970
+43,29604,577627,The Who,Pop/Rock,1960,Shocking Blue,Pop/Rock,1960
+44,31158,51066,Craig Armstrong,Pop/Rock,1980,Steve Jablonsky,Stage & Screen,2000
+45,31971,819344,Desmond Dekker,Reggae,1960,The Beat,Pop/Rock,1970
+46,32045,2411,Tangerine Dream,Electronic,1960,Software,New Age,1980
+47,32193,848784,Roy Acuff,Country,1930,Tex Williams,Country,1940
+48,32333,31263,AndraÃ© Crouch,Religious,1960,Susan Ashton,Religious,1990
+49,32409,774588,Kris Kristofferson,Country,1960,Paul Thorn,Pop/Rock,1990
+50,33995,378624,Quincy Jones,Jazz,1950,Siedah Garrett,R&B;,1980
+51,34880,37730,Pearl Jam,Pop/Rock,1990,Paw,Pop/Rock,1990
+52,35864,154998,Bauhaus,Pop/Rock,1970,Shriekback,Pop/Rock,1980
+53,36106,3495279,Andy Black,Pop/Rock,2010,Steve Miller Band,Pop/Rock,1960
+54,36934,267354,Horace Silver,Jazz,1950,Sonny Clark,Jazz,1950
+55,37197,315336,Perry Como,Vocal,1930,Steve Tyrell,Vocal,1960
+56,37865,607283,Tito Puente,Latin,1940,Andy MontaÃ±ez,Latin,1960
+57,41420,237205,Madonna,Pop/Rock,1980,Pebbles,R&B;,1980
+58,41976,772745,Incubus,Pop/Rock,1990,Audiovent,Pop/Rock,1990
+59,44998,186312,Celia Cruz,Latin,1940,Angela Carrasco,Latin,1990
+60,45287,279337,Sade,R&B;,1980,Sweetback,R&B;,2000
+61,45745,809396,David Grisman,Country,1970,Mike Marshall,International,1980
+62,45941,48816,Bernadette Peters,Vocal,1950,Sutton Foster,Stage & Screen,1990
+63,46184,403120,The Mills Brothers,Vocal,1930,The Ames Brothers,Vocal,1940
+64,46345,211424,Dick Hyman,Jazz,1940,Suzanne Ciani,New Age,1980
+65,48126,333464,Phish,Pop/Rock,1980,The Big Wu,Pop/Rock,1990
+66,48806,359062,KMFDM,Pop/Rock,1980,Soulwax,Electronic,1990
+67,49163,683750,Yellow Magic Orchestra,Electronic,1970,Susumu Yokota,Electronic,1980
+68,50581,311680,Luis Miguel,Latin,1980,Sin Bandera,Latin,2000
+69,51230,586798,Thievery Corporation,Electronic,1990,Bent,Electronic,2000
+70,53441,311074,Martin Denny,Easy Listening,1950,Eden Ahbez,Easy Listening,1940
+71,57188,425105,The Skatalites,Reggae,1960,Bob Andy,Reggae,1960
+72,57488,403120,The Mills Brothers,Vocal,1930,The Four Aces,Vocal,1950
+73,57497,809266,Ultravox,Pop/Rock,1970,B-Movie,Pop/Rock,1970
+74,57577,286561,Robert Earl Keen,Folk,1980,Bleu Edmondson,Country,2000
+75,58361,49180,Betty Harris,R&B;,1960,Betty Everett,R&B;,1950
+76,59503,129775,Parliament,R&B;,1960,Bernie Worrell,R&B;,1970
+77,59949,129775,Parliament,R&B;,1960,B.T. Express,R&B;,1970
+78,61912,487271,Mike Seeger,Folk,1950,Bill Evans,Country,1990
+79,62270,131681,Pat Boone,Vocal,1950,Bobby Rydell,Pop/Rock,1950
+80,62455,24944,Amy Grant,Religious,1970,Avalon,Religious,1970
+81,62729,165855,Frankie Avalon,Pop/Rock,1950,Bobby Sherman,Pop/Rock,1960
+82,63340,520545,My Chemical Romance,Pop/Rock,2000,The Receiving End of Sirens,Pop/Rock,2000
+83,64817,1006782,Sonny Boy Williamson I,Blues,1930,Big Walter Horton,Blues,1930
+84,64954,3595,Andrew Lloyd Webber,Stage & Screen,1960,Michael Ball,Vocal,1980
+85,65620,744548,Spike Jones,Comedy/Spoken,1930,"Bobby ""Boris"" Pickett",Pop/Rock,1960
+86,66228,287604,Louis Jordan,Jazz,1930,Big Maybelle,Blues,1930
+87,68155,756518,The Bobbettes,R&B;,1950,The Chantels,R&B;,1950
+88,69402,82013,The Impressions,R&B;,1950,Bob Marley & the Wailers,Reggae,1960
+89,74005,156886,Spyro Gyra,Jazz,1970,Bill Evans,Jazz,1980
+90,74340,805930,Charlie Christian,Jazz,1930,Jimmy Raney,Jazz,1950
+91,74952,190012,John Tesh,New Age,1980,Ken Elkinson,New Age,2000
+92,75329,361393,Prince,R&B;,1970,Bob Sinclar,Electronic,1990
+93,77963,677781,Wilson Pickett,R&B;,1950,The Commitments,Pop/Rock,1990
+94,80609,137390,The Cure,Pop/Rock,1970,Boys Don't Cry,Pop/Rock,1980
+95,81079,324854,Jermaine Jackson,R&B;,1960,Keith Washington,R&B;,1990
+96,81836,223054,John Fahey,Folk,1950,Alex de Grassi,New Age,1970
+97,84387,780005,LCD Soundsystem,Pop/Rock,2000,Kele,Pop/Rock,2000
+98,84777,887638,Michael Hedges,New Age,1980,Keller Williams,Pop/Rock,1980
+99,86826,661524,Donna Summer,R&B;,1970,Irene Cara,Pop/Rock,1960
+100,87922,860080,Nada Surf,Pop/Rock,1990,The Juliana Theory,Pop/Rock,1990
+101,89071,128440,Duran Duran,Pop/Rock,1970,King,Pop/Rock,1980
+102,90389,290464,Roy Haynes,Jazz,1940,Idris Muhammad,Jazz,1960
+103,91651,921306,808 State,Electronic,1980,Black Grape,Pop/Rock,2000
+104,91763,7448,The Delfonics,R&B;,1960,Black Ivory,R&B;,1970
+105,95176,607202,Air,Electronic,1990,Bonobo,Electronic,1990
+106,96701,288111,Los Fabulosos Cadillacs,Latin,1980,Kinky,International,1990
+107,96804,139026,Led Zeppelin,Pop/Rock,1960,Kingdom Come,Pop/Rock,1980
+108,97065,802464,Freedy Johnston,Pop/Rock,1980,Birdy,Pop/Rock,1990
+109,97203,327735,REO Speedwagon,Pop/Rock,1960,BlackHawk,Country,1990
+110,97395,645474,David Essex,Pop/Rock,1970,Colin Hay,Pop/Rock,1980
+111,98467,754032,The Beatles,Pop/Rock,1960,Klaatu,Pop/Rock,1970
+112,98707,825251,Marilyn Manson,Pop/Rock,1980,kidneythieves,Pop/Rock,1990
+113,99888,754032,The Beatles,Pop/Rock,1960,The Knickerbockers,Pop/Rock,1960
+114,100840,477377,The Memphis Horns,R&B;,1960,Chase,Pop/Rock,1970
+115,101164,782191,Larry Heard,Electronic,1980,LFO,Electronic,1990
+116,101575,4852,Selena,Latin,1980,Control,Latin,2000
+117,101776,642542,Burt Bacharach,Pop/Rock,1950,Jack Nitzsche,Pop/Rock,1950
+118,102964,471355,Operation Ivy,Pop/Rock,1980,Choking Victim,Pop/Rock,1990
+119,103460,443997,Sylvia Telles,Latin,1950,Lani Hall,Vocal,1970
+120,104217,27136,Paulina Rubio,Latin,1980,Jaci Velasquez,Religious,1990
+121,108283,296024,RubÃ©n Blades,Latin,1960,Lalo RodrÃ­guez,Latin,1970
+122,108774,69153,Joan Baez,Folk,1950,Cheryl Wheeler,Folk,1980
+123,109012,754032,The Beatles,Pop/Rock,1960,It's a Beautiful Day,Pop/Rock,1960
+124,109274,674332,Herb Alpert,Easy Listening,1950,Chris Montez,Pop/Rock,1960
+125,109669,105618,Ladysmith Black Mambazo,International,1970,IsmaÃ«l LÃ´,International,1990
+126,110792,502163,10cc,Pop/Rock,1970,City Boy,Pop/Rock,1970
+127,112204,315339,QueensrÃ¿che,Pop/Rock,1980,Crimson Glory,Pop/Rock,1980
+128,115079,276085,Howlin' Wolf,Blues,1930,Joe Hill Louis,Blues,1940
+129,115140,32193,Tex Williams,Country,1940,Commander Cody and His Lost Planet Airmen,Pop/Rock,1960
+130,118853,781172,Jimmy Smith,Jazz,1950,Jack McDuff,Jazz,1950
+131,120163,486047,Sublime,Pop/Rock,1980,Len,Pop/Rock,1990
+132,120411,297894,Poco,Pop/Rock,1960,Cowboy,Pop/Rock,1960
+133,120412,647796,Camper Van Beethoven,Pop/Rock,1980,Cowboy Mouth,Pop/Rock,1990
+134,120487,750203,Slim Gaillard,Vocal,1930,Jack Kerouac,Comedy/Spoken,1950
+135,121236,753706,The All-American Rejects,Pop/Rock,2000,Cartel,Pop/Rock,2000
+136,121863,848913,Richard Hell,Pop/Rock,1970,Coyote Shivers,Pop/Rock,1990
+137,123515,96379,Boyz II Men,R&B;,1980,ChristiÃ³n,R&B;,1990
+138,124248,518313,Todd Terry,Electronic,1980,Laidback Luke,Electronic,1990
+139,126862,288111,Los Fabulosos Cadillacs,Latin,1980,Jaguares,Latin,1990
+140,127889,31263,AndraÃ© Crouch,Religious,1960,BeBe Winans,Religious,1980
+141,128249,792507,Frank Sinatra,Vocal,1930,Eydie Gorme,Vocal,1950
+142,129551,743966,Tantric,Pop/Rock,1990,Crossfade,Pop/Rock,1990
+143,129591,276085,Howlin' Wolf,Blues,1930,"Clarence ""Frogman"" Henry",R&B;,1950
+144,130036,87985,The Hollies,Pop/Rock,1960,"Crosby, Stills, Nash & Young",Pop/Rock,1960
+145,130418,169526,Frankie Paul,Reggae,1980,Spragga Benz,Reggae,1990
+146,130552,62002,Bachman-Turner Overdrive,Pop/Rock,1970,Tal Bachman,Pop/Rock,1990
+147,132849,24944,Amy Grant,Religious,1970,Crystal Lewis,Religious,1980
+148,133420,137580,The Cramps,Pop/Rock,1970,Dwarves,Pop/Rock,1980
+149,133528,120521,Chuck Berry,Pop/Rock,1950,Jo Jo Gunne,Pop/Rock,1970
+150,133832,162677,Dizzy Gillespie,Jazz,1930,Clark Terry,Jazz,1950
+151,135024,824022,Little Richard,Pop/Rock,1950,Larry Williams,R&B;,1950
+152,138235,230667,Zucchero,Pop/Rock,1970,Laura Pausini,Pop/Rock,1990
+153,138837,287604,Louis Jordan,Jazz,1930,Joe Liggins,Blues,1940
+154,140176,792507,Frank Sinatra,Vocal,1930,Eddie Fisher,Vocal,1940
+155,141256,246022,Merle Travis,Country,1930,Joe Maphis,Country,1940
+156,144629,939567,Buffalo Springfield,Pop/Rock,1960,Fever Tree,Pop/Rock,1960
+157,145443,485991,Mike Laure,Latin,1960,Fito Olivares,Latin,1990
+158,145489,845443,Philly Joe Jones,Jazz,1940,Carl Allen,Jazz,1990
+159,146478,222436,David Lee Roth,Pop/Rock,1970,Bang Tango,Pop/Rock,1980
+160,146755,6320,Toto,Pop/Rock,1970,Cutting Crew,Pop/Rock,1980
+161,146796,762731,The Chi-Lites,R&B;,1960,The Deele,R&B;,1980
+162,150629,197532,Charles TrÃ©net,Vocal,1930,Ã‰dith Piaf,Vocal,1930
+163,156749,207127,Ricky Van Shelton,Country,1980,Eric Heatherly,Country,2000
+164,158765,672910,Wire,Pop/Rock,1970,Gavin Friday,Pop/Rock,1980
+165,162265,687933,Yanni,New Age,1980,Franco De Vita,Latin,1980
+166,162794,223701,John McLaughlin,Jazz,1960,Shankar,International,1970
+167,163577,549797,Hank Williams,Country,1930,Doug Kershaw,Country,1950
+168,164750,567190,? & the Mysterians,Pop/Rock,1960,Garland Jeffreys,Pop/Rock,1960
+169,165068,574057,Sugar Minott,Reggae,1970,Garnett Silk,Reggae,1980
+170,166767,784527,Barney Kessel,Jazz,1940,Charlie Barnet,Jazz,1930
+171,167296,754032,The Beatles,Pop/Rock,1960,Caravan,Pop/Rock,1960
+172,167762,88180,Kid Rock,Pop/Rock,1980,Drowning Pool,Pop/Rock,1990
+173,169189,109421,Crowbar,Pop/Rock,1980,Down,Pop/Rock,1990
+174,170214,822777,Liberace,Easy Listening,1940,Ferrante & Teicher,Easy Listening,1950
+175,170690,532957,Cab Calloway,Jazz,1930,Erskine Hawkins,Jazz,1940
+176,171726,296024,RubÃ©n Blades,Latin,1960,Eddie Santiago,Latin,1980
+177,173007,211758,Charlie Parker,Jazz,1930,Frank Morgan,Jazz,1950
+178,174506,951384,Hank Mobley,Jazz,1950,James Spaulding,Jazz,1960
+179,175538,221894,MFSB,R&B;,1970,First Choice,R&B;,1970
+180,176083,324819,Jeri Southern,Vocal,1950,Ruth Cameron,Jazz,1990
+181,177372,175775,Eek-A-Mouse,Reggae,1980,Don Chezina,Latin,1990
+182,177957,81683,Black Uhuru,Reggae,1970,Don Carlos,Reggae,1970
+183,178621,343930,The Jesus and Mary Chain,Pop/Rock,1980,Ultra Vivid Scene,Pop/Rock,1980
+184,178645,44764,Blondie,Pop/Rock,1970,Altered Images,Pop/Rock,1980
+185,178750,59819,Betty Wright,R&B;,1950,Stacy Lattisaw,R&B;,1970
+186,179636,805785,Joe Satriani,Pop/Rock,1970,Jason Becker,Pop/Rock,1990
+187,181817,18258,Teena Marie,R&B;,1970,Caron Wheeler,R&B;,1980
+188,183699,936946,Tommy Makem,International,1950,DÃ³nal Lunny,International,1980
+189,184451,239655,Sandi Patty,Religious,1970,Greater Vision,Religious,1990
+190,185440,308762,Penguin Cafe Orchestra,New Age,1970,David Lanz,New Age,1960
+191,185999,197921,The English Beat,Pop/Rock,1970,Voodoo Glow Skulls,Pop/Rock,1990
+192,186481,91650,Black Flag,Pop/Rock,1970,Dos,Pop/Rock,1980
+193,188467,75100,Bad Company,Pop/Rock,1970,John Parr,Pop/Rock,1970
+194,188697,573978,Marcia Griffiths,Reggae,1960,Foxy Brown,Reggae,1990
+195,188809,51066,Craig Armstrong,Pop/Rock,1980,Eric Serra,Stage & Screen,1970
+196,188843,292559,Roberto Menescal,Latin,1950,Dori Caymmi,Latin,1990
+197,189701,947816,Hank Thompson,Country,1940,Jean Shepard,Country,1950
+198,190531,414251,Otis Redding,R&B;,1960,Frederick Knight,R&B;,1970
+199,190888,684920,Dave Grusin,Jazz,1960,Jeff Lorber,Jazz,1970
+200,192840,165855,Frankie Avalon,Pop/Rock,1950,John Travolta,Pop/Rock,1970
+201,195634,390390,Ohio Players,R&B;,1950,Dazz Band,R&B;,1970
+202,196200,77560,Bobby Short,Vocal,1950,Dorothy Loudon,Vocal,1950
+203,196544,260038,Dinah Washington,Vocal,1940,Della Reese,Vocal,1950
+204,197040,369270,Professor Longhair,Blues,1930,Champion Jack Dupree,Blues,1940
+205,198426,767016,Keith Sweat,R&B;,1980,Changing Faces,R&B;,1990
+206,199089,520545,My Chemical Romance,Pop/Rock,2000,Halifax,Pop/Rock,2000
+207,199194,936946,Tommy Makem,International,1950,Dougie MacLean,Folk,1970
+208,200322,781172,Jimmy Smith,Jazz,1950,"Johnny ""Hammond"" Smith",Jazz,1950
+209,200777,395819,Maxine Sullivan,Vocal,1930,Ernestine Anderson,Vocal,1940
+210,201022,457807,O.V. Wright,R&B;,1960,Lenny Welch,Pop/Rock,1950
+211,201958,577235,The Staple Singers,R&B;,1940,General Public,Pop/Rock,1980
+212,202187,805930,Charlie Christian,Jazz,1930,Ernest Ranglin,Reggae,1950
+213,204847,139089,Barenaked Ladies,Pop/Rock,1980,Wheatus,Pop/Rock,1990
+214,204968,805930,Charlie Christian,Jazz,1930,Charlie Byrd,Jazz,1940
+215,206967,23290,Slam Stewart,Jazz,1940,Erroll Garner,Jazz,1940
+216,212006,936206,Alabama,Country,1970,Ricochet,Country,1990
+217,216586,410219,Merle Haggard,Country,1960,John Conlee,Country,1970
+218,217963,807489,Charlie Louvin,Country,1950,John D. Loudermilk,Pop/Rock,1950
+219,219287,246885,Johnny Mathis,Vocal,1950,Jane Olivor,Vocal,1970
+220,220024,660507,Giorgio Moroder,Pop/Rock,1960,Vitalic,Electronic,1990
+221,221426,796045,Fishbone,Pop/Rock,1970,Hot Action Cop,Pop/Rock,2000
+222,222748,671953,Heart,Pop/Rock,1970,Vixen,Pop/Rock,1980
+223,223683,477523,Mighty Sparrow,International,1950,Machel Montano,Reggae,1980
+224,225944,477523,Mighty Sparrow,International,1950,Shadow,International,1970
+225,227708,31263,AndraÃ© Crouch,Religious,1960,Walter Hawkins,Religious,1960
+226,230886,952794,Harry Belafonte,Vocal,1940,Roaring Lion,International,1930
+227,231013,669511,Marco Antonio SolÃ­s,Latin,1970,Marisela,Latin,1980
+228,233300,52151,Augustus Pablo,Reggae,1970,Hugh Mundell,Reggae,1970
+229,238968,10538,Spandau Ballet,Pop/Rock,1980,Johnny Hates Jazz,Pop/Rock,1980
+230,240009,59156,B.B. King,Blues,1940,"Johnny ""Big Moose"" Walker",Blues,1970
+231,240267,471156,Mickey Gilley,Country,1960,Johnny Lee,Country,1960
+232,244073,178906,Jawbox,Pop/Rock,1980,Samiam,Pop/Rock,1980
+233,245292,342833,Mel Brooks,Comedy/Spoken,1950,Rodney Dangerfield,Comedy/Spoken,1960
+234,246628,238115,Sam Cooke,R&B;,1950,Johnny Nash,R&B;,1950
+235,249420,813092,John Jacob Niles,Folk,1930,Judy Henske,Folk,1960
+236,252513,24944,Amy Grant,Religious,1970,Wayne Watson,Pop/Rock,1960
+237,253296,796741,Eddy Arnold,Country,1940,Leroy Van Dyke,Country,1950
+238,253397,781094,The Clancy Brothers,International,1950,Dick Gaughan,International,1970
+239,253861,754032,The Beatles,Pop/Rock,1960,Jon Anderson,Pop/Rock,1960
+240,253914,636106,Buckwheat Zydeco,International,1970,Wayne Toups,International,1980
+241,255051,140499,Cocteau Twins,Pop/Rock,1970,RÃ³isÃ­n Murphy,Pop/Rock,1990
+242,256528,160690,En Vogue,R&B;,1990,Lucy Pearl,R&B;,1990
+243,256557,84053,The Jam,Pop/Rock,1970,Department S,Pop/Rock,1980
+244,257364,119651,J.J. Cale,Pop/Rock,1950,Justin Adams,R&B;,1950
+245,258514,165162,Gentle Giant,Pop/Rock,1970,Jordan Rudess,Pop/Rock,1990
+246,259529,79016,Billie Holiday,Vocal,1930,Lester Young,Jazz,1930
+247,261087,626463,Stone Temple Pilots,Pop/Rock,1990,Life of Agony,Pop/Rock,1980
+248,264617,757157,Simply Red,Pop/Rock,1980,Lighthouse,Pop/Rock,1990
+249,266503,42993,Sonny & Cher,Pop/Rock,1960,Marilyn McCoo,R&B;,1960
+250,269172,81083,Bill Monroe,Country,1940,Lester Flatt,Country,1940
+251,269972,931567,Titus Turner,Pop/Rock,1950,Little Willie John,R&B;,1950
+252,272567,532957,Cab Calloway,Jazz,1930,Louis Prima,Jazz,1930
+253,272713,936946,Tommy Makem,International,1950,Peter Knight,Vocal,1930
+254,279395,500298,Morgan Heritage,Reggae,1990,Gyptian,Reggae,2000
+255,281953,101795,Kirk Whalum,Jazz,1980,Marion Meadows,Jazz,1980
+256,282752,136871,The Doobie Brothers,Pop/Rock,1970,Robbie Dupree,Pop/Rock,1970
+257,282912,626268,Buffy Sainte-Marie,Folk,1950,Robert Mirabal,International,1990
+258,283015,767016,Keith Sweat,R&B;,1980,Jesse Powell,R&B;,1990
+259,286092,945269,George Winston,New Age,1970,Philip Aaberg,New Age,1970
+260,290040,82584,Billy Eckstine,Vocal,1930,Roy Hamilton,R&B;,1940
+261,295285,840000,Vangelis,Electronic,1960,Lisa Gerrard,Pop/Rock,1980
+262,295933,273531,Liza Minnelli,Vocal,1940,Judy Kuhn,Pop/Rock,1990
+263,302026,925837,Accept,Pop/Rock,1970,Running Wild,Pop/Rock,1980
+264,302774,574597,ABC,Pop/Rock,1980,Roger Sanchez,Electronic,1990
+265,302955,745584,Steel Pulse,Reggae,1970,Junior Kelly,Reggae,2000
+266,303422,615026,Asha Bhosle,International,1940,Lucky Ali,International,1990
+267,305541,29609,Paul Weston,Jazz,1930,Percy Faith,Easy Listening,1950
+268,306851,134729,Faith No More,Pop/Rock,1980,Junkie XL,Electronic,1980
+269,307083,540883,Guns N' Roses,Pop/Rock,1980,Junkyard,Pop/Rock,1980
+270,308013,758453,Blues Traveler,Pop/Rock,1980,"Jump, Little Children",Pop/Rock,2000
+271,309839,200775,Ernest Tubb,Country,1930,Justin Tubb,Country,1950
+272,312464,804476,Charles Aznavour,Vocal,1930,Pierre Bachelet,Stage & Screen,1980
+273,314155,314113,Julie Andrews,Stage & Screen,1940,Peter Allen,Vocal,1950
+274,314923,586798,Thievery Corporation,Electronic,1990,Quantic,Electronic,2000
+275,315104,296024,RubÃ©n Blades,Latin,1960,Luis Enrique,Latin,1980
+276,315142,206241,Eurythmics,Pop/Rock,1980,Scandal,Pop/Rock,1980
+277,315909,783025,Jimmy Yancey,Blues,1930,Pete Johnson,Jazz,1930
+278,317093,287604,Louis Jordan,Jazz,1930,Nat King Cole,Jazz,1930
+279,317571,610706,Bread,Pop/Rock,1960,Jennifer Love Hewitt,Pop/Rock,1990
+280,318966,104714,Kraftwerk,Electronic,1970,Martin Gore,Pop/Rock,1970
+281,320470,578999,Aaliyah,R&B;,1990,Lumidee,R&B;,2000
+282,327130,227527,Flatt & Scruggs,Country,1940,Jerry Douglas,Country,1970
+283,328956,543055,Georgie Fame,Pop/Rock,1950,Matt Bianco,Pop/Rock,1980
+284,329542,162197,Ben Folds,Pop/Rock,1990,Jonathan Coulton,Pop/Rock,2000
+285,329883,790820,Tool,Pop/Rock,1990,RX Bandits,Pop/Rock,2000
+286,329978,96977,In Flames,Pop/Rock,1990,Eluveitie,Pop/Rock,2000
+287,330061,925837,Accept,Pop/Rock,1970,Rage,Pop/Rock,1980
+288,332536,273105,Dr. Lonnie Smith,Jazz,1960,Ronnie Foster,Jazz,1970
+289,333903,856451,Naked Eyes,Pop/Rock,1980,New Musik,Pop/Rock,1980
+290,334243,577261,Mitch Miller,Easy Listening,1940,Phil Ramone,Pop/Rock,1960
+291,346637,261332,Jonah Jones,Jazz,1930,Roy Eldridge,Jazz,1930
+292,352164,119111,J.J. Johnson,Jazz,1940,Kai Winding,Jazz,1940
+293,352575,649435,Gerald Levert,R&B;,1980,Men at Large,R&B;,1990
+294,353145,577531,Woody Guthrie,Folk,1930,Roy Rogers,Country,1930
+295,354609,128440,Duran Duran,Pop/Rock,1970,Kajagoogoo,Pop/Rock,1980
+296,354883,792530,Tori Amos,Pop/Rock,1980,Poe,Pop/Rock,1990
+297,355142,130932,Crazy Horse,Pop/Rock,1960,Nirvana,Pop/Rock,1960
+298,356422,3595,Andrew Lloyd Webber,Stage & Screen,1960,Karen Akers,Vocal,1980
+299,359179,147635,Carly Simon,Pop/Rock,1970,Karla Bonoff,Pop/Rock,1970
+300,359559,21334,Stephanie Mills,R&B;,1960,Karyn White,R&B;,1980
+301,360948,259270,Arrow,International,1970,Rupee,Latin,1990
+302,360956,39656,Sonny Rollins,Jazz,1940,Jimmy Giuffre,Jazz,1940
+303,364861,824022,Little Richard,Pop/Rock,1950,Rudy Ray Moore,Comedy/Spoken,1960
+304,367156,755494,Silver Apples,Pop/Rock,1960,Martin Rev,Pop/Rock,1980
+305,367417,17748,Patti LaBelle,R&B;,1950,Martha Wash,R&B;,1970
+306,369270,748773,Amos Milburn,Blues,1940,Professor Longhair,Blues,1930
+307,389979,81083,Bill Monroe,Country,1940,Ralph Stanley,Country,1940
+308,391285,754032,The Beatles,Pop/Rock,1960,Michael Card,Religious,1980
+309,395633,29884,Paul McCartney,Pop/Rock,1950,Nick Heyward,Pop/Rock,1980
+310,396372,81796,Kenny Clarke,Jazz,1930,Max Roach,Jazz,1940
+311,397156,227527,Flatt & Scruggs,Country,1940,Randy Scruggs,Country,1990
+312,398892,392299,Michael Franks,Vocal,1970,Michael Ruff,Pop/Rock,1980
+313,398909,18977,Barry Manilow,Pop/Rock,1970,Randy Waldman,Jazz,1980
+314,399249,830538,Robert Plant,Pop/Rock,1960,Michael White,Jazz,1980
+315,399361,744969,Alvin & the Chipmunks,Children's,1950,Crazy Frog,Pop/Rock,1990
+316,399437,135273,"Earth, Wind & Fire",R&B;,1960,Odyssey,R&B;,1970
+317,403120,898336,Mississippi Sheiks,Blues,1930,The Mills Brothers,Vocal,1930
+318,405113,950571,Harry James,Jazz,1930,Ray Anthony,Jazz,1940
+319,407101,147635,Carly Simon,Pop/Rock,1970,Nicolette Larson,Pop/Rock,1970
+320,408531,950571,Harry James,Jazz,1930,Ray Nance,Jazz,1930
+321,409985,838300,June Carter Cash,Country,1950,The Peasall Sisters,Country,2000
+322,411487,71970,The J.B.'s,R&B;,1960,The RH Factor,Jazz,2000
+323,412715,617568,Brenton Wood,R&B;,1960,Ralfi Pagan,Latin,1960
+324,413405,179698,Pat Metheny,Jazz,1970,Mike Stern,Jazz,1980
+325,423467,7689,TLC,R&B;,1990,Mista,R&B;,1990
+326,424117,201760,George Benson,Jazz,1960,The Rippingtons,Jazz,1980
+327,428725,669303,Golden Earring,Pop/Rock,1960,2 Brothers on the 4th Floor,Pop/Rock,1990
+328,444140,235923,Leif Garrett,Pop/Rock,1960,The Naked Brothers Band,Pop/Rock,2000
+329,448152,485135,311,Pop/Rock,1990,Methods of Mayhem,Pop/Rock,1990
+330,448207,508443,Air Supply,Pop/Rock,1970,Donna Lewis,Pop/Rock,1990
+331,450700,29884,Paul McCartney,Pop/Rock,1950,Noel Redding,Pop/Rock,1960
+332,450786,74853,The KLF,Electronic,1980,Messiah,Electronic,1990
+333,453009,780581,Lagwagon,Pop/Rock,1990,Mest,Pop/Rock,1990
+334,454240,816890,Johnny Cash,Country,1950,Red Sovine,Country,1930
+335,460553,511041,Aterciopelados,Latin,1990,Belanova,Latin,2000
+336,463663,607283,Tito Puente,Latin,1940,Nuyorican Soul,Electronic,1990
+337,479204,816701,Deniece Williams,R&B;,1970,Anita Ward,R&B;,1970
+338,480984,808944,Jawbreaker,Pop/Rock,1980,Off with Their Heads,Pop/Rock,2000
+339,483848,418740,Sex Pistols,Pop/Rock,1970,The Vibrators,Pop/Rock,1970
+340,485118,351733,Nine Inch Nails,Pop/Rock,1980,Mike Shinoda,Pop/Rock,2000
+341,486115,754032,The Beatles,Pop/Rock,1960,The Rockin' Berries,Pop/Rock,1960
+342,490416,170690,Erskine Hawkins,Jazz,1940,Thelonious Monk,Jazz,1940
+343,490805,198783,Johnny Horton,Country,1950,The Royal Guardsmen,Pop/Rock,1960
+344,492670,744548,Spike Jones,Comedy/Spoken,1930,Monty Python,Comedy/Spoken,1960
+345,494537,145543,Eddie Safranski,Jazz,1940,Milt Hinton,Jazz,1930
+346,499780,797056,Elis Regina,International,1960,Adriana Calcanhotto,Latin,1990
+347,501537,105129,Collective Soul,Pop/Rock,1990,12 Stones,Pop/Rock,2000
+348,502774,109274,Chris Montez,Pop/Rock,1960,The Rivieras,Pop/Rock,1950
+349,502806,75825,The Coasters,R&B;,1950,The Rivingtons,R&B;,1960
+350,502978,257141,Widespread Panic,Pop/Rock,1980,Oysterhead,Pop/Rock,2000
+351,503668,894335,The Platters,R&B;,1950,The Miracles,R&B;,1960
+352,515600,927555,Aretha Franklin,R&B;,1950,Thelma Houston,R&B;,1960
+353,515750,195368,Dorothy Norwood,Religious,1940,Albertina Walker,Religious,1960
+354,515790,245760,Les McCann,Jazz,1960,Alex Bugnon,Jazz,1980
+355,520975,754032,The Beatles,Pop/Rock,1960,Tommy James & the Shondells,Pop/Rock,1960
+356,523661,549797,Hank Williams,Country,1930,Stonewall Jackson,Country,1950
+357,524634,92942,Chic,R&B;,1970,The Bucketheads,Electronic,1990
+358,543169,413524,The Police,Pop/Rock,1970,Gustavo Cerati,Latin,1980
+359,546735,29884,Paul McCartney,Pop/Rock,1950,Gilbert O'Sullivan,Pop/Rock,1960
+360,550940,21578,Sleep,Pop/Rock,1990,Witch,Pop/Rock,2000
+361,556292,167320,Fear Factory,Pop/Rock,1980,Veil of Maya,Pop/Rock,2000
+362,559927,176358,Jamiroquai,R&B;,1990,Maktub,R&B;,1990
+363,567374,24944,Amy Grant,Religious,1970,Dallas Holm,Religious,1980
+364,569064,830538,Robert Plant,Pop/Rock,1960,Ocean,R&B;,1970
+365,574483,830028,"Huey ""Piano"" Smith",R&B;,1950,The Wild Tchoupitoulas,R&B;,1970
+366,576072,572106,The Three Degrees,R&B;,1960,A Taste of Honey,R&B;,1970
+367,578028,137580,The Cramps,Pop/Rock,1970,Mojo Nixon,Pop/Rock,1980
+368,580485,414251,Otis Redding,R&B;,1960,Willie Hutch,R&B;,1960
+369,583843,107139,Bootsy Collins,R&B;,1970,APB,Pop/Rock,1980
+370,585210,44764,Blondie,Pop/Rock,1970,The Waitresses,Pop/Rock,1980
+371,588943,85448,The Heptones,Reggae,1960,The Abyssinians,Reggae,1970
+372,589802,73383,The Gap Band,R&B;,1960,Yarbrough & Peoples,R&B;,1970
+373,591459,6232,Robert Miles,Electronic,1980,TiÃ«sto,Electronic,1990
+374,593129,809396,David Grisman,Country,1970,Tim O'Brien,Country,1970
+375,597269,781370,Chumbawamba,Pop/Rock,1980,Against All Authority,Pop/Rock,1990
+376,600386,918600,The Style Council,Pop/Rock,1980,Mother Earth,Electronic,1980
+377,603980,744548,Spike Jones,Comedy/Spoken,1930,Tiny Tim,Comedy/Spoken,1960
+378,604090,869417,Nightmares on Wax,Electronic,1980,Aim,Electronic,1990
+379,604924,238115,Sam Cooke,R&B;,1950,Arthur Conley,R&B;,1960
+380,607105,197424,Vicente FernÃ¡ndez,Latin,1960,Aida Cuevas,Latin,1970
+381,607967,150629,Ã‰dith Piaf,Vocal,1930,Astor Piazzolla,Latin,1940
+382,611877,744548,Spike Jones,Comedy/Spoken,1930,Tom Lehrer,Comedy/Spoken,1940
+383,612095,349157,Melvins,Pop/Rock,1980,Tomahawk,Pop/Rock,2000
+384,615026,132940,Lata Mangeshkar,International,1950,Asha Bhosle,International,1940
+385,616979,135273,"Earth, Wind & Fire",R&B;,1960,Brainstorm,R&B;,1970
+386,620759,174822,Serge Gainsbourg,Pop/Rock,1950,Alain Bashung,Pop/Rock,1960
+387,623985,192382,Deep Purple,Pop/Rock,1960,Budgie,Pop/Rock,1960
+388,626115,31263,AndraÃ© Crouch,Religious,1960,The Brooklyn Tabernacle Choir,Religious,1970
+389,627250,758194,Beny MorÃ©,Latin,1940,Buena Vista Social Club,Latin,1990
+390,628571,311680,Luis Miguel,Latin,1980,Reik,Latin,2000
+391,632986,956973,Hilary Duff,Pop/Rock,1990,Jordan Pruitt,Pop/Rock,2000
+392,633044,555695,Gipsy Kings,Latin,1980,Strunz & Farah,International,1960
+393,633080,748222,Siouxsie and the Banshees,Pop/Rock,1970,Strawberry Switchblade,Pop/Rock,1980
+394,634674,825032,Hot Lips Page,Jazz,1930,Buck Clayton,Jazz,1930
+395,641111,137494,Fats Domino,R&B;,1940,Buster Brown,Blues,1950
+396,650525,796741,Eddy Arnold,Country,1940,George Morgan,Country,1940
+397,651796,684920,Dave Grusin,Jazz,1960,Gustavo Santaolalla,Latin,1990
+398,660244,194039,Geggy Tah,Pop/Rock,1990,Caviar,Pop/Rock,2000
+399,661974,16759,Tadd Dameron,Jazz,1940,Gigi Gryce,Jazz,1940
+400,662149,542549,Gerry Mulligan,Jazz,1940,Gary McFarland,Jazz,1960
+401,663455,242861,Dennis Brown,Reggae,1970,Half Pint,Reggae,1980
+402,664618,1312035,Playero,Latin,1990,DJ Nelson,Latin,1990
+403,668448,46861,Ray Charles,R&B;,1940,James Cleveland,Religious,1950
+404,669473,147200,The Dells,R&B;,1950,Harold Melvin,R&B;,1950
+405,670641,162677,Dizzy Gillespie,Jazz,1930,"Harry ""Sweets"" Edison",Jazz,1930
+406,672411,38490,The Band,Pop/Rock,1960,Golden Smog,Pop/Rock,1980
+407,672918,197424,Vicente FernÃ¡ndez,Latin,1960,HÃ©ctor Montemayor,Latin,1990
+408,674310,805930,Charlie Christian,Jazz,1930,Herb Ellis,Jazz,1940
+409,674937,668448,James Cleveland,Religious,1950,Daryl Coley,Religious,1970
+410,681956,820434,Whitney Houston,R&B;,1980,Xscape,R&B;,1990
+411,683065,848784,Roy Acuff,Country,1930,Wynn Stewart,Country,1950
+412,683921,52151,Augustus Pablo,Reggae,1970,Yami Bolo,Reggae,1990
+413,691616,737886,Enrique Iglesias,Latin,1990,Ryan Cabrera,Pop/Rock,2000
+414,694325,311074,Martin Denny,Easy Listening,1950,Gheorghe Zamfir,Easy Listening,1970
+415,695943,187907,Don Omar,Latin,1990,Zion & Lennox,Latin,2000
+416,697391,279337,Sade,R&B;,1980,ZhanÃ©,R&B;,1990
+417,740569,337119,Phil Collins,Pop/Rock,1970,Frida,Pop/Rock,1970
+418,741671,4852,Selena,Latin,1980,Palomo,Latin,2000
+419,741692,660507,Giorgio Moroder,Pop/Rock,1960,Alexander Robotnick,R&B;,1980
+420,744075,6613,Ali Farka TourÃ©,International,1970,Toumani DiabatÃ©,International,1990
+421,746128,193320,Def Leppard,Pop/Rock,1970,Steelheart,Pop/Rock,1990
+422,746182,754032,The Beatles,Pop/Rock,1960,Translator,Pop/Rock,1980
+423,748933,543867,Guy Clark,Country,1970,Slaid Cleaves,Folk,1990
+424,752094,221803,UNKLE,Electronic,1990,Supreme Beings of Leisure,Pop/Rock,2000
+425,752150,639005,George Carlin,Comedy/Spoken,1960,Andrew Dice Clay,Comedy/Spoken,1980
+426,752613,636433,The Cardigans,Pop/Rock,1990,Shivaree,Pop/Rock,2000
+427,753094,898331,Mississippi Fred McDowell,Blues,1950,Son House,Blues,1930
+428,753254,330575,Neil Sedaka,Pop/Rock,1950,Paul Williams,Pop/Rock,1960
+429,753422,180023,Tortoise,Pop/Rock,1990,The Album Leaf,Pop/Rock,2000
+430,753985,792507,Frank Sinatra,Vocal,1930,Steve Lawrence,Vocal,1950
+431,754219,6334,Tony Bennett,Vocal,1940,Anthony Newley,Vocal,1940
+432,754879,611881,Atomic Rooster,Pop/Rock,1960,Angel Witch,Pop/Rock,1980
+433,755030,489676,The Pretty Things,Pop/Rock,1960,Steve Harley & Cockney Rebel,Pop/Rock,1970
+434,758194,591620,Antonio MachÃ­n,Latin,1930,Beny MorÃ©,Latin,1940
+435,758661,11028,Frank Loesser,Stage & Screen,1930,Richard Adler,Stage & Screen,1950
+436,759187,578999,Aaliyah,R&B;,1990,Blaque,R&B;,1990
+437,761109,379125,Neil Young,Pop/Rock,1960,Blue Mountain,Pop/Rock,1990
+438,762288,486305,Junior Parker,Blues,1950,Big Mama Thornton,Blues,1940
+439,762496,83554,Billy Bragg,Pop/Rock,1980,Folk Implosion,Pop/Rock,1990
+440,763554,287604,Louis Jordan,Jazz,1930,Bill Doggett,R&B;,1940
+441,769616,608701,Muddy Waters,Blues,1940,Jimmy Rogers,Blues,1950
+442,770628,858710,Marty Robbins,Country,1940,Billy Walker,Country,1940
+443,771297,29334,Slim Whitman,Country,1940,King Sunny Ade,International,1960
+444,771838,816517,DeBarge,R&B;,1980,Immature,R&B;,1990
+445,773615,149173,Carter Burwell,Stage & Screen,1980,Klaus Badelt,Stage & Screen,2000
+446,774956,151469,Earl King,R&B;,1950,Chris Kenner,R&B;,1960
+447,774983,695019,Zakir Hussain,International,1960,Krishna Das,New Age,1990
+448,775446,649950,George Martin,Pop/Rock,1950,Chris Lord-Alge,Pop/Rock,1990
+449,776406,27916,Terry Callier,R&B;,1960,Koop,Electronic,2000
+450,777366,680522,Yaz,Pop/Rock,1980,La Bouche,Electronic,1990
+451,778526,583618,Sunny Day Real Estate,Pop/Rock,1990,Compound Red,Pop/Rock,1990
+452,779209,942252,Compay Segundo,Latin,1930,La Lupe,Latin,1950
+453,779599,186185,CÃ©line Dion,Pop/Rock,1980,Lara Fabian,Pop/Rock,1980
+454,781680,615026,Asha Bhosle,International,1940,Jagjit Singh,International,1970
+455,784122,1055285,112,R&B;,1990,Cupid,R&B;,2000
+456,784527,805930,Charlie Christian,Jazz,1930,Barney Kessel,Jazz,1940
+457,784597,744969,Alvin & the Chipmunks,Children's,1950,Barney,Children's,1990
+458,786080,208404,Dexter Gordon,Jazz,1940,James Moody,Jazz,1940
+459,786360,142652,D.O.A.,Pop/Rock,1970,D.R.I.,Pop/Rock,1980
+460,787960,410219,Merle Haggard,Country,1960,Joe Diffie,Country,1980
+461,788937,40225,Gladys Knight,R&B;,1950,"Evelyn ""Champagne"" King",R&B;,1970
+462,793227,315909,Pete Johnson,Jazz,1930,Ben Webster,Jazz,1930
+463,793898,418740,Sex Pistols,Pop/Rock,1970,Cockney Rejects,Pop/Rock,1980
+464,793913,203008,Rush,Pop/Rock,1960,FM,Pop/Rock,1980
+465,794449,769876,Little Jimmy Scott,Vocal,1950,Frankie Valli,Pop/Rock,1950
+466,795054,488378,Os Mutantes,International,1960,El Tri,Latin,1960
+467,795288,1528006,Olivier Messiaen,Classical,1930,Pierre Boulez,Classical,1940
+468,795905,781094,The Clancy Brothers,International,1950,Dolores Keane,International,1970
+469,798477,75295,Ken Boothe,Reggae,1960,Freddie McGregor,Reggae,1960
+470,798662,760240,Bernard Herrmann,Stage & Screen,1930,Ennio Morricone,Stage & Screen,1950
+471,800492,244406,Johnny Mercer,Vocal,1930,Dory Previn,Stage & Screen,1950
+472,802048,802791,Gene Kelly,Vocal,1930,Gregory Hines,R&B;,1980
+473,803533,31263,AndraÃ© Crouch,Religious,1960,Twila Paris,Religious,1980
+474,804338,30431,Slowdive,Pop/Rock,1980,Drop Nineteens,Pop/Rock,1990
+475,805930,259529,Lester Young,Jazz,1930,Charlie Christian,Jazz,1930
+476,808155,361393,Prince,R&B;,1970,Jamie Principle,Electronic,1980
+477,809058,118544,The Drifters,R&B;,1950,Jay & the Americans,Pop/Rock,1960
+478,810912,72041,Bob Seger,Pop/Rock,1960,John Cafferty & the Beaver Brown Band,Pop/Rock,1970
+479,811178,96379,Boyz II Men,R&B;,1980,Uncle Sam,R&B;,1990
+480,812040,772526,Irma Thomas,R&B;,1960,Jean Knight,R&B;,1970
+481,813463,75100,Bad Company,Pop/Rock,1970,John Waite,Pop/Rock,1970
+482,813485,276592,Jess Stacy,Jazz,1930,Lee Wiley,Vocal,1930
+483,814530,94658,Commissioned,Religious,1980,Deitrick Haddon,Religious,1990
+484,814871,287350,Mark Lanegan,Pop/Rock,1980,Mad Season,Pop/Rock,1990
+485,816267,47134,Susannah McCorkle,Vocal,1970,Dawn Upshaw,Classical,1980
+486,818254,838195,Percy Sledge,R&B;,1960,Lenny Williams,R&B;,1970
+487,818627,276626,Rob Halford,Pop/Rock,1970,Devin Townsend,Pop/Rock,1990
+488,820780,70534,Bill Cosby,Comedy/Spoken,1960,Whoopi Goldberg,Comedy/Spoken,1990
+489,820999,45057,The Louvin Brothers,Country,1940,The Wilburn Brothers,Country,1940
+490,821252,409954,Ray Price,Country,1940,Dick Curless,Country,1960
+491,822913,4852,Selena,Latin,1980,LiberaciÃ³n,Latin,1980
+492,824895,295756,Santana,Pop/Rock,1960,El Chicano,Pop/Rock,1970
+493,825168,477875,The Supremes,R&B;,1950,The Jones Girls,R&B;,1960
+494,825208,898331,Mississippi Fred McDowell,Blues,1950,Lightnin' Hopkins,Blues,1930
+495,826660,178014,U-Roy,Reggae,1960,Josey Wales,Reggae,1980
+496,826936,92303,King Missile,Pop/Rock,1980,Liam Lynch,Pop/Rock,1990
+497,827224,591104,Mongo Santamaria,Latin,1950,Louie Ramirez,Latin,1960
+498,827250,137494,Fats Domino,R&B;,1940,Lloyd Price,R&B;,1950
+499,827367,608701,Muddy Waters,Blues,1940,Long John Baldry,Blues,1950
+500,827760,892771,The O'Jays,R&B;,1960,Loose Ends,R&B;,1980
+501,827859,492162,The Prodigy,Electronic,1990,Lo Fidelity Allstars,Electronic,1990
+502,828507,805930,Charlie Christian,Jazz,1930,Howard Roberts,Jazz,1950
+503,829125,221894,MFSB,R&B;,1970,Loleatta Holloway,R&B;,1960
+504,832833,321321,Lulu,Pop/Rock,1960,Samantha Mumba,Pop/Rock,1990
+505,833539,125569,Chuckii Booker,R&B;,1980,Mark Morrison,R&B;,1990
+506,836017,151290,BÃ©la Fleck,Jazz,1970,Scott Nygaard,Country,1970
+507,836103,669511,Marco Antonio SolÃ­s,Latin,1970,Pepe Aguilar,Latin,1980
+508,837150,577531,Woody Guthrie,Folk,1930,Peggy Seeger,Folk,1950
+509,838847,687933,Yanni,New Age,1980,Vanessa-Mae,Pop/Rock,1990
+510,839037,540883,Guns N' Roses,Pop/Rock,1980,Little Caesar,Pop/Rock,1970
+511,840215,926548,Iggy Pop,Pop/Rock,1960,Peter Murphy,Pop/Rock,1970
+512,845668,582930,David Gilmour,Pop/Rock,1960,Phil Manzanera,Pop/Rock,1970
+513,846671,238495,John Mayall,Blues,1950,Mark-Almond,Pop/Rock,1960
+514,847703,11028,Frank Loesser,Stage & Screen,1930,Jerry Ross,Pop/Rock,1950
+515,851205,519637,Brian Setzer,Pop/Rock,1980,Richard Cheese,Pop/Rock,2000
+516,851240,561715,Godflesh,Pop/Rock,1980,Pitchshifter,Pop/Rock,1990
+517,851639,228714,Mario Lanza,Vocal,1940,PlÃ¡cido Domingo,Classical,1960
+518,852970,188432,David Sanborn,Jazz,1960,Richard Elliot,Jazz,1980
+519,853254,301619,Portishead,Pop/Rock,1990,Ruby,Electronic,1990
+520,855619,47033,The Blue Nile,Pop/Rock,1980,Primitive Radio Gods,Pop/Rock,1990
+521,855655,796439,Carlos Vives,Latin,1980,Los Reyes del Camino,Latin,1990
+522,857887,7731,Papa Roach,Pop/Rock,1990,Pulse Ultra,Pop/Rock,2000
+523,859026,511041,Aterciopelados,Latin,1990,Natalia Lafourcade,Latin,1990
+524,859509,798606,Fugazi,Pop/Rock,1980,Quicksand,Pop/Rock,1990
+525,860996,764890,Ian Tyson,Country,1960,Corb Lund,Country,1990
+526,862902,626268,Buffy Sainte-Marie,Folk,1950,Mary Youngblood,New Age,1990
+527,866767,610706,Bread,Pop/Rock,1960,Randy VanWarmer,Pop/Rock,1970
+528,869364,502371,Missy Elliott,R&B;,1990,Nicole,R&B;,1980
+529,884251,390477,New Kids on the Block,Pop/Rock,1980,O-Town,Pop/Rock,2000
+530,887235,37730,Pearl Jam,Pop/Rock,1990,Revis,Pop/Rock,1990
+531,887348,87113,The Jordanaires,Country,1940,The Oak Ridge Boys,Country,1940
+532,887719,556242,Hamza el Din,International,1960,Nusrat Fateh Ali Khan,International,1970
+533,887990,684920,Dave Grusin,Jazz,1960,Michael Giacchino,Stage & Screen,1990
+534,888394,366164,Rick James,R&B;,1960,O'Bryan,R&B;,1970
+535,888942,744969,Alvin & the Chipmunks,Children's,1950,The Muppets,Children's,1970
+536,890683,230667,Zucchero,Pop/Rock,1970,Mijares,Latin,1980
+537,891911,777210,Kool & the Gang,R&B;,1960,Midnight Star,R&B;,1970
+538,893111,828768,Lord Kitchener,International,1940,The Paragons,Reggae,1960
+539,894831,758194,Beny MorÃ©,Latin,1940,Oscar D'LeÃ³n,Latin,1970
+540,912566,961427,Hans Zimmer,Stage & Screen,1970,Geoff Zanelli,Stage & Screen,2000
+541,914671,43444,Steve Martin,Comedy/Spoken,1960,Christian Finnegan,Comedy/Spoken,2000
+542,919846,325459,R.E.M.,Pop/Rock,1980,54-40,Pop/Rock,1980
+543,920165,171637,Duane Eddy,Pop/Rock,1950,The Tornados,Pop/Rock,1960
+544,921289,245039,Vassar Clements,Country,1950,Stuart Duncan,Country,1990
+545,921554,389979,Ralph Stanley,Country,1940,The Whites,Religious,1970
+546,921888,230784,Lord Creator,Reggae,1960,Alborosie,Reggae,2000
+547,923497,684920,Dave Grusin,Jazz,1960,Thomas Newman,Stage & Screen,1980
+548,923801,541125,Gerry & the Pacemakers,Pop/Rock,1950,The Young Rascals,Pop/Rock,1960
+549,926115,272567,Louis Prima,Jazz,1930,Acker Bilk,Jazz,1950
+550,927278,212614,Deodato,Latin,1960,Adiemus,New Age,1990
+551,933927,119651,J.J. Cale,Pop/Rock,1950,Brant Bjork,Pop/Rock,1990
+552,934801,307461,Van Morrison,Pop/Rock,1950,Brian Kennedy,Pop/Rock,1990
+553,935413,403184,The Osmonds,Pop/Rock,1950,Musical Youth,Reggae,1980
+554,936126,112017,Jo Stafford,Vocal,1930,Tommy Edwards,R&B;,1940
+555,943649,183867,John Cage,Classical,1930,Morton Feldman,Avant-Garde,1940
+556,948333,478426,Orange Juice,Pop/Rock,1970,Haircut 100,Pop/Rock,1980
+557,949025,230667,Zucchero,Pop/Rock,1970,Giorgia,Pop/Rock,1990
+558,950441,246960,Wham!,Pop/Rock,1980,Go West,Pop/Rock,1980
+559,950777,409954,Ray Price,Country,1940,Hank Cochran,Country,1950
+560,950805,6320,Toto,Pop/Rock,1970,Glass Tiger,Pop/Rock,1980
+561,952503,6613,Ali Farka TourÃ©,International,1970,Mali Music,Pop/Rock,2000
+562,954189,69534,Bon Jovi,Pop/Rock,1980,Danger Danger,Pop/Rock,1980
+563,955773,249175,Les Baxter,Easy Listening,1940,Herb Alpert & the Tijuana Brass,Easy Listening,1960
+564,960674,287604,Louis Jordan,Jazz,1930,Wynonie Harris,R&B;,1940
+565,983872,591459,TiÃ«sto,Electronic,1990,Tommy Trash,Electronic,2000
+566,986695,190235,Mad Cobra,Reggae,1980,Teddybears,Pop/Rock,1990
+567,988448,758208,Beth Orton,Pop/Rock,1990,Frou Frou,Pop/Rock,2000
+568,989540,240665,Jeff Buckley,Pop/Rock,1990,Justin Nozuka,Pop/Rock,2000
+569,997588,28002,Shinedown,Pop/Rock,2000,Rev Theory,Pop/Rock,2000
+570,999790,667669,Daft Punk,Electronic,1990,Bingo Players,Electronic,2000
+571,1019633,754032,The Beatles,Pop/Rock,1960,Matt Simons,Pop/Rock,2010
+572,1032216,478173,Marsha Ambrosius,R&B;,1990,Stacy Barthe,R&B;,2000
+573,1032454,754032,The Beatles,Pop/Rock,1960,Jigsaw,Pop/Rock,1960
+574,1061504,549797,Hank Williams,Country,1930,Frankie Miller,Country,1950
+575,1233067,275832,Ron Carter,Jazz,1960,Danny Thompson,Pop/Rock,1960
+576,1276114,745584,Steel Pulse,Reggae,1970,Donovan,Reggae,1980
+577,1409777,793664,El DeBarge,R&B;,1970,Slim,R&B;,1990
+578,1435165,798662,Ennio Morricone,Stage & Screen,1950,Christopher Tin,Stage & Screen,2000
+579,1459978,239921,Depeche Mode,Pop/Rock,1980,Alphaville,Pop/Rock,1980
+580,1471849,1824831,Wisin & Yandel,Latin,1990,Chino & Nacho,Latin,2000
+581,1482685,467203,Michael Jackson,R&B;,1960,Madonna,International,1990
+582,1573712,758999,Boards of Canada,Electronic,1990,Nosaj Thing,Electronic,2000
+583,1591840,57280,Bilal,R&B;,1990,Jesse Boykins III,R&B;,2000
+584,1619044,845662,Jill Scott,R&B;,1990,Daley,R&B;,2000
+585,1620705,894465,The Rolling Stones,Pop/Rock,1960,The Outsiders,Pop/Rock,1960
+586,1772438,480086,Modest Mouse,Pop/Rock,1990,Future Islands,Pop/Rock,2000
+587,1971972,71970,The J.B.'s,R&B;,1960,The Dap-Kings Horns,R&B;,2000
+588,2043528,776011,Kyuss,Pop/Rock,1980,Them Crooked Vultures,Pop/Rock,2000
+589,2060288,924780,Anti-Flag,Pop/Rock,1980,"Defiance, Ohio",Pop/Rock,2000
+590,2113374,275757,Pharrell Williams,R&B;,1990,The Glitch Mob,Pop/Rock,2000
+591,2118074,546214,Gwen Stefani,Pop/Rock,1980,Rita Ora,Pop/Rock,2000
+592,2142940,775877,Coldplay,Pop/Rock,1990,Boyce Avenue,Pop/Rock,2000
+593,2368302,793022,Cock Sparrer,Pop/Rock,1970,Blitz,Pop/Rock,1980
+594,2394289,45313,Steve Winwood,Pop/Rock,1960,Nick Jonas & the Administration,Pop/Rock,2010
+595,2397707,757342,blink-182,Pop/Rock,1990,Allstar Weekend,Pop/Rock,2000
+596,2406958,578999,Aaliyah,R&B;,1990,Tink,R&B;,2010
+597,2437431,811395,MÃºm,Electronic,1990,JÃ³nsi,Pop/Rock,2000
+598,2444397,865016,New Edition,R&B;,1980,The Boys,R&B;,1980
+599,2518402,196969,John Martyn,Folk,1960,Gigi Masin,Electronic,1980
+600,2526137,495338,Ace of Base,Pop/Rock,1990,Twin Shadow,Pop/Rock,2010
+601,2528416,611007,Todd Edwards,Electronic,1990,Disclosure,Electronic,2010
+602,2596970,232480,John Williams,Stage & Screen,1950,Jeremy Soule,Stage & Screen,1990
+603,2641312,546214,Gwen Stefani,Pop/Rock,1980,Cher Lloyd,Pop/Rock,2010
+604,2775792,468938,Omarion,R&B;,2000,Tory Lanez,R&B;,2010
+605,2806733,134600,D'Angelo,R&B;,1990,Allen Stone,R&B;,2010
+606,2814183,83554,Billy Bragg,Pop/Rock,1980,King Krule,Pop/Rock,2010
+607,2877945,587631,Moodymann,Electronic,1990,Romare,Electronic,2010
+608,2923522,31685,Paul Simon,Pop/Rock,1950,Dan Croll,Pop/Rock,2010
+609,3045620,170770,Erykah Badu,R&B;,1990,Hiatus Kaiyote,R&B;,2010
+610,3099573,275757,Pharrell Williams,R&B;,1990,Gawvi,Religious,2000
+611,3105903,761179,BeyoncÃ©,R&B;,1990,Zara Larsson,Electronic,2010
+612,3139368,26164,Sleater-Kinney,Pop/Rock,1990,Chastity Belt,Pop/Rock,2010
+613,3145435,792530,Tori Amos,Pop/Rock,1980,Mary Lambert,Pop/Rock,2000
+614,3178543,761179,BeyoncÃ©,R&B;,1990,Justine Skye,R&B;,2010
+615,3190264,757342,blink-182,Pop/Rock,1990,State Champs,Pop/Rock,2010
+616,3242655,303506,Usher,R&B;,1990,VEDO,R&B;,2010
+617,3306945,3161008,The Neptunes,R&B;,1960,Kaytranada,Electronic,2010
+618,3313123,275757,Pharrell Williams,R&B;,1990,Raury,Pop/Rock,2010
+619,3361526,467203,Michael Jackson,R&B;,1960,LANY,Pop/Rock,2010
+620,3383741,85397,Kelis,R&B;,1990,Bibi Bourelly,Pop/Rock,2010
+621,3410250,3426,Tank,R&B;,2000,Rotimi,R&B;,2010
+622,3413511,866491,Maxwell,R&B;,1990,Gallant,R&B;,2010
+623,3416601,170770,Erykah Badu,R&B;,1990,Jamila Woods,R&B;,2010
+624,3420473,170770,Erykah Badu,R&B;,1990,Steve Lacy,R&B;,2010
+625,3449693,325459,R.E.M.,Pop/Rock,1980,Big Thief,Pop/Rock,2010
+626,3469567,80649,The Libertines,Pop/Rock,2000,Declan McKenna,Pop/Rock,2010
+627,3486253,612716,Tom Petty,Pop/Rock,1970,LANCO,Country,2010
+628,3506278,478173,Marsha Ambrosius,R&B;,1990,Ella Mai,R&B;,2010
+629,3539434,744796,Townes Van Zandt,Folk,1960,Colter Wall,Country,2010
+630,3606027,2570457,Miguel,R&B;,2000,Brent Faiyaz,R&B;,2010
